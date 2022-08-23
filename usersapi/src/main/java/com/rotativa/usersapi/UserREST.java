@@ -16,7 +16,7 @@ import com.rotativa.usersapi.entidades.User;
 
 //possui as operações operações básicas para manipular o usuário no bd
 @RestController
-@RequestMapping("/useri")
+@RequestMapping("/user")
 public class UserREST {
     @Autowired //o spring cria o objeto, injeta no atributo repositório
     private RepositorioUser repositorio;
