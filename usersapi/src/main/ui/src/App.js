@@ -1,12 +1,11 @@
 import "./reset.css";
 import "./base.css";
-import { Cabecalho } from "./cabecalho/cabecalho";
+import { Cabecalho } from "./externo/cabecalho/cabecalho";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { Index } from "./index/index";
-import { Rodape } from "./rodape/rodape";
-import { Cadastro } from "./cadastro/cadastro";
-import { Login } from "./login/login";
-import { useState } from "react";
+import { Index } from "./externo/index/index";
+import { Rodape } from "./externo/rodape/rodape";
+import { Cadastro } from "./externo/cadastro/cadastro";
+import { Login } from "./externo/login/login";
 
 function App() {
 
