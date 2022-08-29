@@ -11,5 +11,3 @@ Banco: mysql;
 
 ### Para rodar o backend
 ../usersapi/src/main/java/com/rotativa/usersapi/
-
-Trabalho realizado em equipe
