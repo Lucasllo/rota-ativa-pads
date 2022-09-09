@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void alterar(User usuario) {
-        if(usuario.getId()>0){
+        if(usuario.getIdusuario()>0){
             repositorioUser.save(usuario);
         }        
     }
