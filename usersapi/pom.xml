@@ -22,20 +22,11 @@
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 
-<!--		
-	ATENÇÃO: PARA USAR O H2 É NECESSÁRIO TROCAR AS PROPERTIES DA APPLICATION PARA
-	spring.datasource.url=jdbc:h2:mem:testdb
-	spring.datasource.driverClassName=org.h2.Driver
-	spring.datasource.username=sa
-	spring.datasource.password=password
-	spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-	spring.h2.console.enabled=true
-	
-	<dependency>
+		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
-		</dependency> -->
+		</dependency> 
 
 		<dependency>
 			<groupId>mysql</groupId>
