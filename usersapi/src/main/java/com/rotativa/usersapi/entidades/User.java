@@ -14,10 +14,9 @@ import javax.persistence.Table;
 @Entity
 @Table(name="usuario", schema = "rotaativa")
 public class User {
-    /*Long = inteiro de 64bytes */
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idusuario;
+    private int idusuario;
     private String nome;
     private String cpf;
     @Column(nullable=false)
@@ -44,10 +43,10 @@ public class User {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    public Long getIdusuario() {
+    public int getIdusuario() {
         return idusuario;
     }
-    public void setIdusuario(Long idusuario) {
+    public void setIdusuario(int idusuario) {
         this.idusuario = idusuario;
     }
     public String getCpf() {

@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.rotativa.usersapi.database.RepositorioUser;
 import com.rotativa.usersapi.entidades.User;
 import com.rotativa.usersapi.service.UserService;
 // possui as operações operações básicas para manipular o usuário no bd
