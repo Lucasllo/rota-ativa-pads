@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.rotativa.usersapi.service.UserService;
 import com.rotativa.usersapi.database.RepositorioUser;
-import com.rotativa.usersapi.entidades.User;
+import com.rotativa.usersapi.entidades.Usuario;
 
 @Service("userService")
 public class UserServiceImpl implements UserService{
@@ -20,24 +20,24 @@ public class UserServiceImpl implements UserService{
 	}
 	
 	@Override
-	public List<User> listar() {
+	public List<Usuario> listar() {
         return repositorioUser.findAll();
     }
     
 	@Override
-    public void salvar(User users) {
+    public void salvar(Usuario users) {
     	repositorioUser.save(users);
     }
 
     @Override
-    public void alterar(User usuario) {
+    public void alterar(Usuario usuario) {
         if(usuario.getIdusuario()>0){
             repositorioUser.save(usuario);
         }        
     }
 
     @Override
-    public void excluir(User usuario) {
+    public void excluir(Usuario usuario) {
         repositorioUser.delete(usuario);        
     }
 }

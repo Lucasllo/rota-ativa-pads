@@ -1,18 +1,18 @@
 package com.rotativa.usersapi.service;
-
+// interface criada em arquivo separado para manter a privacidade da implementação dos métodos.
 import java.util.List;
 
 import org.springframework.stereotype.Component;
-import com.rotativa.usersapi.entidades.User;
+import com.rotativa.usersapi.entidades.Usuario;
 
 @Component
 public interface UserService {
  
-    public List<User> listar();
+    public List<Usuario> listar();
     
-    public void salvar(User users);
+    public void salvar(Usuario users);
 
-    public void alterar(User usuario);
+    public void alterar(Usuario usuario);
 
-    public void excluir(User usuario);
+    public void excluir(Usuario usuario);
 }

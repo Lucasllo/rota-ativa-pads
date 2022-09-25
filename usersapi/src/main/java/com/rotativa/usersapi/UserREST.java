@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.rotativa.usersapi.entidades.User;
+import com.rotativa.usersapi.entidades.Usuario;
 import com.rotativa.usersapi.service.UserService;
 // possui as operações operações básicas para manipular o usuário no bd
 @CrossOrigin(origins = "http://localhost:3000") //Permite que o back envie e receba dados de uma origem diferente
@@ -22,22 +22,22 @@ public class UserREST {
 	UserService usersService;
 
     @GetMapping
-    public List<User> listar(){
+    public List<Usuario> listar(){
         return usersService.listar();
     }
 
     @PostMapping
-    public void salvar(@RequestBody User usuario){
+    public void salvar(@RequestBody Usuario usuario){
         usersService.salvar(usuario);
     }
 
     @PutMapping
-    public void alterar(@RequestBody User usuario){
+    public void alterar(@RequestBody Usuario usuario){
         usersService.alterar(usuario);
     }
 
     @DeleteMapping
-    public void excluir(@RequestBody User usuario){
+    public void excluir(@RequestBody Usuario usuario){
         usersService.excluir(usuario);
     }
 
