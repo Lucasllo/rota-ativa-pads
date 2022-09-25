@@ -6,12 +6,14 @@ import { Index } from "./externo/index/index";
 import { Rodape } from "./externo/rodape/rodape";
 import { Cadastro } from "./externo/cadastro/cadastro";
 import { Login } from "./externo/login/login";
+import { Map } from "./interno/map/map";
 
 function App() {
 
   return (
     <>
       <Cabecalho />
+      <Map/>
       <Routes>
         <Route element={<Index />} exact path="/"></Route>
         <Route element={<Cadastro />} exact path="/cadastro"></Route>
