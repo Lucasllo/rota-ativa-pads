@@ -2,13 +2,14 @@ import { useState } from 'react';
 import CaixaFormularioLogin from '../../components/caixaFormularioLogin/caixaFormularioLogin';
 import './login.css';
 import { log } from "../../dados/dadosFormulario";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import UserService from '../../service/users';
 
 export function Login() {
 
     const userService = new UserService();
 
+    const navigate = useNavigate();
     const [email, setEmail] = useState();
     const [senha, setSenha] = useState();
 
@@ -26,7 +27,13 @@ export function Login() {
     function logar(e) {
         e.preventDefault();
         userService.getUser().then((resp) => {
-            console.log(resp);
+            let login = resp.data.find((p) => p.email == email && p.senha == senha);
+            if (login) {
+              console.log(login)
+              localStorage.setItem('usuarioLogado', JSON.stringify(login.idusuario));
+              JSON.parse(localStorage.getItem('usuarioLogado'));
+              navigate(`/menulogado/${login.idusuario}/mapa`, { replace: true })
+            }
         })
     }
 
