@@ -29,6 +29,9 @@ public class Usuario {
     private String senha;
     private Date datanasc;
     private int ticket;
+
+    @ManyToMany(mappedBy = "usuarios")
+    private List<Vagas> Vaga;
     
 
     public int getAcessibilidade() {
@@ -37,8 +40,7 @@ public class Usuario {
     public void setAcessibilidade(int acessibilidade) {
         this.acessibilidade = acessibilidade;
     }
-    @ManyToMany(mappedBy = "usuarios")
-    private List<Vagas> Vaga;
+
     
     public List<Vagas> getVaga() {
         return Vaga;

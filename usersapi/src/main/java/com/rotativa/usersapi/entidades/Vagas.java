@@ -29,8 +29,9 @@ public class Vagas {
 
     @ManyToMany
     @JoinTable(name = "Vaga_Usuario", 
-        joinColumns = @JoinColumn(name = "idvaga"), 
-        inverseJoinColumns = @JoinColumn(name = "idusuario"))
+      joinColumns = @JoinColumn(name = "idvaga"), 
+      inverseJoinColumns = @JoinColumn(name = "idusuario"))
+        
     private List<Usuario> usuarios;
     // `acessibilidade` TINYINT(1) NOT NULL,
     
