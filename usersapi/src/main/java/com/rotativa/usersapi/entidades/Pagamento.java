@@ -8,6 +8,8 @@ import javax.persistence.Entity; //O uso de @Entity identifica uma classe como E
 import javax.persistence.GeneratedValue; //Gerando valor aleatório
 import javax.persistence.GenerationType; //Estabelecendo estratégia para gerar valores aleatórios
 import javax.persistence.Id; //identificando chave primária para o framework
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -17,9 +19,12 @@ public class Pagamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idpagamento;
     private Date dataCompra;
-    // private TipoPagamento_idTipoPagamento
     private Double valor;
     private int quantidadeTicket;
+
+    @ManyToOne
+    @JoinColumn(nullable = false,unique = false)
+    private Usuario usuario;
     // private int usuario_idusuario
     // PRIMARY KEY (`idpagamento`, `usuario_idusuario`),
     // INDEX `fk_pagamento_TipoPagamento1_idx` (`TipoPagamento_idTipoPagamento` ASC)
@@ -35,22 +40,32 @@ public class Pagamento {
     // REFERENCES `RotaAtiva`.`usuario` (`idusuario`)
     // ON DELETE NO ACTION
     // ON UPDATE NO ACTION)
+    
+    public int getIdpagamento() {
+        return idpagamento;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+    public void setIdpagamento(int idpagamento) {
+        this.idpagamento = idpagamento;
+    }
     public Date getDataCompra() {
         return dataCompra;
     }
-
     public void setDataCompra(Date dataCompra) {
         this.dataCompra = dataCompra;
     }
-
     public Double getValor() {
         return valor;
     }
-
     public void setValor(Double valor) {
         this.valor = valor;
     }
-
     public int getQuantidadeTicket() {
         return quantidadeTicket;
     }
@@ -58,4 +73,6 @@ public class Pagamento {
     public void setQuantidadeTicket(int quantidadeTicket) {
         this.quantidadeTicket = quantidadeTicket;
     }
+    
+    
 }

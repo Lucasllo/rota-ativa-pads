@@ -3,13 +3,17 @@ package com.rotativa.usersapi.entidades;
 do projeto eles devem ser criados dentro da pasta userapi*/
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column; // Definindo regras para a coluna
 import javax.persistence.Entity; //O uso de @Entity identifica uma classe como Entidade
 import javax.persistence.GeneratedValue; //Gerando valor aleatório
 import javax.persistence.GenerationType; //Estabelecendo estratégia para gerar valores aleatórios
 import javax.persistence.Id; //identificando chave primária para o framework
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+
+
 
 @Entity
 @Table(name="usuario", schema = "rotaativa")
@@ -17,14 +21,31 @@ public class Usuario {
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idusuario;
-    private String nome;
     private String cpf;
+    private String nome;
+    private int acessibilidade;
     @Column(nullable=false)
     private String email;
     private String senha;
-    private int ticket;
     private Date datanasc;
+    private int ticket;
+    
 
+    public int getAcessibilidade() {
+        return acessibilidade;
+    }
+    public void setAcessibilidade(int acessibilidade) {
+        this.acessibilidade = acessibilidade;
+    }
+    @ManyToMany(mappedBy = "usuarios")
+    private List<Vagas> Vaga;
+    
+    public List<Vagas> getVaga() {
+        return Vaga;
+    }
+    public void setVaga(List<Vagas> vaga) {
+        Vaga = vaga;
+    }
     public String getNome() {
         return nome;
     }
