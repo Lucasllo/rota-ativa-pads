@@ -13,11 +13,11 @@ function App() {
   return (
     <>
       <Cabecalho />
-      <Map/>
       <Routes>
         <Route element={<Index />} exact path="/"></Route>
         <Route element={<Cadastro />} exact path="/cadastro"></Route>
         <Route element={<Login />} exact path="/login"></Route>
+        <Route element={<Map />} path="/menulogado/:id/mapa"></Route>
       </Routes>
       { useLocation().pathname == "/" 
       ? 
