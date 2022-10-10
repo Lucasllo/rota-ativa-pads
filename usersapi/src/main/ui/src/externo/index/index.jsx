@@ -12,7 +12,7 @@ export function Index() {
           </span>
         </div>
 
-        <img src="/img/maps.png" alt="" />
+        <img src="/img/maps.png" alt="mapa da zona azul" />
       </div>
     </section>
   );
