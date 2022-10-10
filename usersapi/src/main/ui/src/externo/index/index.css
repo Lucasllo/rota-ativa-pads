@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: 0% 30%;
   width: 100vw;
+  height: 100vh;
 }
 
 .principal_caixa {
@@ -16,8 +17,10 @@
 }
 
 .principal_texto span {
+  margin-top: -7vh;
   font-size: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  width: 45vw;
 }
 
 .principal_texto span,
@@ -29,6 +32,7 @@
   .principal {
     background-size: initial;
     height: fit-content;
+    padding: 2vw;
   }
 
   .principal_caixa {
@@ -36,6 +40,10 @@
   }
 
   .principal_texto h2 {
+    width: 100%;
+  }
+
+  .principal_texto span {
     width: 100%;
   }
 
