@@ -6,4 +6,8 @@ export default class UserService{
         return API.get("/user");
     }
 
+    getUsuario(){
+        return API.get("/usuario");
+    }
+
 }

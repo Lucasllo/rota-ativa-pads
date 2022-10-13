@@ -43,45 +43,13 @@ export function navbarLateral() {
           <i className="uil-estate fa-fw"></i>
           <Link to="/menulogado/1">Dashboard</Link>
         </li>
-        <li className="has-dropdown">
-          <i className="uil-calendar-alt"></i>
-          <a href="/#"> Calendário</a>
-          <ul className="sidebar-dropdown list-unstyled">
-            <li>
-              <a href="/#">Diário</a>
-            </li>
-            <li>
-              <a href="/#">Semanal</a>
-            </li>
-            <li>
-              <a href="/#">Mensal</a>
-            </li>
-            <li>
-              <a href="/#">Anual</a>
-            </li>
-            <li>
-              <a href="/#">Todo período</a>
-            </li>
-          </ul>
+        <li>
+          <i className="uil-map-marker"></i>
+          <Link to="/menulogado/relatorioVagas">Relatorio de Vagas</Link>
         </li>
-
-        <li className="has-dropdown">
-          <i className="uil-panel-add"></i>
-          <a href="/#"> Gráficos</a>
-          <ul className="sidebar-dropdown list-unstyled">
-            <li>
-              <a href="/#">Vagas Disponíveis</a>
-            </li>
-            <li>
-              <a href="/#">Usuários Ativos</a>
-            </li>
-            <li>
-              <a href="/#">Novos Usuários</a>
-            </li>
-            <li>
-              <a href="/#">Faturamento</a>
-            </li>
-          </ul>
+        <li>
+          <i className="uil-map-marker"></i>
+          <Link to="/menulogado/relatorioUsuarios">Relatorio de Usuarios</Link>
         </li>
         <li className="">
           <i className="uil-map-marker"></i>
