@@ -1,4 +1,4 @@
-package com.rotativa.usersapi.Rest;
+package com.rotativa.usersapi.service.Rest;
 
 import java.util.ArrayList;
 import java.util.List;

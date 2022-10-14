@@ -1,4 +1,4 @@
-package com.rotativa.usersapi.Rest;
+package com.rotativa.usersapi.service.Rest;
 
 import java.util.List;
 
@@ -15,32 +15,33 @@ import com.rotativa.usersapi.entidades.*;
 import com.rotativa.usersapi.service.TipoPagamentoService;
 import com.rotativa.usersapi.service.UserService;
 import com.rotativa.usersapi.service.VagaService;
+import com.rotativa.usersapi.service.VeiculoService;
 // possui as operações operações básicas para manipular o usuário no bd
 @CrossOrigin(origins = "http://localhost:3000") //Permite que o back envie e receba dados de uma origem diferente
 @RestController
-@RequestMapping("/vaga")
-public class VagaREST {
+@RequestMapping("/veiculo")
+public class VeiculoREST {
     @Autowired //o spring cria o objeto, injeta no atributo repositório
-	VagaService vagaService;;
+	VeiculoService veiculoService;
 
     @GetMapping
-    public List<Vagas> listar(){
-        return vagaService.listar();
+    public List<Veiculo> listar(){
+        return veiculoService.listar();
     }
 
     @PostMapping
-    public void salvar(@RequestBody Vagas usuario){
-        vagaService.salvar(usuario);
+    public void salvar(@RequestBody Veiculo veiculo){
+        veiculoService.salvar(veiculo);
     }
 
     @PutMapping
-    public void alterar(@RequestBody Vagas usuario){
-        vagaService.alterar(usuario);
+    public void alterar(@RequestBody Veiculo veiculo){
+        veiculoService.alterar(veiculo);
     }
 
     @DeleteMapping
-    public void excluir(@RequestBody Vagas usuario){
-        vagaService.excluir(usuario);
+    public void excluir(@RequestBody Veiculo veiculo){
+        veiculoService.excluir(veiculo);
     }
 
 }
