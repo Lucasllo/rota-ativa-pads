@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.rotativa.usersapi.entidades.*;
 
-public interface RepositorioPagamento extends JpaRepository<Pagamento,Long> {
+public interface RepositorioPagamento extends JpaRepository<Pagamento, Long> {
+
     
 }

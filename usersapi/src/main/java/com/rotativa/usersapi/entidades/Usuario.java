@@ -30,9 +30,9 @@ public class Usuario {
     private Date datanasc;
     private int ticket;
 
-    @ManyToMany(mappedBy = "usuarios")
+ /*    @ManyToMany(mappedBy = "usuarios")
     private List<Vagas> Vaga;
-    
+     */
 
     public int getAcessibilidade() {
         return acessibilidade;
@@ -42,12 +42,12 @@ public class Usuario {
     }
 
     
-    public List<Vagas> getVaga() {
+/*     public List<Vagas> getVaga() {
         return Vaga;
     }
     public void setVaga(List<Vagas> vaga) {
         Vaga = vaga;
-    }
+    } */
     public String getNome() {
         return nome;
     }

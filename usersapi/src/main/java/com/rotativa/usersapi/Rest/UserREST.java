@@ -1,5 +1,6 @@
 package com.rotativa.usersapi.Rest;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.rotativa.usersapi.database.RepositorioUser;
 import com.rotativa.usersapi.entidades.Usuario;
 import com.rotativa.usersapi.service.UserService;
 // possui as operações operações básicas para manipular o usuário no bd
@@ -19,7 +23,8 @@ import com.rotativa.usersapi.service.UserService;
 @RequestMapping("/user")
 public class UserREST {
     @Autowired //o spring cria o objeto, injeta no atributo repositório
-	UserService usersService;
+    UserService usersService;
+     RepositorioUser repositorioUser; 
 
     @GetMapping
     public List<Usuario> listar(){
@@ -37,8 +42,26 @@ public class UserREST {
     }
 
     @DeleteMapping
-    public void excluir(@RequestBody Usuario usuario){
+    public void excluir(@RequestBody Usuario usuario) {
         usersService.excluir(usuario);
     }
+
+    @GetMapping("/filtro")
+    public List<Usuario> filtroUsuario(@RequestParam("nome") String nome) {
+        System.out.println("Nome =" + nome);
+      /*   List<Usuario> usuarios = repositorioUser.carregarPorNome(nome); */
+        return null ;
+    }
+
+
+    /* @GetMapping("filtro")
+    public List<Usuario> filtroUsuario(String nome) {
+        if (nome == null) {
+            return usersService.listar();
+        } else {
+            List<Usuario> usuarios = repositorioUser.carregarPorNome(nome);
+            return null;
+        }
+    } */
 
 }

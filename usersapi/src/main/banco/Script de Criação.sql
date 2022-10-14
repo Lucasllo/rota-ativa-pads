@@ -18,7 +18,7 @@ USE `RotaAtiva` ;
 -- Table `RotaAtiva`.`usuario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `RotaAtiva`.`usuario` (
-  `idusuario` INT NOT NULL AUTO_INCREMENT,
+  `idusuario` INT NOT NULL,
   `cpf` VARCHAR(45) NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `acessibilidade` TINYINT(1) NOT NULL,

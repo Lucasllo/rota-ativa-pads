@@ -17,12 +17,15 @@ public class TipoPagamento {
     private String TipoPagamento;
     private String DescPagamento;
 
+   /*   @ManyToOne
+    @JoinColumn(nullable = false,unique = false)
+    private Usuario usuario;  */
+
     @ManyToOne
     @JoinColumn(nullable = false,unique = false)
     private Pagamento pagamento;
-    @ManyToOne
-    @JoinColumn(nullable = false,unique = false)
-    private Usuario usuario;
+    
+  
     
     public Pagamento getPagamento() {
         return pagamento;
@@ -30,12 +33,12 @@ public class TipoPagamento {
     public void setPagamento(Pagamento pagamento) {
         this.pagamento = pagamento;
     }
-    public Usuario getUsuario() {
+   /*  public Usuario getUsuario() {
         return usuario;
     }
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
-    }
+    } */
     public int getIdTipoPagamento() {
         return idTipoPagamento;
     }
