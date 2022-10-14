@@ -4,22 +4,26 @@ import VagaService from '../../service/vaga';
 import Topbar from "../home/Componentes/topbar/Topbar";
 import Sidebar from "../home/Componentes/sidebar/Sidebar";
 import './relatorioUsuario.css'
+import { Link, useLocation } from 'react-router-dom';
 
 let PageSize = 5;
 
 export function RelatorioUsuario() {
+    const location = useLocation();
     const vagaService = new VagaService();
 
     const [usuarios, setUsuarios] = useState([])
     const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
-        vagaService.getVaga().then((resp) => setUsuarios(resp.data));
-    }, [])    
-    
-    useLayoutEffect(()=>{
+        vagaService.getVaga().then((resp) => {
+            setUsuarios(resp.data.find((i) => i.id == location.state.id).usuarios)
+        });
+    }, [])
+
+    useLayoutEffect(() => {
     })
-    
+
     const currentTableData = useMemo(() => {
         const firstPageIndex = (currentPage - 1) * PageSize;
         const lastPageIndex = firstPageIndex + PageSize;
@@ -47,7 +51,12 @@ export function RelatorioUsuario() {
                         {currentTableData.map((item) => {
                             return (
                                 <tr>
-                                    <td>{item.nome}</td>
+                                    <td>
+                                        <Link to={{ pathname: `/menulogado/dadoUsuario/${item.id}` }}
+                                        state={{usuario: item}}>
+                                            {item.nome}
+                                        </Link>
+                                    </td>
                                     <td>{item.credito}</td>
                                     <td>{item.tempo_uso}</td>
                                     <td>{item.veiculo[0].modelo} {item.veiculo[0].placa}</td>

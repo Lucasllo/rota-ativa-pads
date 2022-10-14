@@ -11,6 +11,7 @@ import { Map } from "./interno/map/map";
 import { Home } from "./interno/home/Home";
 import { RelatorioVagas } from "./interno/relatorio_vaga/relatorioVaga";
 import { RelatorioUsuario } from "./interno/relatorio_usuarios/relatorioUsuario";
+import { DadoUsuario } from "./interno/dados_usuario/dadoUsuario";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
         <Route element={<Home />} exact path="/menulogado/:id"></Route>
         <Route element={<Map />} exact path="/menulogado/mapa"></Route>
         <Route element={<RelatorioVagas/>} exact path="/menulogado/relatorioVagas"></Route>
-        <Route element={<RelatorioUsuario/>} exact path="/menulogado/relatorioUsuarios"></Route>
+        <Route element={<RelatorioUsuario/>} exact path="/menulogado/relatorioUsuarios/:id"></Route>
+        <Route element={<DadoUsuario/>} exact path="/menulogado/dadoUsuario/:id"></Route>
       </Routes>
       {useLocation().pathname == "/" ? <Rodape /> : ""}
     </>

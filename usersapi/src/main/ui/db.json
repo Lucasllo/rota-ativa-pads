@@ -103,192 +103,244 @@
     ],
     "vaga": [
         {
-            "nome": "Breanna Landry",
-            "credito": 4,
-            "tempo_uso": "8:00",
-            "veiculo": [
+            "id": 1,
+            "rua_avenida": "Av. 666",
+            "Bairro": "Inferno",
+            "usuarios": [   
                 {
                     "id": 1,
-                    "cor": "azul",
-                    "placa":"MOA-2877",
-                    "modelo":"corola" 
+                    "nome": "Breanna Landry",
+                    "email": "eu@protonmail.org" ,
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
                 },
                 {
                     "id": 2,
-                    "cor": "vermelho",
-                    "placa":"HPC-9087",
-                    "modelo":"uno" 
+                    "nome": "Daniel Mercer",
+                    "email": "odio@hotmail.ca",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "nome": "Daniel Mercer",
-            "credito": 2,
-            "tempo_uso": "4:00",
-            "veiculo": [
+            "id": 2,
+            "rua_avenida": "Av. X",
+            "Bairro": "7 Palmos abaixo",
+            "usuarios": [   
                 {
                     "id": 1,
-                    "cor": "rosa",
-                    "placa":"NAK-1275",
-                    "modelo":"polo" 
+                    "nome": "Breanna Landry",
+                    "email": "odio@hotmail.ca",
+                    "credito": 5,
+                    "tempo_uso": 10,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 6,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 4,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
                 },
                 {
                     "id": 2,
-                    "cor": "vermelho",
-                    "placa":"NEY-5840",
-                    "modelo":"camaro" 
+                    "nome": "Daniel Mercer",
+                    "email": "odio@hotmail.ca",
+                    "credito": 2,
+                    "tempo_uso": 7,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Daniel Mercer",
+                    "email": "odio@hotmail.ca",
+                    "credito": 2,
+                    "tempo_uso": 2,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "nome": "Otto Hull",
-            "credito": 5,
-            "tempo_uso": "10:00",
-            "veiculo": [
+            "id": 3,
+            "rua_avenida": "Av. D",
+            "Bairro": "Tartaro",
+            "usuarios": [   
                 {
                     "id": 1,
-                    "cor": "azul",
-                    "placa":"JUW-5533",
-                    "modelo":"fiesta" 
+                    "nome": "Breanna Landry",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
                 },
                 {
                     "id": 2,
-                    "cor": "cinza",
-                    "placa":"NAK-1275",
-                    "modelo":"corola" 
-                }
-            ]
-        },
-        {
-            "nome": "Cole Talley",
-            "credito": 1,
-            "tempo_uso": "2:00",
-            "veiculo": [
-                {
-                    "id": 1,
-                    "cor": "verde",
-                    "placa":"NEY-5840",
-                    "modelo":"uno" 
+                    "nome": "Daniel Mercer",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
                 },
                 {
-                    "id": 2,
-                    "cor": "cinza",
-                    "placa":"MOA-2877",
-                    "modelo":"polo" 
-                }
-            ]
-        },
-        {
-            "nome": "Yuli Sandoval",
-            "credito": 6,
-            "tempo_uso": "12:00",
-            "veiculo": [
-                {
-                    "id": 1,
-                    "cor": "rosa",
-                    "placa":"HPC-9087",
-                    "modelo":"fiesta" 
+                    "id": 3,
+                    "nome": "Daniel Mercer",
+                    "credito": 2,
+                    "tempo_uso": 9,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
                 },
                 {
-                    "id": 2,
-                    "cor": "vermelho",
-                    "placa":"NUW-5533",
-                    "modelo":"corola" 
-                }
-            ]
-        },
-        {
-            "nome": "Mark Jacobs",
-            "credito": 6,
-            "tempo_uso": "12:00",
-            "veiculo": [
-                {
-                    "id": 1,
-                    "cor": "cinza",
-                    "placa":"JUW-5533",
-                    "modelo":"fiesta" 
-                },
-                {
-                    "id": 2,
-                    "cor": "azul",
-                    "placa":"NAK-1275",
-                    "modelo":"uno" 
-                }
-            ]
-        },
-        {
-            "nome": "India Gregory",
-            "credito": 2,
-            "tempo_uso": "4:00",
-            "veiculo": [
-                {
-                    "id": 1,
-                    "cor": "verde",
-                    "placa":"NAK-1275",
-                    "modelo":"corola" 
-                },
-                {
-                    "id": 2,
-                    "cor": "cinza",
-                    "placa":"MOW-2",
-                    "modelo":"polo" 
-                }
-            ]
-        },
-        {
-            "nome": "Alexander Buckley",
-            "credito": 6,
-            "tempo_uso": "12:00",
-            "veiculo": [
-                {
-                    "id": 1,
-                    "cor": "vermelho",
-                    "placa":"MSP-4637",
-                    "modelo":"uno" 
-                },
-                {
-                    "id": 2,
-                    "cor": "cinza",
-                    "placa":"MOA-9142",
-                    "modelo":"corola" 
-                }
-            ]
-        },
-        {
-            "nome": "Acton Castaneda",
-            "credito": 5,
-            "tempo_uso": "10:00",
-            "veiculo": [
-                {
-                    "id": 1,
-                    "cor": "azul",
-                    "placa":"NEY-5840",
-                    "modelo":"uno" 
-                },
-                {
-                    "id": 2,
-                    "cor": "rosa",
-                    "placa":"NAK-1275",
-                    "modelo":"camaro" 
-                }
-            ]
-        },
-        {
-            "nome": "Heidi Park",
-            "credito": 2,
-            "tempo_uso": "4:00",
-            "veiculo": [
-                {
-                    "id": 1,
-                    "cor": "amarelo",
-                    "placa":"UW-5533",
-                    "modelo":"camaro" 
-                },
-                {
-                    "id": 2,
-                    "cor": "azul",
-                    "placa":"NAK-1275",
-                    "modelo":"corola" 
+                    "id": 4,
+                    "nome": "Daniel Mercer",
+                    "credito": 2,
+                    "tempo_uso": 6,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
                 }
             ]
         }

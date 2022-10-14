@@ -47,10 +47,6 @@ export function navbarLateral() {
           <i className="uil-map-marker"></i>
           <Link to="/menulogado/relatorioVagas">Relatorio de Vagas</Link>
         </li>
-        <li>
-          <i className="uil-map-marker"></i>
-          <Link to="/menulogado/relatorioUsuarios">Relatorio de Usuarios</Link>
-        </li>
         <li className="">
           <i className="uil-map-marker"></i>
           <Link to="/menulogado/mapa">Mapa</Link>
