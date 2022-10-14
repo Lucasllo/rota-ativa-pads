@@ -1,4 +1,11 @@
 {
+    "user":[
+        {
+            "id":00001,
+            "email":"admin@g.com",
+            "senha":"123"
+        }
+    ],
     "usuario": [
         {
             "id": 1,
