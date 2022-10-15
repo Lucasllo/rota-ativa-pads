@@ -40,5 +40,10 @@ public class UserServiceImpl implements UserService{
     public void excluir(Usuario usuario) {
         repositorioUser.delete(usuario);        
     }
+
+    @Override
+    public List<Usuario> carregarPorNome(String nome) {
+        return repositorioUser.carregarPorNome(nome);
+    }
 }
 

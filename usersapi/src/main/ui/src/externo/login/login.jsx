@@ -26,13 +26,13 @@ export function Login() {
 
   function logar(e) {
     e.preventDefault();
-    userService.getUser().then((resp) => {
+    userService.getUsuario().then((resp) => {
       let login = resp.data.find((p) => p.email == email && p.senha == senha);
       if (login) {
         console.log(login);
-        localStorage.setItem("usuarioLogado", JSON.stringify(login.idusuario));
+        localStorage.setItem("usuarioLogado", JSON.stringify(login.id));
         JSON.parse(localStorage.getItem("usuarioLogado"));
-        navigate(`/menulogado/${login.idusuario}/mapa`, { replace: true });
+        navigate(`/menulogado/${login.id}`, { replace: true });
       }
     });
   }

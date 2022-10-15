@@ -24,7 +24,6 @@ import com.rotativa.usersapi.service.UserService;
 public class UserREST {
     @Autowired //o spring cria o objeto, injeta no atributo repositório
     UserService usersService;
-     RepositorioUser repositorioUser; 
 
     @GetMapping
     public List<Usuario> listar(){
@@ -49,8 +48,8 @@ public class UserREST {
     @GetMapping("/filtro")
     public List<Usuario> filtroUsuario(@RequestParam("nome") String nome) {
         System.out.println("Nome =" + nome);
-      /*   List<Usuario> usuarios = repositorioUser.carregarPorNome(nome); */
-        return null ;
+        List<Usuario> usuarios = usersService.carregarPorNome(nome);
+        return usuarios ;
     }
 
 

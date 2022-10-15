@@ -28,7 +28,7 @@ export function DadoUsuario() {
                 <div class="containerUser space">
                     <div class="flex w-full items-center">
                         <div class="flex items-center text-3xl text-gray-900 dark:text-white">
-                            {usuario.nome}
+                            {location.state.usuario.nome}
                         </div>
                         <div class="ml-auto sm:flex hidden items-center justify-end"></div>
                     </div>
@@ -42,14 +42,14 @@ export function DadoUsuario() {
                     <div class="containerInfos formulario containerEffect bordaInferiorCor">
                         <div class="content p-3 bordaSuperior ">
                             <p class="mb-0 ">nome</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">{usuario.nome}</span>
+                            <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.nome}</span>
                         </div>
                     </div>
 
                     <div class="containerInfos formulario containerEffect bordaInferiorCor">
                         <div class="content p-3">
                             <p class="mb-0">e-mail</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">`{usuario.email}`</span>
+                            <span class="d-block ms-2 bordaCompleta paddingLeft">`{location.state.usuario.email}`</span>
                         </div>
                     </div>
 
@@ -76,7 +76,7 @@ export function DadoUsuario() {
                     <section class="statistics space3">
                         <div class="row">
                             {
-                                usuario.veiculo.map((item) => {
+                                location.state.usuario.veiculo.map((item) => {
                                     return (
                                         <div class="col-lg-4 formulario">
                                             <div class="box d-flex rounded-2 align-items-center p-3">

@@ -9,6 +9,8 @@ import com.rotativa.usersapi.entidades.Usuario;
 public interface UserService {
  
     public List<Usuario> listar();
+
+    public List<Usuario> carregarPorNome(String nome);
     
     public void salvar(Usuario users);
 

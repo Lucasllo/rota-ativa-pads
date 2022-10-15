@@ -12,7 +12,7 @@ public interface RepositorioUser extends JpaRepository<Usuario, Long> {
  /*    List<Usuario> findByNome(String nome); */
    /*  Usuario buscarPessoaPorNome(String nome); */
 
-    /*  @Query(value = "SELECT * FROM usuario u WHERE u.nome = :nome")
-    List<Usuario> carregarPorNome(@Param("nome") String nome);  */
+    @Query(value = "SELECT * FROM usuario WHERE usuario.nome = :nome",  nativeQuery = true)
+    List<Usuario> carregarPorNome(@Param("nome") String nome);
     
 }
