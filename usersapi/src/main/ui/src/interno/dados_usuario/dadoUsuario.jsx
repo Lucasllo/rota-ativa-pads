@@ -8,17 +8,6 @@ import { useLocation } from 'react-router-dom';
 
 export function DadoUsuario() {
     const location = useLocation();
-    const vagaService = new VagaService();
-
-    const [usuario, setUsuario] = useState({})
-
-    useEffect(() => {
-        setUsuario(location.state.usuario)
-        console.log(location.state.usuario)
-    }, [])
-    useLayoutEffect(() => {
-        setUsuario(location.state.usuario)
-    })
 
     return (
         <>
@@ -49,21 +38,21 @@ export function DadoUsuario() {
                     <div class="containerInfos formulario containerEffect bordaInferiorCor">
                         <div class="content p-3">
                             <p class="mb-0">e-mail</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">`{location.state.usuario.email}`</span>
+                            <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.email}</span>
                         </div>
                     </div>
 
                     <div class="containerInfos formulario containerEffect bordaInferiorCor">
                         <div class="content p-3">
-                            <p class="mb-0">telefone</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">(00) 00000-0000</span>
+                            <p class="mb-0">CPF</p>
+                            <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.cpf}</span>
                         </div>
                     </div>
 
                     <div class="containerInfos formulario containerEffect ">
                         <div class="content p-3 bordaInferior">
-                            <p class="mb-0">endereço</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">Av.Washington Soares, 1321</span>
+                            <p class="mb-0">Data de Nascimento</p>
+                            <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.datanasc}</span>
                         </div>
                     </div>
 
@@ -81,13 +70,12 @@ export function DadoUsuario() {
                                         <div class="col-lg-4 formulario">
                                             <div class="box d-flex rounded-2 align-items-center p-3">
 
-                                                {/* <img src="./mustang.jpg" class="w-12 mr-4 rounded-full" alt="profile" /> */}
                                                 <div class="ms-3 space3">
                                                     <div class="d-flex align-items-center">
-                                                        <h5 class="mb-0">{item.modelo}</h5>
+                                                        <h5 class="mb-0">{item.modelo.toUpperCase()}</h5>
                                                         <span class="d-block ms-2">{item.placa}</span>
                                                     </div>
-                                                    <p class="fs-normal mb-0">{item.cor}</p>
+                                                    <p class="fs-normal mb-0">{item.cor.toUpperCase()}</p>
                                                 </div>
 
                                             </div>

@@ -32,36 +32,47 @@ const Pagination = props => {
   
     let lastPage = paginationRange[paginationRange.length - 1];
     return (
-      <ul
-        className='pagination-container'
-      >
-        <li
-          className={currentPage != 1 ? "pagination-item" : "pagination-item disabled" }
-          onClick={onPrevious}
-        >
-          <div className="arrow left" />
-        </li>
-        {paginationRange.map(pageNumber => {
-          if (pageNumber === DOTS) {
-            return <li className="pagination-item dots">&#8230;</li>;
-          }
-  
-          return (
+
+      <div className='d-flex justify-content-center'>
+
+        <nav className='my-4 pt-2'>
+
+          <ul
+            className='pagination-container'
+          >
             <li
-              className='pagination-item'
-              onClick={() => onPageChange(pageNumber)}
+              className={currentPage != 1 ? "pagination-item" : "pagination-item disabled" }
+              onClick={onPrevious}
             >
-              {pageNumber}
+              <div className="arrow left" />
             </li>
-          );
-        })}
-        <li
-          className={currentPage != lastPage ? "pagination-item" : "pagination-item disabled" }
-          onClick={onNext}  
-        >
-          <div className="arrow right" />
-        </li>
-      </ul>
+            {paginationRange.map(pageNumber => {
+              if (pageNumber === DOTS) {
+                return <li className="pagination-item dots">&#8230;</li>;
+              }
+      
+              return (
+                <li
+                  className='pagination-item'
+                  onClick={() => onPageChange(pageNumber)}
+                >
+                  {pageNumber}
+                </li>
+              );
+            })}
+            <li
+              className={currentPage != lastPage ? "pagination-item" : "pagination-item disabled" }
+              onClick={onNext}  
+            >
+              <div className="arrow right" />
+            </li>
+          </ul>
+
+        </nav>
+
+
+      </div>
+
     );
   };
   

@@ -29,47 +29,55 @@ export function RelatorioVagas() {
         <>
             <Sidebar />
             <Topbar />
-            <div className="margem">
-                <h1>
-                    Relatorio de Vagas
-                </h1>
-                <table class="content-table">
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Endereço</th>
-                            <th>Quantidade de Usuarios</th>
-                            <th>Tempo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {currentTableData.map((item) => {
-                            var tempo = 0;
-                            item.usuarios.forEach(element => {
-                                tempo += element.tempo_uso
-                            })
-                            return (
-                                <tr>
-                                    <td>{item.id}</td>
-                                    <Link to={{ pathname: `/menulogado/relatorioUsuarios/${item.id}` }}
-                                    state={{id: item.id}}>
+            <div className="card margem">
+                <div className="card-body">
+                    <h1 className="py-3 text-center font-bold font-up blue-text">
+                        Relatorio de Vagas
+                    </h1>
+                    <table class="table table-hover table-responsive mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="row">#</th>
+                                <th class="th-lg">Nome</th>
+                                <th class="th-lg">Crédito</th>
+                                <th class="th-lg">Total do veículos</th>
+                                <th class="th-lg">Tempo de uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {currentTableData.map((item) => {
+                                var tempo = 0;
+                                var credito = 0;
+                                var veiculos = 0;
+                                item.usuarios.forEach(element => {
+                                    tempo += element.tempo_uso
+                                    credito += element.credito
+                                    veiculos += element.veiculo.length
+                                })
+                                return (
+                                    <tr>
+                                        <td>{item.id}</td>
                                         <td>
-                                            {item.rua_avenida} - {item.Bairro}
+                                            <Link to={{ pathname: `/menulogado/relatorioUsuarios/${item.id}` }}
+                                                state={{ vaga: item }}>
+                                                {item.rua_avenida} - {item.Bairro}
+                                            </Link>
                                         </td>
-                                    </Link>
-                                    <td>{item.usuarios.length}</td>
-                                    <td>{tempo}</td>
-                                </tr>
-                            )
-                        })}
-                    </tbody>
-                </table>
-                <Pagination
-                    currentPage={currentPage}
-                    totalCount={vagas.length}
-                    pageSize={PageSize}
-                    onPageChange={page => setCurrentPage(page)}
-                />
+                                        <td>{credito}</td>
+                                        <td>{veiculos}</td>
+                                        <td>{tempo} h</td>
+                                    </tr>
+                                )
+                            })}
+                        </tbody>
+                    </table>
+                    <Pagination
+                        currentPage={currentPage}
+                        totalCount={vagas.length}
+                        pageSize={PageSize}
+                        onPageChange={page => setCurrentPage(page)}
+                    />
+                </div>
             </div>
         </>
     )
