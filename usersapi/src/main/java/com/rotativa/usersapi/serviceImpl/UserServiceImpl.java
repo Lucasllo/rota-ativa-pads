@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.rotativa.usersapi.service.UserService;
 import com.rotativa.usersapi.database.RepositorioUser;
-import com.rotativa.usersapi.entidades.Usuario;
+import com.rotativa.usersapi.Entidades.Usuario;
 
 @Service("userService")
 public class UserServiceImpl implements UserService{

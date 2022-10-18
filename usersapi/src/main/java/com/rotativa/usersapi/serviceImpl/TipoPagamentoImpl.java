@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.rotativa.usersapi.service.*;
 
 import com.rotativa.usersapi.database.*;
-import com.rotativa.usersapi.entidades.*;
+import com.rotativa.usersapi.Entidades.*;
 
 @Service("tipoPagamentoService")
 public class TipoPagamentoImpl implements TipoPagamentoService{

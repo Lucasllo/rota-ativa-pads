@@ -3,7 +3,7 @@ package com.rotativa.usersapi.service;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
-import com.rotativa.usersapi.entidades.Usuario;
+import com.rotativa.usersapi.Entidades.Usuario;
 
 @Component
 public interface UserService {

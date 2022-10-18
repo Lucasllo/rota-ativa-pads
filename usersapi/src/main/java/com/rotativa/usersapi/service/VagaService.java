@@ -3,7 +3,7 @@ package com.rotativa.usersapi.service;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
-import com.rotativa.usersapi.entidades.Vagas;
+import com.rotativa.usersapi.Entidades.Vagas;
 
 @Component
 public interface VagaService {

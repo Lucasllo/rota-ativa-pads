@@ -3,7 +3,7 @@ package com.rotativa.usersapi.service;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
-import com.rotativa.usersapi.entidades.*;
+import com.rotativa.usersapi.Entidades.*;
 
 @Component
 public interface TelefoneService {

@@ -8,7 +8,8 @@ import org.springframework.stereotype.Service;
 import com.rotativa.usersapi.service.*;
 
 import com.rotativa.usersapi.database.*;
-import com.rotativa.usersapi.entidades.*;
+import com.rotativa.usersapi.Entidades.*;
+import com.rotativa.usersapi.Controllers.*;
 
 @Service("pagamentoService")
 public class PagamentoImpl implements PagamentoService{

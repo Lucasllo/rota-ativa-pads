@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.rotativa.usersapi.service.VagaService;
 
 import com.rotativa.usersapi.database.RepositorioVaga;
-import com.rotativa.usersapi.entidades.Vagas;
+import com.rotativa.usersapi.Entidades.Vagas;
 
 @Service("vagaService")
 public class VagaServiceImpl implements VagaService{

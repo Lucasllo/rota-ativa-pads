@@ -1,4 +1,4 @@
-package com.rotativa.usersapi.service.Rest;
+package com.rotativa.usersapi.Controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rotativa.usersapi.database.RepositorioUser;
-import com.rotativa.usersapi.entidades.Usuario;
+import com.rotativa.usersapi.Entidades.Usuario;
 import com.rotativa.usersapi.service.UserService;
 // possui as operações operações básicas para manipular o usuário no bd
 @CrossOrigin(origins = "http://localhost:3000") //Permite que o back envie e receba dados de uma origem diferente

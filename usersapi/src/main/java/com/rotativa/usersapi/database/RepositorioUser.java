@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.rotativa.usersapi.entidades.*;
+import com.rotativa.usersapi.Entidades.*;
 
 public interface RepositorioUser extends JpaRepository<Usuario, Long> {
  /*    List<Usuario> findByNome(String nome); */

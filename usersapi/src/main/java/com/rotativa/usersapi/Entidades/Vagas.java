@@ -1,4 +1,4 @@
-package com.rotativa.usersapi.entidades;
+package com.rotativa.usersapi.Entidades;
 
 /* Este projeto utiliza SpringBoot. Para que o Spring reconheça as elementos 
 do projeto eles devem ser criados dentro da pasta userapi*/

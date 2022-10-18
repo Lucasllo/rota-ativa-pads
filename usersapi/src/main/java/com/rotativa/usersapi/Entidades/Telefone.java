@@ -1,4 +1,4 @@
-package com.rotativa.usersapi.entidades;
+package com.rotativa.usersapi.Entidades;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
