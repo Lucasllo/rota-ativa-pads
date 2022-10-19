@@ -1,7 +1,7 @@
 import Topbar from "../home/Componentes/topbar/Topbar";
 import Sidebar from "../home/Componentes/sidebar/Sidebar";
-import './dadoUsuario.css'
 import { useLocation } from 'react-router-dom';
+import './dadoUsuario.css'
 
 
 export function DadoUsuario() {
@@ -11,10 +11,10 @@ export function DadoUsuario() {
         <>
             <Sidebar />
             <Topbar />
-            <div className='margem-dados'>
+            <div className="margem-esq">
                 <div class="containerUser space">
                     <div class="flex w-full items-center">
-                        <div class="flex items-center text-3xl text-gray-900 dark:text-white">
+                        <div class="flex items-center text-3xl">
                             {location.state.usuario.nome}
                         </div>
                         <div class="ml-auto sm:flex hidden items-center justify-end"></div>
@@ -28,14 +28,14 @@ export function DadoUsuario() {
 
                     <div class="containerInfos formulario containerEffect bordaInferiorCor">
                         <div class="content p-3 bordaSuperior ">
-                            <p class="mb-0 ">nome</p>
+                            <p class="mb-0 ">Nome</p>
                             <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.nome}</span>
                         </div>
                     </div>
 
                     <div class="containerInfos formulario containerEffect bordaInferiorCor">
                         <div class="content p-3">
-                            <p class="mb-0">e-mail</p>
+                            <p class="mb-0">E-mail</p>
                             <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.email}</span>
                         </div>
                     </div>

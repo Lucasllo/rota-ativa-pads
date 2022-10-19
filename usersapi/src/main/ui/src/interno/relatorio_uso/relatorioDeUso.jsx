@@ -1,14 +1,24 @@
-import { useEffect, useMemo, useState } from 'react';
-import Pagination from '../../components/Paginacao/Pagination';
+import { Box, Flex, SkeletonText } from "@chakra-ui/react";
+import {
+  useJsApiLoader,
+  GoogleMap,
+  Polygon,
+  Marker,
+} from "@react-google-maps/api";
+import { useEffect, useMemo, useState } from "react";
 import Topbar from "../home/Componentes/topbar/Topbar";
 import Sidebar from "../home/Componentes/sidebar/Sidebar";
-import './relatorioVaga.css'
-import VagaService from '../../service/vaga';
-import { Link } from 'react-router-dom';
+import dados from "../map/json.json";
+import VagaService from "../../service/vaga";
+import Pagination from "../../components/Paginacao/Pagination";
+import { Link } from "react-router-dom";
 
-let PageSize = 10;
+const center = { lat: -3.735015, lng: -38.494695 };
 
-export function RelatorioVagas() {
+let PageSize = 5;
+
+export function RelatorioDeUso() {
+ 
     const vagaService = new VagaService();
 
     const [vagas, setVagas] = useState([])
@@ -25,14 +35,58 @@ export function RelatorioVagas() {
     }, [currentPage, vagas]);
 
 
-    return (
-        <>
-            <Sidebar />
-            <Topbar />
-            <div className="card margem-relatorio">
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: "AIzaSyAQYGeShstIRAbsrS4lwyumbLwlG5t-sTA",
+    libraries: ["places"],
+  });
+
+  const [showInfoWindow, setShowInfoWindow] = useState(false);
+
+  if (!isLoaded) {
+    return <SkeletonText />;
+  }
+
+  return (
+    <>
+      <Sidebar />
+      <Topbar />
+      <div>
+        <Flex h="50vh" className="margem-esq">
+          <Box h="100%" w="100%">
+            <GoogleMap
+              center={center}
+              zoom={15}
+              mapContainerStyle={{ width: "100%", height: "100%" }}
+            >
+              {dados.map((d) => {
+
+                var x = vagas.find((p) => p.rua_avenida == d.rua_avenida );
+                
+                return (
+                  <>
+                    <Polygon
+                      options={{ strokeColor: x?.usuarios?.length > 3 ? "#FF5858" : "#027373", strokeWeight: 2 }}
+                      onClick={() => {
+                        setShowInfoWindow(true);
+                      }}
+                      paths={d.path}
+                    ></Polygon>
+                  </>
+                );
+              })}
+              {showInfoWindow && (
+                <Marker
+                  position={{ lat: -22.618827234831404, lng: -42.57636812499999 }}
+                ></Marker>
+              )}
+            </GoogleMap>
+          </Box>
+        </Flex>
+
+        <div className="card margem-relatorio">
                 <div className="card-body">
                     <h1 className="py-3 text-center font-bold font-up blue-text">
-                        Relatorio de Vagas
+                        Vagas Mais Usadas
                     </h1>
                     <table class="table table-hover table-responsive mb-0">
                         <thead>
@@ -59,7 +113,7 @@ export function RelatorioVagas() {
                                         <td>{item.id}</td>
                                         <td>
                                             <Link to={{ pathname: `/menulogado/relatorioUsuarios/${item.id}` }}
-                                                state={{ vaga: item }}>
+                                                state={{ vaga: item}}>
                                                 {item.rua_avenida} - {item.Bairro}
                                             </Link>
                                         </td>
@@ -79,6 +133,7 @@ export function RelatorioVagas() {
                     />
                 </div>
             </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }

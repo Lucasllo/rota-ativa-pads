@@ -28,3 +28,11 @@ ul {
     width: 90%;
     margin: auto;
 }
+
+.margem-esq{
+    margin-left: 250px;
+}
+
+.margem-relatorio {
+    margin: 1rem 20px 0 270px;
+  }

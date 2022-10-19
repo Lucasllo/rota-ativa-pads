@@ -28,15 +28,6 @@ export function navbarLateral() {
           <p className="mt-1 mb-0">Admin</p>
         </div>
       </div>
-      {/* NAVBAR LATERAL - BUSCADOR */}
-      <div className="search position-relative text-center px-4 py-3 mt-2">
-        <input
-          type="text"
-          className="form-control w-100 border-0 bg-transparent"
-          placeholder="Buscar"
-        />
-        <i className="fa fa-search position-absolute d-block fs-6"></i>
-      </div>
       {/* NAVBAR LATERAL - LINKS DE ACESSO */}
       <ul className="categories list-unstyled">
         <li className="">
@@ -46,6 +37,10 @@ export function navbarLateral() {
         <li>
           <i className="uil-map-marker"></i>
           <Link to="/menulogado/relatorioVagas">Relatorio de Vagas</Link>
+        </li>
+        <li className="">
+          <i className="uil-map-marker"></i>
+          <Link to="/menulogado/relatorioUso">Relatorio de Uso</Link>
         </li>
         <li className="">
           <i className="uil-map-marker"></i>

@@ -1,4 +1,3 @@
-import "./style.css";
 import "./styleFinal.css";
 import Sidebar from "./Componentes/sidebar/Sidebar";
 import Topbar from "./Componentes/topbar/Topbar";
