@@ -61,9 +61,12 @@ public class Pagamento {
         this.quantidadeTicket = quantidadeTicket;
     }
     
-    @Override
+     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
-    }
+        return "Pagamento {" +
+        "data da compra='" + dataCompra + '\'' +
+        ", valor='" + valor + '\'' +
+        ", Tickets='" + quantidadeTicket + '\'' +
+        ", usuario='" + this.us1 + 
+        '}'; 
 }

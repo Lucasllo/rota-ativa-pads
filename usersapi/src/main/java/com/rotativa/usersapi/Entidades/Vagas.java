@@ -19,7 +19,7 @@ import javax.persistence.Table;
 public class Vagas {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idvaga;
+    private int idVaga;
     @Column(name = "logradouro")
     private String logradouro;
     @Column(name = "bairro")
@@ -29,11 +29,8 @@ public class Vagas {
     @Column(name = "horaSaida")
     private Date saida;
 
-    public Vagas() {
-    }
-
-    public Vagas(int idvaga, String logradouro, String bairro, Date entrada, Date saida) {
-        this.idvaga = idvaga;
+     public Vagas(int idVaga, String logradouro, String bairro, Date entrada, Date saida) {
+        this.idVaga = idVaga;
         this.logradouro = logradouro;
         this.bairro = bairro;
         this.entrada = entrada;
@@ -42,7 +39,7 @@ public class Vagas {
     
     @ManyToMany
     @JoinTable(name = "Vaga_Usuario", 
-      joinColumns = @JoinColumn(name = "idvaga"), 
+      joinColumns = @JoinColumn(name = "idVaga"), 
       inverseJoinColumns = @JoinColumn(name = "idusuario"))
     
     public Date getSaida() {
@@ -54,11 +51,11 @@ public class Vagas {
     }
 
     public int getIdvaga() {
-        return idvaga;
+        return idVaga;
     }
 
-    public void setIdvaga(int idvaga) {
-        this.idvaga = idvaga;
+    public void setIdvaga(int idVaga) {
+        this.idVaga = idVaga;
     }
 
     public String getLogradouro() {
@@ -87,8 +84,13 @@ public class Vagas {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        return "Vagas {" +
+                "id='" + idVaga + '\'' +
+                ", cpf='" + logradouro + '\'' +
+                ", nome='" + bairro + '\'' +
+                ", acessibilidade='" + entrada + '\'' +
+                ", email='" + saída + '\'' +
+                '}';
     }
 }
 

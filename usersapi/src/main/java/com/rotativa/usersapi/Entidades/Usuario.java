@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idusuario;
+    private int idUsuario;
     @Column(name = "cpf", nullable = false)
     private String cpf;
     @Column(name = "nome")
@@ -32,13 +32,9 @@ public class Usuario {
     @Column(name = "ticket")
     private int ticket;
 
-    public Usuario() {
-
-    }
-
-    public Usuario(int idusuario, String cpf, String nome, int acessibilidade, String email, String senha,
+    public Usuario(int idUsuario, String cpf, String nome, int acessibilidade, String email, String senha,
             Date datanasc, int ticket) {
-        this.idusuario = idusuario;
+        this.idusuario = idUsuario;
         this.cpf = cpf;
         this.nome = nome;
         this.acessibilidade = acessibilidade;
@@ -80,12 +76,12 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public int getIdusuario() {
-        return idusuario;
+    public int getIdUsuario() {
+        return idUsuario;
     }
 
-    public void setIdusuario(int idusuario) {
-        this.idusuario = idusuario;
+    public void setIdUsuario(int idusuario) {
+        this.idusuario = idUsuario;
     }
 
     public String getCpf() {
@@ -115,7 +111,7 @@ public class Usuario {
     @Override
     public String toString() {
         return "Usuario {" +
-                "id='" + idusuario + '\'' +
+                "id='" + idUsuario + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", nome='" + nome + '\'' +
                 ", acessibilidade='" + acessibilidade + '\'' +

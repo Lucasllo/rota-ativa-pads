@@ -31,8 +31,8 @@ public class Veiculo {
         return idVeiculo;
     }
 
-    public void setIdVeiculo(int idveiculo) {
-        this.idVeiculo = idveiculo;
+    public void setIdVeiculo(int idVeiculo) {
+        this.idVeiculo = idVeiculo;
     }
 
     public String getCor() {
@@ -57,6 +57,16 @@ public class Veiculo {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    @Override
+    public String toString() {
+        return "Veiculo {" +
+                "id='" + idVeiculo + '\'' +
+                ", cor='" + cor + '\'' +
+                ", placa='" + placa + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
     }
 
 }
