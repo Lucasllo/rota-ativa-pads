@@ -32,7 +32,7 @@ export function Map() {
       <Sidebar />
       <Topbar />
       <div className="margem-esq">
-        <Flex h="87.8vh">
+        <Flex className="mapa">
           <Box h="100%" w="100%">
             <GoogleMap
               center={center}
