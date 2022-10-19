@@ -1,16 +1,18 @@
 import Topbar from "../home/Componentes/topbar/Topbar";
 import Sidebar from "../home/Componentes/sidebar/Sidebar";
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './dadoUsuario.css'
 
 
 export function DadoUsuario() {
     const location = useLocation();
+    const navigate = useNavigate();
 
     return (
         <>
             <Sidebar />
             <Topbar />
+            <button className='btnVoltar margem-relatorio' onClick={() => navigate(-1)}> <img src="/img/btnVoltar.svg" alt="" /> Voltar</button>
             <div className="margem-esq">
                 <div class="containerUser space">
                     <div class="flex w-full items-center">

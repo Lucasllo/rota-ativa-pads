@@ -11,14 +11,15 @@ import Sidebar from "../home/Componentes/sidebar/Sidebar";
 import dados from "../map/json.json";
 import VagaService from "../../service/vaga";
 import Pagination from "../../components/Paginacao/Pagination";
-import { Link } from "react-router-dom";
+import { Link, unstable_HistoryRouter, useNavigate } from "react-router-dom";
 
 const center = { lat: -3.735015, lng: -38.494695 };
 
 let PageSize = 5;
 
 export function RelatorioDeUso() {
- 
+
+    const navigate = useNavigate();
     const vagaService = new VagaService();
 
     const [vagas, setVagas] = useState([])
@@ -51,7 +52,7 @@ export function RelatorioDeUso() {
       <Sidebar />
       <Topbar />
       <div>
-        <Flex h="50vh" className="margem-esq">
+        <Flex h="30vh" className="margem-esq">
           <Box h="100%" w="100%">
             <GoogleMap
               center={center}
@@ -66,9 +67,7 @@ export function RelatorioDeUso() {
                   <>
                     <Polygon
                       options={{ strokeColor: x?.usuarios?.length > 3 ? "#FF5858" : "#027373", strokeWeight: 2 }}
-                      onClick={() => {
-                        setShowInfoWindow(true);
-                      }}
+                      onClick={()=>{navigate(`/menulogado/relatorioUsuarios/${x.id}`, {state: { vaga: x}, replace: true});}}
                       paths={d.path}
                     ></Polygon>
                   </>
@@ -83,6 +82,8 @@ export function RelatorioDeUso() {
           </Box>
         </Flex>
 
+        <button className='btnVoltar margem-relatorio' onClick={() => navigate(-1)}> <img src="/img/btnVoltar.svg" alt="" /> Voltar</button>
+        
         <div className="card margem-relatorio">
                 <div className="card-body">
                     <h1 className="py-3 text-center font-bold font-up blue-text">

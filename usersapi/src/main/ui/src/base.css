@@ -35,4 +35,18 @@ ul {
 
 .margem-relatorio {
     margin: 1rem 20px 0 270px;
-  }
+}
+
+.btnVoltar{
+    color: white;
+    background-color: #218579;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btnVoltar img{
+    height: 0.9rem;
+}

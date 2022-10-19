@@ -4,12 +4,13 @@ import Topbar from "../home/Componentes/topbar/Topbar";
 import Sidebar from "../home/Componentes/sidebar/Sidebar";
 import './relatorioVaga.css'
 import VagaService from '../../service/vaga';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 let PageSize = 10;
 
 export function RelatorioVagas() {
     const vagaService = new VagaService();
+    const navigate = useNavigate();
 
     const [vagas, setVagas] = useState([])
     const [currentPage, setCurrentPage] = useState(1);
@@ -29,6 +30,7 @@ export function RelatorioVagas() {
         <>
             <Sidebar />
             <Topbar />
+            <button className='btnVoltar margem-relatorio' onClick={() => navigate(-1)}> <img src="/img/btnVoltar.svg" alt="" /> Voltar</button>
             <div className="card margem-relatorio">
                 <div className="card-body">
                     <h1 className="py-3 text-center font-bold font-up blue-text">

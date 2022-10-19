@@ -12,7 +12,7 @@ import Topbar from "../home/Componentes/topbar/Topbar";
 import Sidebar from "../home/Componentes/sidebar/Sidebar";
 import './relatorioUsuario.css'
 import dados from "../map/json.json";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const center = { lat: -3.735015, lng: -38.494695 };
 let PageSize = 5;
@@ -20,6 +20,7 @@ var x;
 
 export function RelatorioUsuario() {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const [usuarios, setUsuarios] = useState([])
     const [currentPage, setCurrentPage] = useState(1);
@@ -59,13 +60,18 @@ export function RelatorioUsuario() {
             >
                     <Polygon
                       options={{ strokeColor: "#027373", strokeWeight: 5 }}
+                      onClick={()=>{console.log(location)}}
                       paths={x.path}
                     ></Polygon>
                   
             </GoogleMap>
           </Box>
         </Flex>
+
+        <button className='btnVoltar margem-relatorio' onClick={() => navigate(-1)}> <img src="/img/btnVoltar.svg" alt="" /> Voltar</button>
+        
             <div className="card margem-relatorio">
+                
                 <div className="card-body">
 
                     <div class="row">
