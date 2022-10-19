@@ -3,91 +3,127 @@ package com.rotativa.usersapi.Entidades;
 do projeto eles devem ser criados dentro da pasta userapi*/
 
 import java.util.Date;
-import java.util.List;
 
-import javax.persistence.Column; // Definindo regras para a coluna
-import javax.persistence.Entity; //O uso de @Entity identifica uma classe como Entidade
-import javax.persistence.GeneratedValue; //Gerando valor aleatório
-import javax.persistence.GenerationType; //Estabelecendo estratégia para gerar valores aleatórios
-import javax.persistence.Id; //identificando chave primária para o framework
-import javax.persistence.ManyToMany;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
-
-
 @Entity
-@Table(name="usuario", schema = "rotaativa")
+@Table(name = "usuario")
 public class Usuario {
-    @Id 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int idusuario;
+    @Column(name = "cpf", nullable = false)
     private String cpf;
+    @Column(name = "nome")
     private String nome;
+    @Column(name = "acessibilidade")
     private int acessibilidade;
-    @Column(nullable=false)
+    @Column(name = "email")
     private String email;
+    @Column(name = "senha")
     private String senha;
+    @Column(name = "dataNasc")
     private Date datanasc;
+    @Column(name = "ticket")
     private int ticket;
 
- /*    @ManyToMany(mappedBy = "usuarios")
-    private List<Vagas> Vaga;
-     */
+    public Usuario() {
+
+    }
+
+    public Usuario(int idusuario, String cpf, String nome, int acessibilidade, String email, String senha,
+            Date datanasc, int ticket) {
+        this.idusuario = idusuario;
+        this.cpf = cpf;
+        this.nome = nome;
+        this.acessibilidade = acessibilidade;
+        this.email = email;
+        this.senha = senha;
+        this.datanasc = datanasc;
+        this.ticket = ticket;
+    }
 
     public int getAcessibilidade() {
         return acessibilidade;
     }
+
     public void setAcessibilidade(int acessibilidade) {
         this.acessibilidade = acessibilidade;
     }
 
-    
-/*     public List<Vagas> getVaga() {
-        return Vaga;
-    }
-    public void setVaga(List<Vagas> vaga) {
-        Vaga = vaga;
-    } */
     public String getNome() {
         return nome;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
+
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
+
     public String getSenha() {
         return senha;
     }
+
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
     public int getIdusuario() {
         return idusuario;
     }
+
     public void setIdusuario(int idusuario) {
         this.idusuario = idusuario;
     }
+
     public String getCpf() {
         return cpf;
     }
+
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
     public int getTicket() {
         return ticket;
     }
+
     public void setTicket(int ticket) {
         this.ticket = ticket;
     }
+
     public Date getDatanasc() {
         return datanasc;
     }
+
     public void setDatanasc(Date datanasc) {
         this.datanasc = datanasc;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario {" +
+                "id='" + idusuario + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                ", acessibilidade='" + acessibilidade + '\'' +
+                ", email='" + email + '\'' +
+                ", senha='" + senha + '\'' +
+                ", nascimento='" + datanasc + '\'' +
+                ", ticket='" + ticket +
+                '}';
+
     }
 }

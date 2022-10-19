@@ -1,39 +1,49 @@
 package com.rotativa.usersapi.Entidades;
 
-/* Este projeto utiliza SpringBoot. Para que o Spring reconheça as elementos 
-do projeto eles devem ser criados dentro da pasta userapi*/
+import java.beans.Transient;
 import java.sql.Date;
 import java.util.List;
 
-import javax.persistence.Entity; //O uso de @Entity identifica uma classe como Entidade
-import javax.persistence.Column; // Definindo regras para a coluna
-import javax.persistence.GeneratedValue; //Gerando valor aleatório
-import javax.persistence.GenerationType; //Estabelecendo estratégia para gerar valores aleatórios
-import javax.persistence.Id; //identificando chave primária para o framework
+import javax.persistence.Entity; 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue; 
+import javax.persistence.GenerationType; 
+import javax.persistence.Id; 
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "vaga", schema = "rotaativa")
+@Table(name = "vaga")
 public class Vagas {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int idvaga;
-    @Column(nullable = false)
-    private String rua_avenida;
+    @Column(name = "logradouro")
+    private String logradouro;
+    @Column(name = "bairro")
     private String bairro;
+    @Column(name = "horaEntrada")
     private Date entrada;
+    @Column(name = "horaSaida")
     private Date saida;
 
+    public Vagas() {
+    }
+
+    public Vagas(int idvaga, String logradouro, String bairro, Date entrada, Date saida) {
+        this.idvaga = idvaga;
+        this.logradouro = logradouro;
+        this.bairro = bairro;
+        this.entrada = entrada;
+        this.saida = saida;
+    }
+    
     @ManyToMany
     @JoinTable(name = "Vaga_Usuario", 
       joinColumns = @JoinColumn(name = "idvaga"), 
       inverseJoinColumns = @JoinColumn(name = "idusuario"))
-        
-    private List<Usuario> usuarios;
-    // `acessibilidade` TINYINT(1) NOT NULL,
     
     public Date getSaida() {
         return saida;
@@ -51,12 +61,12 @@ public class Vagas {
         this.idvaga = idvaga;
     }
 
-    public String getRua_avenida() {
-        return rua_avenida;
+    public String getLogradouro() {
+        return logradouro;
     }
 
-    public void setRua_avenida(String rua_avenida) {
-        this.rua_avenida = rua_avenida;
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 
     public String getBairro() {
@@ -75,11 +85,10 @@ public class Vagas {
         this.entrada = entrada;
     }
 
-    public List<Usuario> getUsuarios() {
-        return usuarios;
-    }
-
-    public void setUsuarios(List<Usuario> usuarios) {
-        this.usuarios = usuarios;
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
     }
 }
+

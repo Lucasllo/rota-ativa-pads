@@ -2,57 +2,44 @@ package com.rotativa.usersapi.Entidades;
 
 import java.sql.Date;
 
-/* Este projeto utiliza SpringBoot. Para que o Spring reconheça as elementos 
-do projeto eles devem ser criados dentro da pasta userapi*/
-import javax.persistence.Entity; //O uso de @Entity identifica uma classe como Entidade
-import javax.persistence.GeneratedValue; //Gerando valor aleatório
-import javax.persistence.GenerationType; //Estabelecendo estratégia para gerar valores aleatórios
-import javax.persistence.Id; //identificando chave primária para o framework
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue; 
+import javax.persistence.GenerationType; 
+import javax.persistence.Id; 
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
-@Table(name = "pagamento", schema = "rotaativa")
+@Table(name = "pagamento")
 public class Pagamento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idpagamento;
+    private int idPagamento;
+    @Column(name = "dataCompra")
     private Date dataCompra;
+    @Column(name = "valor")
     private Double valor;
+    @Column(name = "quantidadeTicket")
     private int quantidadeTicket;
 
-    @ManyToOne
-    @JoinColumn(nullable = false,unique = false)
-    private Usuario usuario;
-    // private int usuario_idusuario
-    // PRIMARY KEY (`idpagamento`, `usuario_idusuario`),
-    // INDEX `fk_pagamento_TipoPagamento1_idx` (`TipoPagamento_idTipoPagamento` ASC)
-    // VISIBLE,
-    // INDEX `fk_pagamento_usuario1_idx` (`usuario_idusuario` ASC) VISIBLE,
-    // CONSTRAINT `fk_pagamento_TipoPagamento1`
-    // FOREIGN KEY (`TipoPagamento_idTipoPagamento`)
-    // REFERENCES `RotaAtiva`.`TipoPagamento` (`idTipoPagamento`)
-    // ON DELETE NO ACTION
-    // ON UPDATE NO ACTION,
-    // CONSTRAINT `fk_pagamento_usuario1`
-    // FOREIGN KEY (`usuario_idusuario`)
-    // REFERENCES `RotaAtiva`.`usuario` (`idusuario`)
-    // ON DELETE NO ACTION
-    // ON UPDATE NO ACTION)
-    
+    @Transient
+    Usuario us1;
+        
     public int getIdpagamento() {
-        return idpagamento;
+        return idPagamento;
     }
 
     public Usuario getUsuario() {
-        return usuario;
+        return us1;
     }
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setUsuario(Usuario us1) {
+        this.us1 = us1;
     }
     public void setIdpagamento(int idpagamento) {
-        this.idpagamento = idpagamento;
+        this.idPagamento = idPagamento;
     }
     public Date getDataCompra() {
         return dataCompra;
@@ -74,5 +61,9 @@ public class Pagamento {
         this.quantidadeTicket = quantidadeTicket;
     }
     
-    
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString();
+    }
 }
