@@ -393,7 +393,7 @@
         },
         {
             "id": 4,
-            "rua_avenida": "Av. 666",
+            "rua_avenida": "Av. A",
             "Bairro": "Inferno",
             "usuarios": [
                 {
@@ -458,7 +458,7 @@
         },
         {
             "id": 1,
-            "rua_avenida": "Av. 666",
+            "rua_avenida": "Av. B",
             "Bairro": "Inferno",
             "usuarios": [
                 {
@@ -523,7 +523,7 @@
         },
         {
             "id": 2,
-            "rua_avenida": "Av. X",
+            "rua_avenida": "Av. C",
             "Bairro": "7 Palmos abaixo",
             "usuarios": [
                 {
@@ -740,7 +740,7 @@
         },
         {
             "id": 4,
-            "rua_avenida": "Av. 666",
+            "rua_avenida": "Av. E",
             "Bairro": "Inferno",
             "usuarios": [
                 {
@@ -805,7 +805,1395 @@
         },
         {
             "id": 1,
-            "rua_avenida": "Av. 666",
+            "rua_avenida": "Av. F",
+            "Bairro": "Inferno",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Buffy Cooley",
+                    "cpf": "551875 7546672155",
+                    "email": "eu@protonmail.org",
+                    "senha": "MQV11YLU1MH",
+                    "acessibilidade": 0,
+                    "datanasc": "Mar 11, 2014",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Jordan Salazar",
+                    "cpf": "4556436877337",
+                    "email": "odio@hotmail.ca",
+                    "senha": "OEO78VTL5KQ",
+                    "acessibilidade": 0,
+                    "datanasc": "Jul 7, 2023",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "rua_avenida": "Av. G",
+            "Bairro": "7 Palmos abaixo",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Ivy Cook",
+                    "cpf": "417500 211391 7152",
+                    "email": "faucibus.leo@outlook.net",
+                    "senha": "DFM87NTL2XT",
+                    "acessibilidade": 0,
+                    "datanasc": "Apr 30, 2000",
+                    "credito": 5,
+                    "tempo_uso": 10,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 6,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 4,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Nash Porter",
+                    "cpf": "630413 33 8186 8544 610",
+                    "email": "dictum.ultricies@icloud.ca",
+                    "senha": "RRM22OIH6PE",
+                    "acessibilidade": 0,
+                    "datanasc": "May 12, 2015",
+                    "credito": 2,
+                    "tempo_uso": 7,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Katelyn Brewer",
+                    "cpf": "376543616479539",
+                    "email": "vivamus@protonmail.couk",
+                    "senha": "BKS12WDS7IQ",
+                    "acessibilidade": 0,
+                    "datanasc": "Oct 21, 2016",
+                    "credito": 2,
+                    "tempo_uso": 2,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "rua_avenida": "Av. H",
+            "Bairro": "Tartaro",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Vaughan Griffith",
+                    "cpf": "3695 454422 22867",
+                    "email": "fusce.aliquam@hotmail.couk",
+                    "senha": "MWR47XFL8WU",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 22, 2009",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Yoko Downs",
+                    "cpf": "67626175365824662",
+                    "email": "tortor@hotmail.net",
+                    "senha": "CTY64BPX8JW",
+                    "acessibilidade": 0,
+                    "datanasc": "Jun 22, 2014",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Wylie Lester",
+                    "cpf": "6767492436327764291",
+                    "email": "justo.eu@aol.org",
+                    "senha": "DWC01HIO1ZQ",
+                    "acessibilidade": 1,
+                    "datanasc": "Jul 16, 2007",
+                    "credito": 2,
+                    "tempo_uso": 9,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "nome": "Richard Pickett",
+                    "cpf": "6331104244727914440",
+                    "email": "quisque.nonummy@protonmail.ca",
+                    "senha": "VGC15MPG3QE",
+                    "acessibilidade": 1,
+                    "datanasc": "Aug 27, 2015",
+                    "credito": 2,
+                    "tempo_uso": 6,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "rua_avenida": "Av. I",
+            "Bairro": "Inferno",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Zelda Paul",
+                    "cpf": "3789 968264 32425",
+                    "email": "mi.lacinia@aol.ca",
+                    "senha": "FYZ75JAB7HJ",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 21, 2016",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Vaughan Griffith",
+                    "cpf": "3695 454422 22867",
+                    "email": "fusce.aliquam@hotmail.couk",
+                    "senha": "MWR47XFL8WU",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 22, 2009",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "rua_avenida": "Av. J",
+            "Bairro": "Inferno",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Buffy Cooley",
+                    "cpf": "551875 7546672155",
+                    "email": "eu@protonmail.org",
+                    "senha": "MQV11YLU1MH",
+                    "acessibilidade": 0,
+                    "datanasc": "Mar 11, 2014",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Jordan Salazar",
+                    "cpf": "4556436877337",
+                    "email": "odio@hotmail.ca",
+                    "senha": "OEO78VTL5KQ",
+                    "acessibilidade": 0,
+                    "datanasc": "Jul 7, 2023",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "rua_avenida": "Av. K",
+            "Bairro": "7 Palmos abaixo",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Ivy Cook",
+                    "cpf": "417500 211391 7152",
+                    "email": "faucibus.leo@outlook.net",
+                    "senha": "DFM87NTL2XT",
+                    "acessibilidade": 0,
+                    "datanasc": "Apr 30, 2000",
+                    "credito": 5,
+                    "tempo_uso": 10,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 6,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 4,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Nash Porter",
+                    "cpf": "630413 33 8186 8544 610",
+                    "email": "dictum.ultricies@icloud.ca",
+                    "senha": "RRM22OIH6PE",
+                    "acessibilidade": 0,
+                    "datanasc": "May 12, 2015",
+                    "credito": 2,
+                    "tempo_uso": 7,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Katelyn Brewer",
+                    "cpf": "376543616479539",
+                    "email": "vivamus@protonmail.couk",
+                    "senha": "BKS12WDS7IQ",
+                    "acessibilidade": 0,
+                    "datanasc": "Oct 21, 2016",
+                    "credito": 2,
+                    "tempo_uso": 2,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "rua_avenida": "Av. L",
+            "Bairro": "Tartaro",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Vaughan Griffith",
+                    "cpf": "3695 454422 22867",
+                    "email": "fusce.aliquam@hotmail.couk",
+                    "senha": "MWR47XFL8WU",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 22, 2009",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Yoko Downs",
+                    "cpf": "67626175365824662",
+                    "email": "tortor@hotmail.net",
+                    "senha": "CTY64BPX8JW",
+                    "acessibilidade": 0,
+                    "datanasc": "Jun 22, 2014",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Wylie Lester",
+                    "cpf": "6767492436327764291",
+                    "email": "justo.eu@aol.org",
+                    "senha": "DWC01HIO1ZQ",
+                    "acessibilidade": 1,
+                    "datanasc": "Jul 16, 2007",
+                    "credito": 2,
+                    "tempo_uso": 9,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "nome": "Richard Pickett",
+                    "cpf": "6331104244727914440",
+                    "email": "quisque.nonummy@protonmail.ca",
+                    "senha": "VGC15MPG3QE",
+                    "acessibilidade": 1,
+                    "datanasc": "Aug 27, 2015",
+                    "credito": 2,
+                    "tempo_uso": 6,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "rua_avenida": "Av. M",
+            "Bairro": "Inferno",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Zelda Paul",
+                    "cpf": "3789 968264 32425",
+                    "email": "mi.lacinia@aol.ca",
+                    "senha": "FYZ75JAB7HJ",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 21, 2016",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Vaughan Griffith",
+                    "cpf": "3695 454422 22867",
+                    "email": "fusce.aliquam@hotmail.couk",
+                    "senha": "MWR47XFL8WU",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 22, 2009",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "rua_avenida": "Av. N",
+            "Bairro": "Inferno",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Buffy Cooley",
+                    "cpf": "551875 7546672155",
+                    "email": "eu@protonmail.org",
+                    "senha": "MQV11YLU1MH",
+                    "acessibilidade": 0,
+                    "datanasc": "Mar 11, 2014",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Jordan Salazar",
+                    "cpf": "4556436877337",
+                    "email": "odio@hotmail.ca",
+                    "senha": "OEO78VTL5KQ",
+                    "acessibilidade": 0,
+                    "datanasc": "Jul 7, 2023",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "rua_avenida": "Av. O",
+            "Bairro": "7 Palmos abaixo",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Ivy Cook",
+                    "cpf": "417500 211391 7152",
+                    "email": "faucibus.leo@outlook.net",
+                    "senha": "DFM87NTL2XT",
+                    "acessibilidade": 0,
+                    "datanasc": "Apr 30, 2000",
+                    "credito": 5,
+                    "tempo_uso": 10,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 6,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 4,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Nash Porter",
+                    "cpf": "630413 33 8186 8544 610",
+                    "email": "dictum.ultricies@icloud.ca",
+                    "senha": "RRM22OIH6PE",
+                    "acessibilidade": 0,
+                    "datanasc": "May 12, 2015",
+                    "credito": 2,
+                    "tempo_uso": 7,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Katelyn Brewer",
+                    "cpf": "376543616479539",
+                    "email": "vivamus@protonmail.couk",
+                    "senha": "BKS12WDS7IQ",
+                    "acessibilidade": 0,
+                    "datanasc": "Oct 21, 2016",
+                    "credito": 2,
+                    "tempo_uso": 2,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "rua_avenida": "Av. P",
+            "Bairro": "Tartaro",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Vaughan Griffith",
+                    "cpf": "3695 454422 22867",
+                    "email": "fusce.aliquam@hotmail.couk",
+                    "senha": "MWR47XFL8WU",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 22, 2009",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Yoko Downs",
+                    "cpf": "67626175365824662",
+                    "email": "tortor@hotmail.net",
+                    "senha": "CTY64BPX8JW",
+                    "acessibilidade": 0,
+                    "datanasc": "Jun 22, 2014",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Wylie Lester",
+                    "cpf": "6767492436327764291",
+                    "email": "justo.eu@aol.org",
+                    "senha": "DWC01HIO1ZQ",
+                    "acessibilidade": 1,
+                    "datanasc": "Jul 16, 2007",
+                    "credito": 2,
+                    "tempo_uso": 9,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "nome": "Richard Pickett",
+                    "cpf": "6331104244727914440",
+                    "email": "quisque.nonummy@protonmail.ca",
+                    "senha": "VGC15MPG3QE",
+                    "acessibilidade": 1,
+                    "datanasc": "Aug 27, 2015",
+                    "credito": 2,
+                    "tempo_uso": 6,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "rua_avenida": "Av. Q",
+            "Bairro": "Inferno",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Zelda Paul",
+                    "cpf": "3789 968264 32425",
+                    "email": "mi.lacinia@aol.ca",
+                    "senha": "FYZ75JAB7HJ",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 21, 2016",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Vaughan Griffith",
+                    "cpf": "3695 454422 22867",
+                    "email": "fusce.aliquam@hotmail.couk",
+                    "senha": "MWR47XFL8WU",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 22, 2009",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "rua_avenida": "Av. R",
+            "Bairro": "Inferno",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Buffy Cooley",
+                    "cpf": "551875 7546672155",
+                    "email": "eu@protonmail.org",
+                    "senha": "MQV11YLU1MH",
+                    "acessibilidade": 0,
+                    "datanasc": "Mar 11, 2014",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Jordan Salazar",
+                    "cpf": "4556436877337",
+                    "email": "odio@hotmail.ca",
+                    "senha": "OEO78VTL5KQ",
+                    "acessibilidade": 0,
+                    "datanasc": "Jul 7, 2023",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "rua_avenida": "Av. S",
+            "Bairro": "7 Palmos abaixo",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Ivy Cook",
+                    "cpf": "417500 211391 7152",
+                    "email": "faucibus.leo@outlook.net",
+                    "senha": "DFM87NTL2XT",
+                    "acessibilidade": 0,
+                    "datanasc": "Apr 30, 2000",
+                    "credito": 5,
+                    "tempo_uso": 10,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 6,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 4,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Nash Porter",
+                    "cpf": "630413 33 8186 8544 610",
+                    "email": "dictum.ultricies@icloud.ca",
+                    "senha": "RRM22OIH6PE",
+                    "acessibilidade": 0,
+                    "datanasc": "May 12, 2015",
+                    "credito": 2,
+                    "tempo_uso": 7,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Katelyn Brewer",
+                    "cpf": "376543616479539",
+                    "email": "vivamus@protonmail.couk",
+                    "senha": "BKS12WDS7IQ",
+                    "acessibilidade": 0,
+                    "datanasc": "Oct 21, 2016",
+                    "credito": 2,
+                    "tempo_uso": 2,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "rua_avenida": "Av. T",
+            "Bairro": "Tartaro",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Vaughan Griffith",
+                    "cpf": "3695 454422 22867",
+                    "email": "fusce.aliquam@hotmail.couk",
+                    "senha": "MWR47XFL8WU",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 22, 2009",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Yoko Downs",
+                    "cpf": "67626175365824662",
+                    "email": "tortor@hotmail.net",
+                    "senha": "CTY64BPX8JW",
+                    "acessibilidade": 0,
+                    "datanasc": "Jun 22, 2014",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nome": "Wylie Lester",
+                    "cpf": "6767492436327764291",
+                    "email": "justo.eu@aol.org",
+                    "senha": "DWC01HIO1ZQ",
+                    "acessibilidade": 1,
+                    "datanasc": "Jul 16, 2007",
+                    "credito": 2,
+                    "tempo_uso": 9,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "nome": "Richard Pickett",
+                    "cpf": "6331104244727914440",
+                    "email": "quisque.nonummy@protonmail.ca",
+                    "senha": "VGC15MPG3QE",
+                    "acessibilidade": 1,
+                    "datanasc": "Aug 27, 2015",
+                    "credito": 2,
+                    "tempo_uso": 6,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "rua_avenida": "Av. V",
+            "Bairro": "Inferno",
+            "usuarios": [
+                {
+                    "id": 1,
+                    "nome": "Zelda Paul",
+                    "cpf": "3789 968264 32425",
+                    "email": "mi.lacinia@aol.ca",
+                    "senha": "FYZ75JAB7HJ",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 21, 2016",
+                    "credito": 4,
+                    "tempo_uso": 8,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "azul",
+                            "placa": "MOA-2877",
+                            "modelo": "corola",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "HPC-9087",
+                            "modelo": "uno",
+                            "credito": 2,
+                            "tempo_uso": "4:00"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nome": "Vaughan Griffith",
+                    "cpf": "3695 454422 22867",
+                    "email": "fusce.aliquam@hotmail.couk",
+                    "senha": "MWR47XFL8WU",
+                    "acessibilidade": 1,
+                    "datanasc": "Feb 22, 2009",
+                    "credito": 2,
+                    "tempo_uso": 4,
+                    "veiculo": [
+                        {
+                            "id": 1,
+                            "cor": "rosa",
+                            "placa": "NAK-1275",
+                            "modelo": "polo",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        },
+                        {
+                            "id": 2,
+                            "cor": "vermelho",
+                            "placa": "NEY-5840",
+                            "modelo": "camaro",
+                            "credito": 1,
+                            "tempo_uso": "2:00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "rua_avenida": "Av. W",
             "Bairro": "Inferno",
             "usuarios": [
                 {
@@ -964,7 +2352,7 @@
         },
         {
             "id": 3,
-            "rua_avenida": "Av. D",
+            "rua_avenida": "Av. Y",
             "Bairro": "Tartaro",
             "usuarios": [
                 {
@@ -1087,1395 +2475,7 @@
         },
         {
             "id": 4,
-            "rua_avenida": "Av. 666",
-            "Bairro": "Inferno",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Zelda Paul",
-                    "cpf": "3789 968264 32425",
-                    "email": "mi.lacinia@aol.ca",
-                    "senha": "FYZ75JAB7HJ",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 21, 2016",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Vaughan Griffith",
-                    "cpf": "3695 454422 22867",
-                    "email": "fusce.aliquam@hotmail.couk",
-                    "senha": "MWR47XFL8WU",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 22, 2009",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 1,
-            "rua_avenida": "Av. 666",
-            "Bairro": "Inferno",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Buffy Cooley",
-                    "cpf": "551875 7546672155",
-                    "email": "eu@protonmail.org",
-                    "senha": "MQV11YLU1MH",
-                    "acessibilidade": 0,
-                    "datanasc": "Mar 11, 2014",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Jordan Salazar",
-                    "cpf": "4556436877337",
-                    "email": "odio@hotmail.ca",
-                    "senha": "OEO78VTL5KQ",
-                    "acessibilidade": 0,
-                    "datanasc": "Jul 7, 2023",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "rua_avenida": "Av. X",
-            "Bairro": "7 Palmos abaixo",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Ivy Cook",
-                    "cpf": "417500 211391 7152",
-                    "email": "faucibus.leo@outlook.net",
-                    "senha": "DFM87NTL2XT",
-                    "acessibilidade": 0,
-                    "datanasc": "Apr 30, 2000",
-                    "credito": 5,
-                    "tempo_uso": 10,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 6,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 4,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Nash Porter",
-                    "cpf": "630413 33 8186 8544 610",
-                    "email": "dictum.ultricies@icloud.ca",
-                    "senha": "RRM22OIH6PE",
-                    "acessibilidade": 0,
-                    "datanasc": "May 12, 2015",
-                    "credito": 2,
-                    "tempo_uso": 7,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "nome": "Katelyn Brewer",
-                    "cpf": "376543616479539",
-                    "email": "vivamus@protonmail.couk",
-                    "senha": "BKS12WDS7IQ",
-                    "acessibilidade": 0,
-                    "datanasc": "Oct 21, 2016",
-                    "credito": 2,
-                    "tempo_uso": 2,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "rua_avenida": "Av. D",
-            "Bairro": "Tartaro",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Vaughan Griffith",
-                    "cpf": "3695 454422 22867",
-                    "email": "fusce.aliquam@hotmail.couk",
-                    "senha": "MWR47XFL8WU",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 22, 2009",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Yoko Downs",
-                    "cpf": "67626175365824662",
-                    "email": "tortor@hotmail.net",
-                    "senha": "CTY64BPX8JW",
-                    "acessibilidade": 0,
-                    "datanasc": "Jun 22, 2014",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "nome": "Wylie Lester",
-                    "cpf": "6767492436327764291",
-                    "email": "justo.eu@aol.org",
-                    "senha": "DWC01HIO1ZQ",
-                    "acessibilidade": 1,
-                    "datanasc": "Jul 16, 2007",
-                    "credito": 2,
-                    "tempo_uso": 9,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "nome": "Richard Pickett",
-                    "cpf": "6331104244727914440",
-                    "email": "quisque.nonummy@protonmail.ca",
-                    "senha": "VGC15MPG3QE",
-                    "acessibilidade": 1,
-                    "datanasc": "Aug 27, 2015",
-                    "credito": 2,
-                    "tempo_uso": 6,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "rua_avenida": "Av. 666",
-            "Bairro": "Inferno",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Zelda Paul",
-                    "cpf": "3789 968264 32425",
-                    "email": "mi.lacinia@aol.ca",
-                    "senha": "FYZ75JAB7HJ",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 21, 2016",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Vaughan Griffith",
-                    "cpf": "3695 454422 22867",
-                    "email": "fusce.aliquam@hotmail.couk",
-                    "senha": "MWR47XFL8WU",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 22, 2009",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 1,
-            "rua_avenida": "Av. 666",
-            "Bairro": "Inferno",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Buffy Cooley",
-                    "cpf": "551875 7546672155",
-                    "email": "eu@protonmail.org",
-                    "senha": "MQV11YLU1MH",
-                    "acessibilidade": 0,
-                    "datanasc": "Mar 11, 2014",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Jordan Salazar",
-                    "cpf": "4556436877337",
-                    "email": "odio@hotmail.ca",
-                    "senha": "OEO78VTL5KQ",
-                    "acessibilidade": 0,
-                    "datanasc": "Jul 7, 2023",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "rua_avenida": "Av. X",
-            "Bairro": "7 Palmos abaixo",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Ivy Cook",
-                    "cpf": "417500 211391 7152",
-                    "email": "faucibus.leo@outlook.net",
-                    "senha": "DFM87NTL2XT",
-                    "acessibilidade": 0,
-                    "datanasc": "Apr 30, 2000",
-                    "credito": 5,
-                    "tempo_uso": 10,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 6,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 4,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Nash Porter",
-                    "cpf": "630413 33 8186 8544 610",
-                    "email": "dictum.ultricies@icloud.ca",
-                    "senha": "RRM22OIH6PE",
-                    "acessibilidade": 0,
-                    "datanasc": "May 12, 2015",
-                    "credito": 2,
-                    "tempo_uso": 7,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "nome": "Katelyn Brewer",
-                    "cpf": "376543616479539",
-                    "email": "vivamus@protonmail.couk",
-                    "senha": "BKS12WDS7IQ",
-                    "acessibilidade": 0,
-                    "datanasc": "Oct 21, 2016",
-                    "credito": 2,
-                    "tempo_uso": 2,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "rua_avenida": "Av. D",
-            "Bairro": "Tartaro",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Vaughan Griffith",
-                    "cpf": "3695 454422 22867",
-                    "email": "fusce.aliquam@hotmail.couk",
-                    "senha": "MWR47XFL8WU",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 22, 2009",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Yoko Downs",
-                    "cpf": "67626175365824662",
-                    "email": "tortor@hotmail.net",
-                    "senha": "CTY64BPX8JW",
-                    "acessibilidade": 0,
-                    "datanasc": "Jun 22, 2014",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "nome": "Wylie Lester",
-                    "cpf": "6767492436327764291",
-                    "email": "justo.eu@aol.org",
-                    "senha": "DWC01HIO1ZQ",
-                    "acessibilidade": 1,
-                    "datanasc": "Jul 16, 2007",
-                    "credito": 2,
-                    "tempo_uso": 9,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "nome": "Richard Pickett",
-                    "cpf": "6331104244727914440",
-                    "email": "quisque.nonummy@protonmail.ca",
-                    "senha": "VGC15MPG3QE",
-                    "acessibilidade": 1,
-                    "datanasc": "Aug 27, 2015",
-                    "credito": 2,
-                    "tempo_uso": 6,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "rua_avenida": "Av. 666",
-            "Bairro": "Inferno",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Zelda Paul",
-                    "cpf": "3789 968264 32425",
-                    "email": "mi.lacinia@aol.ca",
-                    "senha": "FYZ75JAB7HJ",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 21, 2016",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Vaughan Griffith",
-                    "cpf": "3695 454422 22867",
-                    "email": "fusce.aliquam@hotmail.couk",
-                    "senha": "MWR47XFL8WU",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 22, 2009",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 1,
-            "rua_avenida": "Av. 666",
-            "Bairro": "Inferno",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Buffy Cooley",
-                    "cpf": "551875 7546672155",
-                    "email": "eu@protonmail.org",
-                    "senha": "MQV11YLU1MH",
-                    "acessibilidade": 0,
-                    "datanasc": "Mar 11, 2014",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Jordan Salazar",
-                    "cpf": "4556436877337",
-                    "email": "odio@hotmail.ca",
-                    "senha": "OEO78VTL5KQ",
-                    "acessibilidade": 0,
-                    "datanasc": "Jul 7, 2023",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "rua_avenida": "Av. X",
-            "Bairro": "7 Palmos abaixo",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Ivy Cook",
-                    "cpf": "417500 211391 7152",
-                    "email": "faucibus.leo@outlook.net",
-                    "senha": "DFM87NTL2XT",
-                    "acessibilidade": 0,
-                    "datanasc": "Apr 30, 2000",
-                    "credito": 5,
-                    "tempo_uso": 10,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 6,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 4,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Nash Porter",
-                    "cpf": "630413 33 8186 8544 610",
-                    "email": "dictum.ultricies@icloud.ca",
-                    "senha": "RRM22OIH6PE",
-                    "acessibilidade": 0,
-                    "datanasc": "May 12, 2015",
-                    "credito": 2,
-                    "tempo_uso": 7,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "nome": "Katelyn Brewer",
-                    "cpf": "376543616479539",
-                    "email": "vivamus@protonmail.couk",
-                    "senha": "BKS12WDS7IQ",
-                    "acessibilidade": 0,
-                    "datanasc": "Oct 21, 2016",
-                    "credito": 2,
-                    "tempo_uso": 2,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "rua_avenida": "Av. D",
-            "Bairro": "Tartaro",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Vaughan Griffith",
-                    "cpf": "3695 454422 22867",
-                    "email": "fusce.aliquam@hotmail.couk",
-                    "senha": "MWR47XFL8WU",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 22, 2009",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Yoko Downs",
-                    "cpf": "67626175365824662",
-                    "email": "tortor@hotmail.net",
-                    "senha": "CTY64BPX8JW",
-                    "acessibilidade": 0,
-                    "datanasc": "Jun 22, 2014",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "nome": "Wylie Lester",
-                    "cpf": "6767492436327764291",
-                    "email": "justo.eu@aol.org",
-                    "senha": "DWC01HIO1ZQ",
-                    "acessibilidade": 1,
-                    "datanasc": "Jul 16, 2007",
-                    "credito": 2,
-                    "tempo_uso": 9,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "nome": "Richard Pickett",
-                    "cpf": "6331104244727914440",
-                    "email": "quisque.nonummy@protonmail.ca",
-                    "senha": "VGC15MPG3QE",
-                    "acessibilidade": 1,
-                    "datanasc": "Aug 27, 2015",
-                    "credito": 2,
-                    "tempo_uso": 6,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "rua_avenida": "Av. 666",
-            "Bairro": "Inferno",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Zelda Paul",
-                    "cpf": "3789 968264 32425",
-                    "email": "mi.lacinia@aol.ca",
-                    "senha": "FYZ75JAB7HJ",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 21, 2016",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Vaughan Griffith",
-                    "cpf": "3695 454422 22867",
-                    "email": "fusce.aliquam@hotmail.couk",
-                    "senha": "MWR47XFL8WU",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 22, 2009",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 1,
-            "rua_avenida": "Av. 666",
-            "Bairro": "Inferno",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Buffy Cooley",
-                    "cpf": "551875 7546672155",
-                    "email": "eu@protonmail.org",
-                    "senha": "MQV11YLU1MH",
-                    "acessibilidade": 0,
-                    "datanasc": "Mar 11, 2014",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Jordan Salazar",
-                    "cpf": "4556436877337",
-                    "email": "odio@hotmail.ca",
-                    "senha": "OEO78VTL5KQ",
-                    "acessibilidade": 0,
-                    "datanasc": "Jul 7, 2023",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "rua_avenida": "Av. X",
-            "Bairro": "7 Palmos abaixo",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Ivy Cook",
-                    "cpf": "417500 211391 7152",
-                    "email": "faucibus.leo@outlook.net",
-                    "senha": "DFM87NTL2XT",
-                    "acessibilidade": 0,
-                    "datanasc": "Apr 30, 2000",
-                    "credito": 5,
-                    "tempo_uso": 10,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 6,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 4,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Nash Porter",
-                    "cpf": "630413 33 8186 8544 610",
-                    "email": "dictum.ultricies@icloud.ca",
-                    "senha": "RRM22OIH6PE",
-                    "acessibilidade": 0,
-                    "datanasc": "May 12, 2015",
-                    "credito": 2,
-                    "tempo_uso": 7,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "nome": "Katelyn Brewer",
-                    "cpf": "376543616479539",
-                    "email": "vivamus@protonmail.couk",
-                    "senha": "BKS12WDS7IQ",
-                    "acessibilidade": 0,
-                    "datanasc": "Oct 21, 2016",
-                    "credito": 2,
-                    "tempo_uso": 2,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "rua_avenida": "Av. D",
-            "Bairro": "Tartaro",
-            "usuarios": [
-                {
-                    "id": 1,
-                    "nome": "Vaughan Griffith",
-                    "cpf": "3695 454422 22867",
-                    "email": "fusce.aliquam@hotmail.couk",
-                    "senha": "MWR47XFL8WU",
-                    "acessibilidade": 1,
-                    "datanasc": "Feb 22, 2009",
-                    "credito": 4,
-                    "tempo_uso": 8,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "azul",
-                            "placa": "MOA-2877",
-                            "modelo": "corola",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "HPC-9087",
-                            "modelo": "uno",
-                            "credito": 2,
-                            "tempo_uso": "4:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "nome": "Yoko Downs",
-                    "cpf": "67626175365824662",
-                    "email": "tortor@hotmail.net",
-                    "senha": "CTY64BPX8JW",
-                    "acessibilidade": 0,
-                    "datanasc": "Jun 22, 2014",
-                    "credito": 2,
-                    "tempo_uso": 4,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "nome": "Wylie Lester",
-                    "cpf": "6767492436327764291",
-                    "email": "justo.eu@aol.org",
-                    "senha": "DWC01HIO1ZQ",
-                    "acessibilidade": 1,
-                    "datanasc": "Jul 16, 2007",
-                    "credito": 2,
-                    "tempo_uso": 9,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "nome": "Richard Pickett",
-                    "cpf": "6331104244727914440",
-                    "email": "quisque.nonummy@protonmail.ca",
-                    "senha": "VGC15MPG3QE",
-                    "acessibilidade": 1,
-                    "datanasc": "Aug 27, 2015",
-                    "credito": 2,
-                    "tempo_uso": 6,
-                    "veiculo": [
-                        {
-                            "id": 1,
-                            "cor": "rosa",
-                            "placa": "NAK-1275",
-                            "modelo": "polo",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        },
-                        {
-                            "id": 2,
-                            "cor": "vermelho",
-                            "placa": "NEY-5840",
-                            "modelo": "camaro",
-                            "credito": 1,
-                            "tempo_uso": "2:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "rua_avenida": "Av. 666",
+            "rua_avenida": "Av. Z",
             "Bairro": "Inferno",
             "usuarios": [
                 {

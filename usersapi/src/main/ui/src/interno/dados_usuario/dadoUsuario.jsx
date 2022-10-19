@@ -1,5 +1,3 @@
-import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
-import VagaService from '../../service/vaga';
 import Topbar from "../home/Componentes/topbar/Topbar";
 import Sidebar from "../home/Componentes/sidebar/Sidebar";
 import './dadoUsuario.css'
