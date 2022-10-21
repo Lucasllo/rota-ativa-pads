@@ -8,11 +8,13 @@ export function DadoUsuario() {
     const location = useLocation();
     const navigate = useNavigate();
 
+    const infos = ["Nome", "E-mail", "CPF", "Data de Nascimento"]
+    const dados = [location.state.usuario.nome, location.state.usuario.email, location.state.usuario.cpf, location.state.usuario.datanasc]
+
     return (
         <>
             <Sidebar />
             <Topbar />
-            <button className='btnVoltar margem-relatorio' onClick={() => navigate(-1)}> <img src="/img/btnVoltar.svg" alt="" /> Voltar</button>
             <div className="margem-esq">
                 <div class="containerUser space">
                     <div class="flex w-full items-center">
@@ -28,33 +30,18 @@ export function DadoUsuario() {
 
                 <div class="p-4">
 
-                    <div class="containerInfos formulario containerEffect bordaInferiorCor">
-                        <div class="content p-3 bordaSuperior ">
-                            <p class="mb-0 ">Nome</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.nome}</span>
-                        </div>
-                    </div>
+                    {infos.map((info, index)=>{
+                        return(
+                            <div class="containerInfos formulario containerEffect bordaInferiorCor">
+                                <div class="content p-3 bordaSuperior dados">
+                                    <p class="mb-0 ">{info}</p>
+                                    <span class="">{dados[index]}</span>
+                                </div>
+                            </div>        
+                        )
+                    })}
 
-                    <div class="containerInfos formulario containerEffect bordaInferiorCor">
-                        <div class="content p-3">
-                            <p class="mb-0">E-mail</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.email}</span>
-                        </div>
-                    </div>
-
-                    <div class="containerInfos formulario containerEffect bordaInferiorCor">
-                        <div class="content p-3">
-                            <p class="mb-0">CPF</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.cpf}</span>
-                        </div>
-                    </div>
-
-                    <div class="containerInfos formulario containerEffect ">
-                        <div class="content p-3 bordaInferior">
-                            <p class="mb-0">Data de Nascimento</p>
-                            <span class="d-block ms-2 bordaCompleta paddingLeft">{location.state.usuario.datanasc}</span>
-                        </div>
-                    </div>
+                   
 
                     <div class="containerInfos space2">
                         <div class="content rounded-3 p-3">
@@ -90,6 +77,7 @@ export function DadoUsuario() {
 
                 </div>
             </div>
+            <button className='btnVoltar margem-relatorio' onClick={() => navigate(-1)}> <img src="/img/btnVoltar.svg" alt="" /> Voltar</button>
         </>
     )
 }

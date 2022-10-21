@@ -23,10 +23,27 @@ export function RelatorioUsuario() {
     const navigate = useNavigate();
 
     const [usuarios, setUsuarios] = useState([])
+
+    const [buscar, setBuscar] = useState("");
+
+    const [lista, setLista] = useState([]);
+
+    function testaBusca(nome) {
+        const regex = new RegExp(buscar, 'i');
+        return regex.test(nome);
+      } 
+  
+      useEffect(() => {
+          const novaLista = usuarios.filter(item => testaBusca(item.nome))
+          setLista(novaLista);
+      }, [buscar])
+  
+
     const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
             setUsuarios(location.state.vaga.usuarios)
+            setLista(location.state.vaga.usuarios);
     }, [])
     
     x = dados.find((p) => p.rua_avenida == location.state.vaga.rua_avenida );
@@ -34,8 +51,8 @@ export function RelatorioUsuario() {
     const currentTableData = useMemo(() => {
         const firstPageIndex = (currentPage - 1) * PageSize;
         const lastPageIndex = firstPageIndex + PageSize;
-        return usuarios.slice(firstPageIndex, lastPageIndex);
-    }, [currentPage, usuarios]);
+        return lista.slice(firstPageIndex, lastPageIndex);
+    }, [currentPage, lista]);
 
     const { isLoaded } = useJsApiLoader({
         googleMapsApiKey: "AIzaSyAQYGeShstIRAbsrS4lwyumbLwlG5t-sTA",
@@ -88,7 +105,14 @@ export function RelatorioUsuario() {
                             </h3>
                         
                             <div class="input-group md-form form-sm form-2 pl-0">
-                                <input class="form-control my-0 py-1 pl-3 purple-border" type="text" placeholder="Pesquise o usuario aqui..." aria-label="Search"/>
+                                <input 
+                                    class="form-control my-0 py-1 pl-3 purple-border" 
+                                    type="text" 
+                                    placeholder="Pesquise o usuario aqui..." 
+                                    aria-label="Search"
+                                    value={buscar}
+                                    onChange={evento => setBuscar(evento.target.value)}
+                                />
                                 <span class="input-group-addon waves-effect purple lighten-2" id="basic-addon1"><a><i class="fa fa-search white-text" aria-hidden="true"></i></a></span>
                             </div>
 
@@ -125,7 +149,7 @@ export function RelatorioUsuario() {
                     </table>
                     <Pagination
                         currentPage={currentPage}
-                        totalCount={usuarios.length}
+                        totalCount={lista.length}
                         pageSize={PageSize}
                         onPageChange={page => setCurrentPage(page)}
                     />

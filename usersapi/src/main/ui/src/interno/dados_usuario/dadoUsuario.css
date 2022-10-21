@@ -95,11 +95,6 @@ a {
 	opacity: 96%;
 }
 
-.formulario span:hover {
-	background-color: white;
-	color: #313348;
-}
-
 /** --------------------------------
  -- Espaços
 -------------------------------- */
@@ -1185,4 +1180,12 @@ hr {
 
 .margem-dados {
     margin-left: 250px;
+}
+
+.dados p{
+    font-size: 1.5rem;
+}
+
+.dados span{
+    font-size: 1.3rem;
 }
