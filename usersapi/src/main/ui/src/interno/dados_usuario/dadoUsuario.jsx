@@ -77,7 +77,10 @@ export function DadoUsuario() {
 
                 </div>
             </div>
-            <button className='btnVoltar margem-relatorio' onClick={() => navigate(-1)}> <img src="/img/btnVoltar.svg" alt="" /> Voltar</button>
+            <div className="p-4-left">
+                <button className='btnVoltar margem-relatorio' onClick={() => navigate(-1)}> <img src="/img/btnVoltar.svg" alt="voltar" /> Voltar</button>
+
+            </div>
         </>
     )
 }

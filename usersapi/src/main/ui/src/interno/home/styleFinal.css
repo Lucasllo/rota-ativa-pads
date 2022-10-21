@@ -126,29 +126,10 @@ body {
 
 /* Start media query */
 
-@media (max-width: 767px) {
-  #wrapper {
-    margin: 0 !important;
-  }
-  .statistics .box {
-    margin-bottom: 25px !important;
-  }
-  .navbar .navbar-nav .open .dropdown-menu > li > a {
-    color: #ccc !important;
-  }
-  .navbar .navbar-nav .open .dropdown-menu > li > a:hover {
-    color: #fff !important;
-  }
-  .navbar .navbar-toggle {
-    border: none !important;
-    color: #eee !important;
-    font-size: 18px !important;
-  }
-  .navbar .navbar-toggle:focus,
-  .navbar .navbar-toggle:hover {
-    background-color: transparent !important;
-  }
+* td, * th{
+  text-align: center;
 }
+
 
 ::-webkit-scrollbar {
   background: transparent;

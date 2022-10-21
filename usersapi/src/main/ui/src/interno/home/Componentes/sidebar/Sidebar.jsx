@@ -32,23 +32,31 @@ export function navbarLateral() {
       <ul className="categories list-unstyled">
         <li className="">
           <i className="uil-estate fa-fw"></i>
-          <Link to="/menulogado/1">Dashboard</Link>
+          <Link className="btnSideBar" to="/menulogado/1"> 
+          <img src="/img/dashboard.svg" alt="Dashboard" />
+            <span>Dashboard</span>
+          </Link>
         </li>
         <li>
           <i className="uil-map-marker"></i>
-          <Link to="/menulogado/relatorioVagas">Relatorio de Vagas</Link>
+          <Link className="btnSideBar" to="/menulogado/relatorioVagas">
+            <img src="/img/relatorio.svg" alt="Relatorio de Vagas" />
+            <span>Relatorio de Vagas</span>
+          </Link>
         </li>
         <li className="">
           <i className="uil-map-marker"></i>
-          <Link to="/menulogado/relatorioUso">Relatorio de Uso</Link>
+          <Link className="btnSideBar" to="/menulogado/relatorioUso">
+          <img src="/img/relatorio.svg" alt="Relatorio de Uso" />
+            <span>Relatorio de Uso</span>
+            </Link>
         </li>
         <li className="">
           <i className="uil-map-marker"></i>
-          <Link to="/menulogado/mapa">Mapa</Link>
-        </li>
-        <li className="">
-          <i className="uil-setting"></i>
-          <a href="/#"> Configurações</a>
+          <Link className="btnSideBar" to="/menulogado/mapa">
+          <img src="/img/mapa.svg" alt="Mapa" />
+            <span>Mapa</span>
+          </Link>
         </li>
       </ul>
     </aside>

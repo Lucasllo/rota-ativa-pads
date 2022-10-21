@@ -87,7 +87,7 @@ export function RelatorioDeUso() {
                 return (
                   <>
                     <Polygon
-                      options={{ strokeColor: x?.usuarios?.length > 3 ? "#FF5858" : "#027373", strokeWeight: 2 }}
+                      options={{ strokeColor: x?.usuarios?.length > 2 ? "#FF5858" : "#027373", strokeWeight: 2 }}
                       onClick={()=>{navigate(`/menulogado/relatorioUsuarios/${x.id}`, {state: { vaga: x}, replace: true});}}
                       paths={d.path}
                     ></Polygon>

@@ -30,11 +30,11 @@ ul {
 }
 
 .margem-esq{
-    margin-left: 250px;
+    margin-left: var(--sidebar-width);
 }
 
 .margem-relatorio {
-    margin: 1rem 20px 0 270px;
+    margin: 1% 20px 0 calc(var(--sidebar-width) + 1%);
 }
 
 .btnVoltar{

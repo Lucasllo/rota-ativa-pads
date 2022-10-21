@@ -18,7 +18,7 @@
 	--navbar-bg-color: #027373;
 	/* BACKGROUND SIDEBAR */
 	--sidebar-bg-color: #252636;
-	--sidebar-width: 250px;
+	--sidebar-width: 16%;
 }
 
 * {
@@ -33,14 +33,6 @@ body {
 	font-size: .925rem;
 }
 
-#wrapper {
-	margin-left: var(--sidebar-width);
-	transition: all .3s ease-in-out;
-}
-
-#wrapper.fullwidth {
-	margin-left: 0;
-}
 
 a {
     color: inherit;
@@ -708,6 +700,10 @@ hr {
 
 .p-4 {
     padding: 1rem
+}
+
+.p-4-left {
+    padding-left: 1rem
 }
 
 .p-5 {
