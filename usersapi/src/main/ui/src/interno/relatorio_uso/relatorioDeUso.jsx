@@ -112,7 +112,7 @@ export function RelatorioDeUso() {
                       <input 
                         class="form-control my-0 py-1 pl-3 purple-border" 
                         type="text" 
-                        placeholder="Pesquise o usuario aqui..." 
+                        placeholder="Pesquise o endereço ou bairro aqui..." 
                         aria-label="Search"
                         value={buscar}
                         onChange={evento => setBuscar(evento.target.value)}
