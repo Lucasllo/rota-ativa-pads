@@ -19,13 +19,12 @@ export function navbarLateral() {
           src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907008/medium/1501685726/enhance"
           alt="Imagem do usuário"
         />
-        <div className="ms-2">
+        <div>
           <h5 className="fs-6 mb-0">
-            <a className="text-decoration-none" href="/#">
+            <a className="text-decoration-none text-center" href="/#">
               Matheus Dias
             </a>
           </h5>
-          <p className="mt-1 mb-0">Admin</p>
         </div>
       </div>
       {/* NAVBAR LATERAL - LINKS DE ACESSO */}

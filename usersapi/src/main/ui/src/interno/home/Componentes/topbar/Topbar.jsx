@@ -18,15 +18,6 @@ export function TopBar() {
           <div className="container-fluid mx-2">
             {/* NAVBAR - BOTÃO MENU */}
             <div className="navbar-header">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#toggle-navbar"
-                aria-controls="toggle-navbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              ></button>
               {/* LOGO */}
               <a className="navbar-brand" href="/#">
                 Rota<span className="main-color">Ativa</span>

@@ -706,6 +706,12 @@ hr {
     padding-left: 1rem
 }
 
+@media screen and (max-width: 768px){
+    .p-4-left{
+        padding: 0;
+    }
+}
+
 .p-5 {
     padding: 1.25rem
 }
