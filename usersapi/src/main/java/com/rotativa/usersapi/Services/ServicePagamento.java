@@ -5,13 +5,14 @@ import org.springframework.stereotype.Service;
 
 import com.rotativa.usersapi.Services.*;
 import com.rotativa.usersapi.Entidades.Pagamento;
+import com.rotativa.usersapi.Repositories.RepositoryPagamento;
 
 @Service
 public class ServicePagamento {
 	
     private RepositoryPagamento repositorio;
 	
-    public ServicePagamento(RepositoryEmpresa repositorio){
+    public ServicePagamento(RepositoryPagamento repositorio){
         this.repositorio = repositorio;
     }
 

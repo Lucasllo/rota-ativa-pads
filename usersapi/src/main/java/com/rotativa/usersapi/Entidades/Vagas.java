@@ -40,7 +40,7 @@ public class Vagas {
     @ManyToMany
     @JoinTable(name = "Vaga_Usuario", 
       joinColumns = @JoinColumn(name = "idVaga"), 
-      inverseJoinColumns = @JoinColumn(name = "idusuario"))
+      inverseJoinColumns = @JoinColumn(name = "idUsuario"))
     
     public Date getSaida() {
         return saida;
@@ -86,10 +86,10 @@ public class Vagas {
     public String toString() {
         return "Vagas {" +
                 "id='" + idVaga + '\'' +
-                ", cpf='" + logradouro + '\'' +
-                ", nome='" + bairro + '\'' +
-                ", acessibilidade='" + entrada + '\'' +
-                ", email='" + saída + '\'' +
+                ", logradouro='" + logradouro + '\'' +
+                ", bairro ='" + bairro + '\'' +
+                ", entrada='" + entrada + '\'' +
+                ", saida='" + saida + '\'' +
                 '}';
     }
 }

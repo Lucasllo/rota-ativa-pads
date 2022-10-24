@@ -70,3 +70,4 @@ public class Pagamento {
         ", usuario='" + this.us1 + 
         '}'; 
 }
+}

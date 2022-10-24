@@ -34,7 +34,7 @@ public class Usuario {
 
     public Usuario(int idUsuario, String cpf, String nome, int acessibilidade, String email, String senha,
             Date datanasc, int ticket) {
-        this.idusuario = idUsuario;
+        this.idUsuario = idUsuario;
         this.cpf = cpf;
         this.nome = nome;
         this.acessibilidade = acessibilidade;
@@ -80,8 +80,8 @@ public class Usuario {
         return idUsuario;
     }
 
-    public void setIdUsuario(int idusuario) {
-        this.idusuario = idUsuario;
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     public String getCpf() {
