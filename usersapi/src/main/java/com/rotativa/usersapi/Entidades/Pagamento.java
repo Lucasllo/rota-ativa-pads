@@ -27,6 +27,14 @@ public class Pagamento {
 
     @Transient
     Usuario us1;
+
+      public Pagamento(int idPagamento, Date dataCompra, Double valor, int quantidadeTicket, Usuario us1) {
+        this.idPagamento = idPagamento;
+        this.dataCompra = dataCompra;
+        this.valor = valor;
+        this.quantidadeTicket = quantidadeTicket;
+        this.us1 = us1;
+    }
         
     public int getIdpagamento() {
         return idPagamento;

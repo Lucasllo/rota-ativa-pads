@@ -2,8 +2,6 @@ package com.rotativa.usersapi.Entidades;
 /* Este projeto utiliza SpringBoot. Para que o Spring reconheça as elementos 
 do projeto eles devem ser criados dentro da pasta userapi*/
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,88 +25,93 @@ public class Usuario {
     private String email;
     @Column(name = "senha")
     private String senha;
-    @Column(name = "dataNasc")
-    private Date datanasc;
     @Column(name = "ticket")
     private int ticket;
 
-    public Usuario(int idUsuario, String cpf, String nome, int acessibilidade, String email, String senha,
-            Date datanasc, int ticket) {
-        this.idUsuario = idUsuario;
-        this.cpf = cpf;
-        this.nome = nome;
-        this.acessibilidade = acessibilidade;
-        this.email = email;
-        this.senha = senha;
-        this.datanasc = datanasc;
-        this.ticket = ticket;
-    }
+  public Usuario() {
+    //
+ 	}
+  
+     public Usuario(int idUsuario, String cpf, String nome, int acessibilidade, String email, String senha, int ticket) {
+ 		this.idUsuario = idUsuario;
+ 		this.cpf = cpf;
+ 		this.nome = nome;
+ 		this.acessibilidade = acessibilidade;
+ 		this.email = email;
+ 		this.senha = senha;
+ 		this.ticket = ticket;
+ 	}
 
-    public int getAcessibilidade() {
-        return acessibilidade;
-    }
+  public int getIdUsuario() {
+		return idUsuario;
+	}
 
-    public void setAcessibilidade(int acessibilidade) {
-        this.acessibilidade = acessibilidade;
-    }
 
-    public String getNome() {
-        return nome;
-    }
+	public void setIdUsuario(int idUsuario) {
+		this.idUsuario = idUsuario;
+	}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
-    public String getEmail() {
-        return email;
-    }
+	public String getCpf() {
+		return cpf;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
-    public String getSenha() {
-        return senha;
-    }
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 
-    public int getIdUsuario() {
-        return idUsuario;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
-    }
 
-    public String getCpf() {
-        return cpf;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
 
-    public int getTicket() {
-        return ticket;
-    }
+	public int getAcessibilidade() {
+		return acessibilidade;
+	}
 
-    public void setTicket(int ticket) {
-        this.ticket = ticket;
-    }
 
-    public Date getDatanasc() {
-        return datanasc;
-    }
+	public void setAcessibilidade(int acessibilidade) {
+		this.acessibilidade = acessibilidade;
+	}
 
-    public void setDatanasc(Date datanasc) {
-        this.datanasc = datanasc;
-    }
 
-    @Override
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getSenha() {
+		return senha;
+	}
+
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+
+	public int getTicket() {
+		return ticket;
+	}
+
+
+	public void setTicket(int ticket) {
+		this.ticket = ticket;
+	}
+
+   @Override
     public String toString() {
         return "Usuario {" +
                 "id='" + idUsuario + '\'' +
@@ -117,7 +120,6 @@ public class Usuario {
                 ", acessibilidade='" + acessibilidade + '\'' +
                 ", email='" + email + '\'' +
                 ", senha='" + senha + '\'' +
-                ", nascimento='" + datanasc + '\'' +
                 ", ticket='" + ticket +
                 '}';
 

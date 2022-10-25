@@ -18,19 +18,19 @@ import com.rotativa.usersapi.Repositories.RepositoryUsuario;
 import com.rotativa.usersapi.Entidades.Usuario;
 import com.rotativa.usersapi.Services.ServiceUsuario;
 
-@CrossOrigin(origins = "http://localhost:3000") 
+@CrossOrigin(origins = "http://https://pdmkm6-3000.preview.csb.app/") 
+
 @RestController
 public class ControlUsuario {
-    
-    ServiceUsuario servUser;
+    private ServiceUsuario se1;
 
-    public ControlUsuario(ServiceUsuario servUser){
-        this.servUser = servUser;
-    }    
-
-    @GetMapping("/usuarios")
-    public List<Usuario> usuarios(){
-        return this.servUser.listar();
+    public ControlUsuario(ServiceUsuario se1){
+        this.se1 = se1;
+    }
+  
+    @GetMapping("/informacion")
+    public List<Usuario> informacion(){
+        return this.se1.getRepositorio();
     }
 /*
     @PostMapping

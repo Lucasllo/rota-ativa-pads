@@ -9,16 +9,15 @@ import com.rotativa.usersapi.Repositories.RepositoryUsuario;
 import com.rotativa.usersapi.Entidades.Usuario;
 
 @Service
-public class ServiceUsuario{
-	
-	private RepositoryUsuario repositorio;
-	
-	@Autowired
-	public ServiceUsuario(RepositoryUsuario repositorio) {
-		this.repositorio = repositorio;
-	}
-	
-	public List<Usuario> listar() {
+public class ServiceUsuario {
+
+    private RepositoryUsuario repositorio;
+
+    public ServiceUsuario(RepositoryUsuario repositorio){
+        this.repositorio = repositorio;
+    }
+
+    public List<Usuario> getRepositorio(){
         return this.repositorio.findAll();
     }
     /*
