@@ -1,4 +1,3 @@
-import "./style.css";
 import "./styleFinal.css";
 import Sidebar from "./Componentes/sidebar/Sidebar";
 import Topbar from "./Componentes/topbar/Topbar";
@@ -25,7 +24,7 @@ export function Home() {
             <div className="row">
               {/*<!-- ITEM 01 -->*/}
               <div className="col-lg-4">
-                <div className="box d-flex rounded-2 align-items-center p-3">
+                <div className="box d-flex rounded-2 align-items-center p-3  mb-4">
                   <i className="uil-users-alt fs-2 text-center bg-success rounded-circle"></i>
                   {/*<!-- LABEL -->*/}
                   <div className="ms-3">
@@ -74,7 +73,7 @@ export function Home() {
           <section className="charts mt-4">
             <div className="row">
               <div className="col-lg-6">
-                <div className="chart-container rounded-2 p-3">
+                <div className="chart-container rounded-2 p-3 mb-4">
                   <h3 className="fs-6 mb-3">
                     Estatísticas de Usuários e Vagas
                   </h3>
@@ -82,7 +81,7 @@ export function Home() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="chart-container rounded-2 p-3">
+                <div className="chart-container rounded-2 p-3 mb-4">
                   <h3 className="fs-6 mb-3">
                     Estatísticas de Usuários e Vagas
                   </h3>

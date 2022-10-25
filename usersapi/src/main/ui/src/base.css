@@ -28,3 +28,25 @@ ul {
     width: 90%;
     margin: auto;
 }
+
+.margem-esq{
+    margin-left: var(--sidebar-width);
+}
+
+.margem-relatorio {
+    margin: 1% 20px 0 calc(var(--sidebar-width) + 1%);
+}
+
+.btnVoltar{
+    color: white;
+    background-color: #218579;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btnVoltar img{
+    height: 0.9rem;
+}

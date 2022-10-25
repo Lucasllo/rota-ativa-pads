@@ -12,6 +12,7 @@ import { Home } from "./interno/home/Home";
 import { RelatorioVagas } from "./interno/relatorio_vaga/relatorioVaga";
 import { RelatorioUsuario } from "./interno/relatorio_usuarios/relatorioUsuario";
 import { DadoUsuario } from "./interno/dados_usuario/dadoUsuario";
+import { RelatorioDeUso } from "./interno/relatorio_uso/relatorioDeUso";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route element={<RelatorioVagas/>} exact path="/menulogado/relatorioVagas"></Route>
         <Route element={<RelatorioUsuario/>} exact path="/menulogado/relatorioUsuarios/:id"></Route>
         <Route element={<DadoUsuario/>} exact path="/menulogado/dadoUsuario/:id"></Route>
+        <Route element={<RelatorioDeUso/>} exact path="/menulogado/relatorioUso"></Route>
       </Routes>
       {useLocation().pathname == "/" ? <Rodape /> : ""}
     </>
