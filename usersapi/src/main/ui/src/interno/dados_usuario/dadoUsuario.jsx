@@ -13,8 +13,6 @@ export function DadoUsuario() {
 
     return (
         <>
-            <Sidebar />
-            <Topbar />
             <div className="margem-esq">
                 <div class="containerUser space">
                     <div class="flex w-full items-center">

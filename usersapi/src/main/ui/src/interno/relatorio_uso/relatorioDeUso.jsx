@@ -70,8 +70,6 @@ export function RelatorioDeUso() {
 
   return (
     <>
-      <Sidebar />
-      <Topbar />
       <div>
         <Flex h="30vh" className="margem-esq">
           <Box h="100%" w="100%">

@@ -45,8 +45,6 @@ export function RelatorioVagas() {
 
     return (
         <>
-            <Sidebar />
-            <Topbar />
             <div className="card margem-relatorio">
                 <div className="card-body">
                     <h1 className="py-3 text-center font-bold font-up blue-text">

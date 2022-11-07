@@ -29,8 +29,6 @@ export function Map() {
 
   return (
     <>
-      <Sidebar />
-      <Topbar />
       <div className="margem-esq">
         <Flex className="mapa">
           <Box h="100%" w="100%">

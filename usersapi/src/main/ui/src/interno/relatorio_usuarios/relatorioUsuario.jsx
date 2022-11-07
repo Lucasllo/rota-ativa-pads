@@ -66,8 +66,6 @@ export function RelatorioUsuario() {
 
     return (
         <>
-            <Sidebar />
-            <Topbar />
             <Flex h="30vh" className="margem-esq">
           <Box h="100%" w="100%">
             <GoogleMap
