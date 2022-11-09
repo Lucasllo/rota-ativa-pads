@@ -13,37 +13,37 @@ import com.rotativa.usersapi.Entidades.Vagas;
 @Service
 public class ServiceVagas{
 	
-    RepositoryVagas repositorioVaga;
+  private RepositoryVagas repositorio;
 	
 	@Autowired
-	public ServiceVagas(RepositoryVagas repositorioVaga) {
-		this.repositorioVaga = repositorioVaga;
+	public ServiceVagas(RepositoryVagas repositorio) {
+		this.repositorio = repositorio;
 	}
 	
-	public List<Vagas> listar() {
-        return repositorioVaga.findAll();
+	public List<Vagas> getRepositorio() {
+        return this.repositorio.findAll();
     }
     
     public void salvar(Vagas vagas) {
-    	repositorioVaga.save(vagas);
+    	repositorio.save(vagas);
     }
 
     public void alterar(Vagas vagas) {
         if(vagas.getIdvaga()>0){
-            repositorioVaga.save(vagas);
+            repositorio.save(vagas);
         }        
     }
 
     public void excluir(Vagas usuario) {
-        repositorioVaga.delete(usuario);
+        repositorio.delete(usuario);
     }
   
     public List<List<String>> relatorioFinanceiro() {
-        return repositorioVaga.relatorioFinanceiro();
+        return repositorio.relatorioFinanceiro();
     }
   
     public List<List<String>> relatorioFinanceiroPorVaga(String nome) {
-        return repositorioVaga.relatorioFinanceiroPorVaga(nome);
+        return repositorio.relatorioFinanceiroPorVaga(nome);
     }
 
 

@@ -28,12 +28,12 @@ public class ControlUsuario {
         this.se1 = se1;
     }
   
-    @GetMapping("/informacion")
-    public List<Usuario> informacion(){
+    @GetMapping("/usuarios")
+    public List<Usuario> usuariosTodos(){
         return this.se1.getRepositorio();
     }
 
-    @PostMapping("/informacion/usuario:")
+    @PostMapping("/usuarios/usuario:")
     public void salvar(@RequestBody Usuario usuario){
         se1.salvar(usuario);
     }

@@ -1,7 +1,6 @@
 package com.rotativa.usersapi.Entidades;
 
 import java.beans.Transient;
-import java.sql.Date;
 import java.util.List;
 
 import javax.persistence.Entity; 
@@ -20,30 +19,34 @@ public class Vagas {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int idVaga;
-    @Column(name = "logradouro")
-    private String logradouro;
+    @Column(name = "rua_avenida")
+    private String rua_avenida;
     @Column(name = "bairro")
     private String bairro;
-    @Column(name = "horaEntrada")
-    private Date entrada;
-    @Column(name = "horaSaida")
-    private Date saida;
-
-     public Vagas(int idVaga, String logradouro, String bairro, Date entrada, Date saida) {
+    @Column(name = "acessibilidade")
+    private int acessibilidade;
+    @Column(name = "nomeVaga")
+    private String nomeVaga;
+  
+    public Vagas() {
+      //
+    }
+  
+     public Vagas(int idVaga, String rua_avenida, String bairro, int acessibilidade, String nomeVaga) {
         this.idVaga = idVaga;
-        this.logradouro = logradouro;
+        this.rua_avenida = rua_avenida;
         this.bairro = bairro;
-        this.entrada = entrada;
-        this.saida = saida;
+        this.acessibilidade = acessibilidade;
+        this.nomeVaga = nomeVaga;
     }
     
     
-    public Date getSaida() {
-        return saida;
+    public String getNomeVaga() {
+        return nomeVaga;
     }
 
-    public void setSaida(Date saida) {
-        this.saida = saida;
+    public void setNomeVaga(String nomeVaga) {
+        this.nomeVaga = nomeVaga;
     }
 
     public int getIdvaga() {
@@ -54,12 +57,12 @@ public class Vagas {
         this.idVaga = idVaga;
     }
 
-    public String getLogradouro() {
-        return logradouro;
+    public String getRua_avenida() {
+        return rua_avenida;
     }
 
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
+    public void setRua_avenida(String rua_avenida) {
+        this.rua_avenida = rua_avenida;
     }
 
     public String getBairro() {
@@ -70,22 +73,22 @@ public class Vagas {
         this.bairro = bairro;
     }
 
-    public Date getEntrada() {
-        return entrada;
+    public int getAcessibilidade() {
+        return acessibilidade;
     }
 
-    public void setEntrada(Date entrada) {
-        this.entrada = entrada;
+    public void setAcessibilidade(int acessibilidade) {
+        this.acessibilidade = acessibilidade;
     }
 
     @Override
     public String toString() {
         return "Vagas {" +
                 "id='" + idVaga + '\'' +
-                ", logradouro='" + logradouro + '\'' +
+                ", logradouro='" + rua_avenida + '\'' +
                 ", bairro ='" + bairro + '\'' +
-                ", entrada='" + entrada + '\'' +
-                ", saida='" + saida + '\'' +
+                ", acessibilidade='" + acessibilidade + '\'' +
+                ", nomeVaga='" + nomeVaga + '\'' +
                 '}';
     }
 }

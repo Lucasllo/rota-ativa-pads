@@ -14,32 +14,33 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.rotativa.usersapi.Entidades.*;
-import com.rotativa.usersapi.Services.ServiceUsuario;
+import com.rotativa.usersapi.Entidades.Vagas;
 import com.rotativa.usersapi.Services.ServiceVagas;
 
 @CrossOrigin(origins = "https://j2kinx-3000.preview.csb.app/") 
   
 @RestController
-@RequestMapping("/vagas")
 public class ControlVagas {
-    @Autowired //o spring cria o objeto, injeta no atributo repositório
-	ServiceVagas vagaService;
+   private ServiceVagas se2;
 
-    @GetMapping
-    public List<Vagas> listar(){
-        return vagaService.listar();
+    public ControlVagas(ServiceVagas se2){
+        this.se2 = se2;
+    }
+
+    @GetMapping("/vagas")
+    public List<Vagas> VagasTodas(){
+        return this.se2.getRepositorio();
     }
   
     @GetMapping("/relatorio")
     List<List<String>> relatorioFinanceiro() {
-        List<List<String>> retorno = vagaService.relatorioFinanceiro();
+        List<List<String>> retorno = se2.relatorioFinanceiro();
         return retorno;
     }
    
     @GetMapping("/relatorioPorVaga")
     List<List<String>> relatorioFinanceiroPorVaga(@RequestParam("nome") String nome) {
-        List<List<String>> retorno = vagaService.relatorioFinanceiroPorVaga(nome);
+        List<List<String>> retorno = se2.relatorioFinanceiroPorVaga(nome);
         return retorno;
     }
 }

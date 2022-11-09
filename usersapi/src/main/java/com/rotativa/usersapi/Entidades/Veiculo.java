@@ -20,6 +20,10 @@ public class Veiculo {
     @Column(name = "modelo")
     private String modelo;
 
+public Veiculo() {
+        //
+    }
+  
     public Veiculo(int idVeiculo, String cor, String placa, String modelo) {
         this.idVeiculo = idVeiculo;
         this.cor = cor;
