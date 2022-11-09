@@ -15,7 +15,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "vaga")
+@Table(name = "vagas")
 public class Vagas {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -37,10 +37,6 @@ public class Vagas {
         this.saida = saida;
     }
     
-    @ManyToMany
-    @JoinTable(name = "Vaga_Usuario", 
-      joinColumns = @JoinColumn(name = "idVaga"), 
-      inverseJoinColumns = @JoinColumn(name = "idUsuario"))
     
     public Date getSaida() {
         return saida;
