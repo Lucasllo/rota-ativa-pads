@@ -1,17 +1,23 @@
 import Sidebar from "./Componentes/sidebar/Sidebar";
 import Topbar from "./Componentes/topbar/Topbar";
-import { Outlet } from "react-router-dom";
-{
-  /* https://fisqmr.csb.app/login */
-}
+import { Navigate, Outlet,  } from "react-router-dom";
+
+
 export function Home() {
+  var id = localStorage.getItem("usuarioLogado");
+
   return (
     <>
-      <Sidebar />
-      <Topbar />
-
-      <Outlet />
-      
+      {id != null 
+        ?
+        <>
+          <Sidebar />
+          <Topbar />
+          <Outlet />
+        </>
+        :
+        <Navigate to="/" replace={true} />
+      }
     </>
   );
 }
