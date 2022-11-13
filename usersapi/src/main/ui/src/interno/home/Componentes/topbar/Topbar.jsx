@@ -25,9 +25,9 @@ export function TopBar() {
             {/* NAVBAR - BOTÃO MENU */}
             <div className="navbar-header">
               {/* LOGO */}
-              <a className="navbar-brand" href="/#">
+              <Link className="navbar-brand" to="/">
                 Rota<span className="main-color">Ativa</span>
-              </a>
+              </Link>
             </div>
 
             <li className='cabecalho_menu-item'>
