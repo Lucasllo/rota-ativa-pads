@@ -1,69 +1,62 @@
 package com.rotativa.usersapi.Entidades;
 
-import java.beans.Transient;
-import java.sql.Date;
-import java.util.List;
-
 import javax.persistence.Entity; 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue; 
 import javax.persistence.GenerationType; 
 import javax.persistence.Id; 
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "vaga")
+@Table(name = "vagas")
 public class Vagas {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idVaga;
-    @Column(name = "logradouro")
-    private String logradouro;
+    private int id_vaga;
+    @Column(name = "rua_avenida")
+    private String rua_avenida;
     @Column(name = "bairro")
     private String bairro;
-    @Column(name = "horaEntrada")
-    private Date entrada;
-    @Column(name = "horaSaida")
-    private Date saida;
-
-     public Vagas(int idVaga, String logradouro, String bairro, Date entrada, Date saida) {
-        this.idVaga = idVaga;
-        this.logradouro = logradouro;
+    @Column(name = "acessibilidade")
+    private int acessibilidade;
+    @Column(name = "nomeVaga")
+    private String nomeVaga;
+  
+    public Vagas() {
+      //
+    }
+  
+     public Vagas(int idVaga, String rua_avenida, String bairro, int acessibilidade, String nomeVaga) {
+        this.id_vaga = idVaga;
+        this.rua_avenida = rua_avenida;
         this.bairro = bairro;
-        this.entrada = entrada;
-        this.saida = saida;
+        this.acessibilidade = acessibilidade;
+        this.nomeVaga = nomeVaga;
     }
     
-    @ManyToMany
-    @JoinTable(name = "Vaga_Usuario", 
-      joinColumns = @JoinColumn(name = "idVaga"), 
-      inverseJoinColumns = @JoinColumn(name = "idUsuario"))
     
-    public Date getSaida() {
-        return saida;
+    public String getNomeVaga() {
+        return nomeVaga;
     }
 
-    public void setSaida(Date saida) {
-        this.saida = saida;
+    public void setNomeVaga(String nomeVaga) {
+        this.nomeVaga = nomeVaga;
     }
 
     public int getIdvaga() {
-        return idVaga;
+        return id_vaga;
     }
 
     public void setIdvaga(int idVaga) {
-        this.idVaga = idVaga;
+        this.id_vaga = idVaga;
     }
 
-    public String getLogradouro() {
-        return logradouro;
+    public String getRua_avenida() {
+        return rua_avenida;
     }
 
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
+    public void setRua_avenida(String rua_avenida) {
+        this.rua_avenida = rua_avenida;
     }
 
     public String getBairro() {
@@ -74,22 +67,22 @@ public class Vagas {
         this.bairro = bairro;
     }
 
-    public Date getEntrada() {
-        return entrada;
+    public int getAcessibilidade() {
+        return acessibilidade;
     }
 
-    public void setEntrada(Date entrada) {
-        this.entrada = entrada;
+    public void setAcessibilidade(int acessibilidade) {
+        this.acessibilidade = acessibilidade;
     }
 
     @Override
     public String toString() {
         return "Vagas {" +
-                "id='" + idVaga + '\'' +
-                ", logradouro='" + logradouro + '\'' +
+                "id='" + id_vaga + '\'' +
+                ", logradouro='" + rua_avenida + '\'' +
                 ", bairro ='" + bairro + '\'' +
-                ", entrada='" + entrada + '\'' +
-                ", saida='" + saida + '\'' +
+                ", acessibilidade='" + acessibilidade + '\'' +
+                ", nomeVaga='" + nomeVaga + '\'' +
                 '}';
     }
 }

@@ -2,7 +2,6 @@ package com.rotativa.usersapi.Services;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.rotativa.usersapi.Repositories.RepositoryUsuario;
@@ -20,13 +19,12 @@ public class ServiceUsuario {
     public List<Usuario> getRepositorio(){
         return this.repositorio.findAll();
     }
-    /*
-    public void salvar(Usuario users) {
-    	repositorio.save(users);
+    
+    public void salvar(Usuario usuario) {
+    	repositorio.save(usuario);
     }
 
     public void excluir(Usuario usuario) {
-        repositorio.delete(usuario);        
+      repositorio.delete(usuario);        
     }
-*/
 }
