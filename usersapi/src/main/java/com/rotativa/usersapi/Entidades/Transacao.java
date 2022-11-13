@@ -1,15 +1,11 @@
 package com.rotativa.usersapi.Entidades;
 
-import java.util.List;
 import java.util.Date;
 import javax.persistence.Entity; 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue; 
 import javax.persistence.GenerationType; 
 import javax.persistence.Id; 
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -17,7 +13,7 @@ import javax.persistence.Table;
 public class Transacao {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idTransacao;
+    private int id_transacao;
     @Column(name = "vaga_idvaga")
     private int vaga_idvaga;
     @Column(name = "usuario_idusuario")
@@ -33,8 +29,16 @@ public class Transacao {
         //
     }
   
-     public Transacao(int idTransacao, int vaga_idvaga, int usuario_idusuario, Date entrada, Date saida, int ticketsUsados) {
-        this.idTransacao = idTransacao;
+     /**
+     * @param id_transacao
+     * @param vaga_idvaga
+     * @param usuario_idusuario
+     * @param entrada
+     * @param saida
+     * @param ticketsUsados
+     */
+    public Transacao(int id_transacao, int vaga_idvaga, int usuario_idusuario, Date entrada, Date saida, int ticketsUsados) {
+        this.id_transacao = id_transacao;
         this.vaga_idvaga = vaga_idvaga;
         this.usuario_idusuario = usuario_idusuario;
         this.entrada = entrada;
@@ -50,12 +54,12 @@ public class Transacao {
         this.ticketsUsados = ticketsUsados;
     }
 
-    public int getIdTransacao() {
-        return idTransacao;
+    public int getId_transacao() {
+        return id_transacao;
     }
 
-    public void setIdTransacao(int idTransacao) {
-        this.idTransacao = idTransacao;
+    public void setId_Transacao(int id_transacao) {
+        this.id_transacao = id_transacao;
     }
 
     public int getVaga_idvaga() {
@@ -94,7 +98,7 @@ public class Transacao {
     @Override
     public String toString() {
         return "Vagas {" +
-                "id='" + idTransacao + '\'' +
+                "id='" + id_transacao + '\'' +
                 ", vaga='" + vaga_idvaga + '\'' +
                 ", usuario ='" + usuario_idusuario + '\'' +
                 ", entrada='" + entrada + '\'' +

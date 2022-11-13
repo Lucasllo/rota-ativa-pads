@@ -3,7 +3,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.rotativa.usersapi.Services.*;
 import com.rotativa.usersapi.Entidades.Pagamento;
 import com.rotativa.usersapi.Repositories.RepositoryPagamento;
 

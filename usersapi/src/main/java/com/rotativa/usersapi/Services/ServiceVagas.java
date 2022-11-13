@@ -1,7 +1,5 @@
 package com.rotativa.usersapi.Services;
 
-import java.sql.Date;
-import java.sql.Time;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +36,7 @@ public class ServiceVagas{
         repositorio.delete(usuario);
     }
   
+    /* 
     public List<List<String>> relatorioFinanceiro() {
         return repositorio.relatorioFinanceiro();
     }
@@ -46,5 +45,5 @@ public class ServiceVagas{
         return repositorio.relatorioFinanceiroPorVaga(nome);
     }
 
-
+*/
 }

@@ -1,16 +1,10 @@
 package com.rotativa.usersapi.Entidades;
 
-import java.beans.Transient;
-import java.util.List;
-
 import javax.persistence.Entity; 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue; 
 import javax.persistence.GenerationType; 
 import javax.persistence.Id; 
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -18,7 +12,7 @@ import javax.persistence.Table;
 public class Vagas {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idVaga;
+    private int id_vaga;
     @Column(name = "rua_avenida")
     private String rua_avenida;
     @Column(name = "bairro")
@@ -33,7 +27,7 @@ public class Vagas {
     }
   
      public Vagas(int idVaga, String rua_avenida, String bairro, int acessibilidade, String nomeVaga) {
-        this.idVaga = idVaga;
+        this.id_vaga = idVaga;
         this.rua_avenida = rua_avenida;
         this.bairro = bairro;
         this.acessibilidade = acessibilidade;
@@ -50,11 +44,11 @@ public class Vagas {
     }
 
     public int getIdvaga() {
-        return idVaga;
+        return id_vaga;
     }
 
     public void setIdvaga(int idVaga) {
-        this.idVaga = idVaga;
+        this.id_vaga = idVaga;
     }
 
     public String getRua_avenida() {
@@ -84,7 +78,7 @@ public class Vagas {
     @Override
     public String toString() {
         return "Vagas {" +
-                "id='" + idVaga + '\'' +
+                "id='" + id_vaga + '\'' +
                 ", logradouro='" + rua_avenida + '\'' +
                 ", bairro ='" + bairro + '\'' +
                 ", acessibilidade='" + acessibilidade + '\'' +
