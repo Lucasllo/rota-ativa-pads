@@ -51,26 +51,26 @@ export function RelatorioVagas() {
                         Relatorio de Vagas
                     </h1>
 
-                    <div class="input-group md-form form-sm form-2 pl-0">
+                    <div className="input-group md-form form-sm form-2 pl-0">
                             <input 
-                                class="form-control my-0 py-1 pl-3 purple-border" 
+                                className="form-control my-0 py-1 pl-3 purple-border" 
                                 type="text" 
                                 placeholder="Pesquise o endereço ou bairro aqui..." 
                                 aria-label="Search"
                                 value={buscar}
                                 onChange={evento => setBuscar(evento.target.value)}
                             />                           
-                            <span class="input-group-addon waves-effect purple lighten-2" id="basic-addon1"><a><i class="fa fa-search white-text" aria-hidden="true"></i></a></span>
+                            <span className="input-group-addon waves-effect purple lighten-2" id="basic-addon1"><a><i className="fa fa-search white-text" aria-hidden="true"></i></a></span>
                     </div>
 
-                    <table class="table table-hover table-responsive mb-0">
+                    <table className="table table-hover table-responsive mb-0">
                         <thead>
                             <tr>
                                 <th scope="row">#</th>
-                                <th class="th-lg">Nome</th>
-                                <th class="th-lg">Crédito</th>
-                                <th class="th-lg">Total do veículos</th>
-                                <th class="th-lg">Tempo de uso</th>
+                                <th className="th-lg">Nome</th>
+                                <th className="th-lg">Crédito</th>
+                                <th className="th-lg">Total do veículos</th>
+                                <th className="th-lg">Tempo de uso</th>
                             </tr>
                         </thead>
                         <tbody>

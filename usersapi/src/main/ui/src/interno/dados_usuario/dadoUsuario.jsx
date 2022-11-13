@@ -1,5 +1,3 @@
-import Topbar from "../home/Componentes/topbar/Topbar";
-import Sidebar from "../home/Componentes/sidebar/Sidebar";
 import { useLocation, useNavigate } from 'react-router-dom';
 import './dadoUsuario.css'
 
@@ -14,26 +12,26 @@ export function DadoUsuario() {
     return (
         <>
             <div className="margem-esq">
-                <div class="containerUser space">
-                    <div class="flex w-full items-center">
-                        <div class="flex items-center text-3xl">
+                <div className="containerUser space">
+                    <div className="flex w-full items-center">
+                        <div className="flex items-center text-3xl">
                             {location.state.usuario.nome}
                         </div>
-                        <div class="ml-auto sm:flex hidden items-center justify-end"></div>
+                        <div className="ml-auto sm:flex hidden items-center justify-end"></div>
                     </div>
-                    <div class="flex items-center space-x-3 sm:mt-7 mt-4">
+                    <div className="flex items-center space-x-3 sm:mt-7 mt-4">
 
                     </div>
                 </div>
 
-                <div class="p-4">
+                <div className="p-4">
 
                     {infos.map((info, index)=>{
                         return(
-                            <div class="containerInfos formulario containerEffect bordaInferiorCor">
-                                <div class="content p-3 bordaSuperior dados">
-                                    <p class="mb-0 ">{info}</p>
-                                    <span class="">{dados[index]}</span>
+                            <div className="containerInfos formulario containerEffect bordaInferiorCor">
+                                <div className="content p-3 bordaSuperior dados">
+                                    <p className="mb-0 ">{info}</p>
+                                    <span className="">{dados[index]}</span>
                                 </div>
                             </div>        
                         )
@@ -41,26 +39,26 @@ export function DadoUsuario() {
 
                    
 
-                    <div class="containerInfos space2">
-                        <div class="content rounded-3 p-3">
-                            <h1 class="tituloVeiculos">Veículos</h1>
+                    <div className="containerInfos space2">
+                        <div className="content rounded-3 p-3">
+                            <h1 className="tituloVeiculos">Veículos</h1>
                         </div>
                     </div>
 
-                    <section class="statistics space3">
-                        <div class="row">
+                    <section className="statistics space3">
+                        <div className="row">
                             {
                                 location.state.usuario.veiculo.map((item) => {
                                     return (
-                                        <div class="col-lg-4 formulario">
-                                            <div class="box d-flex rounded-2 align-items-center p-3">
+                                        <div className="col-lg-4 formulario">
+                                            <div className="box d-flex rounded-2 align-items-center p-3">
 
-                                                <div class="ms-3 space3">
-                                                    <div class="d-flex align-items-center">
-                                                        <h5 class="mb-0">{item.modelo.toUpperCase()}</h5>
-                                                        <span class="d-block ms-2">{item.placa}</span>
+                                                <div className="ms-3 space3">
+                                                    <div className="d-flex align-items-center">
+                                                        <h5 className="mb-0">{item.modelo.toUpperCase()}</h5>
+                                                        <span className="d-block ms-2">{item.placa}</span>
                                                     </div>
-                                                    <p class="fs-normal mb-0">{item.cor.toUpperCase()}</p>
+                                                    <p className="fs-normal mb-0">{item.cor.toUpperCase()}</p>
                                                 </div>
 
                                             </div>

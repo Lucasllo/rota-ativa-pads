@@ -14,6 +14,7 @@ import { RelatorioUsuario } from "./interno/relatorio_usuarios/relatorioUsuario"
 import { DadoUsuario } from "./interno/dados_usuario/dadoUsuario";
 import { RelatorioDeUso } from "./interno/relatorio_uso/relatorioDeUso";
 import Dashboard from "./interno/dashboard/dashboard";
+import { EditaPerfil } from "./interno/edita_perfil/edita_perfil";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route element={<RelatorioUsuario/>} path="relatorioUsuarios/:id"/>
           <Route element={<DadoUsuario/>} path="dadoUsuario/:id"/>
           <Route element={<RelatorioDeUso/>} path="relatorioUso"/>
+          <Route element={<EditaPerfil/>} path="perfil"/>
         </Route>
       </Routes>
       {useLocation().pathname == "/" ? <Rodape /> : ""}

@@ -1,7 +1,32 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import UserService from "../../../../service/users";
 import "./Sidebar.css";
 
-export function navbarLateral() {
+export function NavbarLateral() {
+  const userService = new UserService();
+
+  const [usuario, setUsuario] = useState({
+    nome: "",
+    email: "",
+    cpf: "",
+    datanasc: ""
+  });
+
+  useEffect(() => {
+    userService.getUsuario().then((resp) => {
+      let id = localStorage.getItem("usuarioLogado")
+      let login = resp.data.find((p) => p.id == id);
+      if (login) {
+        setUsuario(login);
+        console.log(login);
+      }
+    })
+  }, [])
+
+
+
+
   return (
     <aside
       className="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left"
@@ -21,9 +46,11 @@ export function navbarLateral() {
         />
         <div>
           <h5 className="fs-6 mb-0">
-            <a className="text-decoration-none text-center" href="/#">
-              Matheus Dias
-            </a>
+            <Link className="btnSideBar" to={{ pathname: `/menulogado/perfil` }}>
+              <span>
+                {usuario.nome}
+              </span>
+            </Link>
           </h5>
         </div>
       </div>
@@ -31,8 +58,8 @@ export function navbarLateral() {
       <ul className="categories list-unstyled">
         <li className="">
           <i className="uil-estate fa-fw"></i>
-          <Link className="btnSideBar" to="/menulogado/1"> 
-          <img src="/img/dashboard.svg" alt="Dashboard" />
+          <Link className="btnSideBar" to="/menulogado/1">
+            <img src="/img/dashboard.svg" alt="Dashboard" />
             <span>Dashboard</span>
           </Link>
         </li>
@@ -46,14 +73,14 @@ export function navbarLateral() {
         <li className="">
           <i className="uil-map-marker"></i>
           <Link className="btnSideBar" to="/menulogado/relatorioUso">
-          <img src="/img/relatorio.svg" alt="Relatorio de Uso" />
+            <img src="/img/relatorio.svg" alt="Relatorio de Uso" />
             <span>Relatorio de Uso</span>
-            </Link>
+          </Link>
         </li>
         <li className="">
           <i className="uil-map-marker"></i>
           <Link className="btnSideBar" to="/menulogado/mapa">
-          <img src="/img/mapa.svg" alt="Mapa" />
+            <img src="/img/mapa.svg" alt="Mapa" />
             <span>Mapa</span>
           </Link>
         </li>
@@ -62,4 +89,4 @@ export function navbarLateral() {
   );
 }
 
-export default navbarLateral;
+export default NavbarLateral;
