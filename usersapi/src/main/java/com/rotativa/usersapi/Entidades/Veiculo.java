@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -12,27 +13,33 @@ import javax.persistence.Table;
 public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int idVeiculo;
+    private int id_veiculo;
     @Column(name = "cor")
     private String cor;
     @Column(name = "placa")
     private String placa;
     @Column(name = "modelo")
     private String modelo;
+    @ManyToOne
+   private Usuario usuario;
 
+public Veiculo() {
+        //
+    }
+  
     public Veiculo(int idVeiculo, String cor, String placa, String modelo) {
-        this.idVeiculo = idVeiculo;
+        this.id_veiculo = idVeiculo;
         this.cor = cor;
         this.placa = placa;
         this.modelo = modelo;
     }
 
     public int getIdVeiculo() {
-        return idVeiculo;
+        return id_veiculo;
     }
 
     public void setIdVeiculo(int idVeiculo) {
-        this.idVeiculo = idVeiculo;
+        this.id_veiculo = idVeiculo;
     }
 
     public String getCor() {
@@ -62,7 +69,7 @@ public class Veiculo {
     @Override
     public String toString() {
         return "Veiculo {" +
-                "id='" + idVeiculo + '\'' +
+                "id='" + id_veiculo + '\'' +
                 ", cor='" + cor + '\'' +
                 ", placa='" + placa + '\'' +
                 ", modelo='" + modelo + '\'' +
