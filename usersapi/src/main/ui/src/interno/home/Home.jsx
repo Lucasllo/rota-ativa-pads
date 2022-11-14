@@ -1,6 +1,7 @@
 import "./styleFinal.css";
 import Sidebar from "./Componentes/sidebar/Sidebar";
 import Topbar from "./Componentes/topbar/Topbar";
+
 {
   /* https://fisqmr.csb.app/login */
 }
@@ -92,6 +93,7 @@ export function Home() {
           </section>
         </div>
       </section>
+      
     </>
   );
 }
