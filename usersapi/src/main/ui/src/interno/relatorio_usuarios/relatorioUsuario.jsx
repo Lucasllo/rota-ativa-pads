@@ -101,12 +101,21 @@ export function RelatorioUsuario() {
                 Endereço: {location.state.vaga.rua_avenida} -{" "}
                 {location.state.vaga.Bairro}
               </h2>
-              <h2>Regra:</h2>
-
+              <h2>
+                Regra:
+                {location.state.vaga.hora == undefined
+                  ? ""
+                  : ` ${location.state.vaga.hora} - `}
+                {location.state.vaga.tipoVaga == undefined
+                  ? ""
+                  : `${location.state.vaga.tipoVaga} - `}
+                {location.state.vaga.tempo == undefined
+                  ? ""
+                  : `${location.state.vaga.tempo}`}
+              </h2>
               <h3 className="py-3 text-center font-bold font-up blue-text">
                 Relatorio de Usuarios
               </h3>
-
               <div className="input-group md-form form-sm form-2 pl-0">
                 <input
                   className="form-control my-0 py-1 pl-3 purple-border"

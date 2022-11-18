@@ -6,8 +6,6 @@ import {
   Marker,
 } from "@react-google-maps/api";
 import { useEffect, useMemo, useState } from "react";
-import Topbar from "../home/Componentes/topbar/Topbar";
-import Sidebar from "../home/Componentes/sidebar/Sidebar";
 import VagaService from "../../service/vaga";
 import Pagination from "../../components/Paginacao/Pagination";
 import { Link, useNavigate } from "react-router-dom";

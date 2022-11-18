@@ -15,6 +15,9 @@ export function EditarVaga() {
   const [nome, setNome] = useState("");
   const [rua, setRua] = useState("");
   const [bairro, setBairro] = useState("");
+  const [tempo, setTempo] = useState("");
+  const [tipoVaga, setTipoVaga] = useState("");
+  const [hora, setHora] = useState("");
 
   function salvar(e) {
     e.preventDefault();
@@ -23,6 +26,9 @@ export function EditarVaga() {
       rua_avenida: rua,
       Bairro: bairro,
       usuarios: [],
+      tipoVaga: tipoVaga,
+      hora: hora,
+      tempo: tempo,
     });
 
     areasService
@@ -30,6 +36,9 @@ export function EditarVaga() {
         nome_vaga: nome,
         rua_avenida: rua,
         Bairro: bairro,
+        tipoVaga: tipoVaga,
+        hora: hora,
+        tempo: tempo,
         path: [
           {
             lat: Number(lat),
@@ -58,7 +67,7 @@ export function EditarVaga() {
             </Link>
           </div>
           <form className="adicionar_form" onSubmit={salvar}>
-            <label className="adicionar_titulo">Vaga</label>{" "}
+            <label className="adicionar_titulo">Vaga</label>
             {/* Cadastro de Vaga */}
             <fieldset className="adicionar_corpo">
               <input
@@ -135,7 +144,13 @@ export function EditarVaga() {
               <label className="adicionar_titulo">Regras</label>
             </fieldset>
             <fieldset className="adicionar_corpo">
-              <select className="tipodevaga" name="tipodevaga" required>
+              <select
+                onChange={(e) => setTipoVaga(e.target.value)}
+                value={tipoVaga}
+                className="tipodevaga"
+                name="tipodevaga"
+                required
+              >
                 <option value="selecione">Tipo de vaga</option>
                 <option value="comum">Comum</option>
                 <option value="prioritario">Prioritário</option>
@@ -143,17 +158,25 @@ export function EditarVaga() {
             </fieldset>
             <fieldset className="adicionar_corpo">
               <input
+                onChange={(e) => setHora(e.target.value)}
+                value={hora}
                 className="horadeuso"
                 name="hora de uso"
                 type="text"
                 required
                 placeholder="Horário de uso"
               />
-              <select className="tempomaximo" name="tempomaximo" required>
-                <option value="tempo">Tempo máximo</option>
-                <option value="1 Hora">1 Hora</option>
-                <option value="2 Horas">2 Horas</option>
-                <option value="5 Horas">5 Horas</option>
+              <select
+                className="tempomaximo"
+                onChange={(e) => setTempo(e.target.value)}
+                value={tempo}
+                name="tempomaximo"
+                required
+              >
+                <option value="tempo">Tempo máximo - Ticket</option>
+                <option value="1 Hora">1 Hora - Ticket</option>
+                <option value="2 Horas">2 Horas - Ticket</option>
+                <option value="5 Horas">5 Horas - Ticket</option>
               </select>
             </fieldset>
             <button class="botao_enviar">Cadastrar</button>

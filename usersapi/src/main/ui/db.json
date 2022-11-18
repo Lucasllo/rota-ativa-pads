@@ -2283,20 +2283,6 @@
       ]
     },
     {
-      "nome_vaga": "Vaga 26",
-      "rua_avenida": "teste",
-      "Bairro": "teste",
-      "usuarios": [],
-      "id": 26
-    },
-    {
-      "nome_vaga": "Vaga 27",
-      "rua_avenida": "aaaaa",
-      "Bairro": "aaaaa",
-      "usuarios": [],
-      "id": 27
-    },
-    {
       "nome_vaga": "testando",
       "rua_avenida": "teste",
       "Bairro": "1",
@@ -2704,38 +2690,6 @@
           "lng": -38.498568
         }
       ]
-    },
-    {
-      "nome_vaga": "Vaga 26",
-      "rua_avenida": "teste",
-      "Bairro": "teste",
-      "path": [
-        {
-          "lat": -3.733566,
-          "lng": -38.506236
-        },
-        {
-          "lat": -3.72738,
-          "lng": -38.504241
-        }
-      ],
-      "id": 26
-    },
-    {
-      "nome_vaga": "Vaga 27",
-      "rua_avenida": "aaaaa",
-      "Bairro": "aaaaa",
-      "path": [
-        {
-          "lat": -3.731031,
-          "lng": -38.494547
-        },
-        {
-          "lat": -3.738747,
-          "lng": -38.497067
-        }
-      ],
-      "id": 27
     },
     {
       "nome_vaga": "testando",
