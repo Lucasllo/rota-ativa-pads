@@ -6,4 +6,8 @@ export default class VagaService{
         return API.get("/vaga");
     }
 
+    postVaga(vaga){
+        return API.post("/vaga", vaga);
+    }
+
 }

@@ -6,20 +6,25 @@ import {
   Marker,
 } from "@react-google-maps/api";
 import { useEffect, useState } from "react";
-import Topbar from "../home/Componentes/topbar/Topbar";
-import Sidebar from "../home/Componentes/sidebar/Sidebar";
-import dados from "./json.json";
-import VagaService from "../../service/vaga";
 import './map.css'
+import AreasService from "../../service/areas";
 
 const center = { lat: -3.735015, lng: -38.494695 };
 
 export function Map() {
+  const areasService = new AreasService();
+  const [dados, setDados] = useState([]);
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: "AIzaSyAQYGeShstIRAbsrS4lwyumbLwlG5t-sTA",
     libraries: ["places"],
   });
+
+  useEffect(() => {
+    areasService.getAreas().then((resp) => {
+      setDados(resp.data);
+    })
+  }, [])
 
   const [showInfoWindow, setShowInfoWindow] = useState(false);
 

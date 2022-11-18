@@ -8,17 +8,19 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import Topbar from "../home/Componentes/topbar/Topbar";
 import Sidebar from "../home/Componentes/sidebar/Sidebar";
-import dados from "../map/json.json";
 import VagaService from "../../service/vaga";
 import Pagination from "../../components/Paginacao/Pagination";
 import { Link, useNavigate } from "react-router-dom";
+import AreasService from "../../service/areas";
 
 const center = { lat: -3.735015, lng: -38.494695 };
 
 let PageSize = 5;
 
 export function RelatorioDeUso() {
-  
+  const areasService = new AreasService();
+  const [dados, setDados] = useState([]);
+
   const navigate = useNavigate();
   
   const vagaService = new VagaService();
@@ -38,6 +40,12 @@ export function RelatorioDeUso() {
       const novaLista = vagas.filter(item => testaBusca(item.rua_avenida) || testaBusca(item.Bairro))
       setLista(novaLista);
   }, [buscar])
+
+  useEffect(() => {
+    areasService.getAreas().then((resp) => {
+      setDados(resp.data);
+    })
+  }, [])
 
 
   const [currentPage, setCurrentPage] = useState(1);

@@ -84,6 +84,13 @@ export function NavbarLateral() {
             <span>Mapa</span>
           </Link>
         </li>
+        <li className="">
+          <i className="uil-map-marker"></i>
+          <Link className="btnSideBar" to="/menulogado/editarVaga">
+            <img src="/img/mapa.svg" alt="Mapa" />
+            <span>Editar Vaga</span>
+          </Link>
+        </li>
       </ul>
     </aside>
   );
