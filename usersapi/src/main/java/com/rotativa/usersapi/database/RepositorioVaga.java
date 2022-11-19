@@ -4,6 +4,7 @@ import java.sql.Time;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
@@ -61,6 +62,18 @@ public interface RepositorioVaga extends JpaRepository<Vagas, Long> {
     @Query(value = "select idvaga,nomeVaga,rua_avenida,bairro,acessibilidade,longitudeInicial,longitudeFinal,latitudeInicial,latitudeFinal,horarioUsoInica,horarioUsoFinal,tempoTicket,estadoVaga from vaga v "+
     "where nomeVaga = :nome and estadovaga = 1", nativeQuery = true)
     List<List<String>> buscarVaga(String nome);
+
+    @Modifying
+    @Query(value = "UPDATE vaga "+
+    "SET estadoVaga = 0 "+
+    "where nomevaga = :nome" , nativeQuery = true) 
+    void desativarVaga(@Param("nome") String nome);
+    
+    @Modifying
+    @Query(value = "UPDATE vaga "+
+    "SET estadoVaga = 1 "+
+    "where nomevaga = :nome" , nativeQuery = true) 
+    void ativarVaga(@Param("nome")String nome);
 
 
 

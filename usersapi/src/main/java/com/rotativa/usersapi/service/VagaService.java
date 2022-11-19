@@ -29,4 +29,8 @@ public interface VagaService {
     public void excluir(Vagas vagas);
 
     List<List<String>> buscarVaga(@Param("nome") String nome);
+
+    void desativarVaga(@Param("nome") String nome);
+
+    void ativarVaga(@Param("nome") String nome);
 }

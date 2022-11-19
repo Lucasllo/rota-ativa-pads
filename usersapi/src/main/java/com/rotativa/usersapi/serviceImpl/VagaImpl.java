@@ -68,6 +68,14 @@ public class VagaImpl implements VagaService{
     public List<List<String>> buscarVaga(String nome) {
         return repositorioVaga.buscarVaga(nome);
     }
+    @Override
+    public void ativarVaga(String nome) {
+        repositorioVaga.ativarVaga(nome);
+    }
+    @Override
+    public void desativarVaga(String nome) {
+        repositorioVaga.desativarVaga(nome);
+    }
 
 
 }
