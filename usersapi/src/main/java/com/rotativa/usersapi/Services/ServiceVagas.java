@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.rotativa.usersapi.Repositories.RepositoryVagas;
-import com.rotativa.usersapi.Entidades.Vagas;
+import com.rotativa.usersapi.entidades.Vagas;
 
 @Service
 public class ServiceVagas{

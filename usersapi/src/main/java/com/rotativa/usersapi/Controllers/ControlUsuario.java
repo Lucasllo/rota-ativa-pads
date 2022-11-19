@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rotativa.usersapi.Entidades.Usuario;
 import com.rotativa.usersapi.Services.ServiceUsuario;
+import com.rotativa.usersapi.entidades.Usuario;
 
 @CrossOrigin(origins = "https://j2kinx-3000.preview.csb.app/") 
 

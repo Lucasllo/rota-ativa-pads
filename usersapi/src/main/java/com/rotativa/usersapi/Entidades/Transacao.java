@@ -1,4 +1,4 @@
-package com.rotativa.usersapi.Entidades;
+package com.rotativa.usersapi.entidades;
 
 import java.util.Date;
 import javax.persistence.Entity; 

@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.rotativa.usersapi.Repositories.RepositoryUsuario;
-import com.rotativa.usersapi.Entidades.Usuario;
+import com.rotativa.usersapi.entidades.Usuario;
 
 @Service
 public class ServiceUsuario {

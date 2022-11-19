@@ -1,79 +1,50 @@
-package com.rotativa.usersapi.Entidades;
+package com.rotativa.usersapi.entidades;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+/* Este projeto utiliza SpringBoot. Para que o Spring reconheça as elementos 
+do projeto eles devem ser criados dentro da pasta userapi*/
+import javax.persistence.Entity; //O uso de @Entity identifica uma classe como Entidade
+import javax.persistence.Id; //identificando chave primária para o framework
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "veiculo")
+@Table(name = "veiculo", schema = "rotaativa")
 public class Veiculo {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id_veiculo;
-    @Column(name = "cor")
-    private String cor;
-    @Column(name = "placa")
-    private String placa;
-    @Column(name = "modelo")
-    private String modelo;
-    @ManyToOne
-   private Usuario usuario;
+  @Id
+  private int idveiculo;
+  private String cor;
+  private String placa;
+  private String modelo;
 
-public Veiculo() {
-        //
-    }
-  
-    public Veiculo(int idVeiculo, String cor, String placa, String modelo) {
-        this.id_veiculo = idVeiculo;
-        this.cor = cor;
-        this.placa = placa;
-        this.modelo = modelo;
-    }
+  public int getIdveiculo() {
+    return idveiculo;
+  }
 
-    public int getIdVeiculo() {
-        return id_veiculo;
-    }
+  public void setIdveiculo(int idveiculo) {
+    this.idveiculo = idveiculo;
+  }
 
-    public void setIdVeiculo(int idVeiculo) {
-        this.id_veiculo = idVeiculo;
-    }
+  public String getCor() {
+    return cor;
+  }
 
-    public String getCor() {
-        return cor;
-    }
+  public void setCor(String cor) {
+    this.cor = cor;
+  }
 
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
+  public String getPlaca() {
+    return placa;
+  }
 
-    public String getPlaca() {
-        return placa;
-    }
+  public void setPlaca(String placa) {
+    this.placa = placa;
+  }
 
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }
+  public String getModelo() {
+    return modelo;
+  }
 
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    @Override
-    public String toString() {
-        return "Veiculo {" +
-                "id='" + id_veiculo + '\'' +
-                ", cor='" + cor + '\'' +
-                ", placa='" + placa + '\'' +
-                ", modelo='" + modelo + '\'' +
-                '}';
-    }
+  public void setModelo(String modelo) {
+    this.modelo = modelo;
+  }
 
 }

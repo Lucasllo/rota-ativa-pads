@@ -5,8 +5,9 @@ import java.util.List;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.rotativa.usersapi.Entidades.Vagas;
+
 import com.rotativa.usersapi.Services.ServiceVagas;
+import com.rotativa.usersapi.entidades.Vagas;
 
 @CrossOrigin(origins = "https://j2kinx-3000.preview.csb.app/") 
   

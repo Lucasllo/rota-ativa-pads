@@ -1,44 +1,28 @@
-package com.rotativa.usersapi.Entidades;
+package com.rotativa.usersapi.entidades;
 
 import java.sql.Date;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue; 
-import javax.persistence.GenerationType; 
-import javax.persistence.Id; 
+import javax.persistence.Entity; //O uso de @Entity identifica uma classe como Entidade
+import javax.persistence.Id; //identificando chave primária para o framework
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "pagamento")
+@Table(name = "pagamento", schema = "rotaativa")
 public class Pagamento {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_pagamento;
-    @Column(name = "dataCompra")
+    private int idpagamento;
     private Date dataCompra;
-    @Column(name = "valor")
     private Double valor;
-    @Column(name = "quantidadeTicket")
     private int quantidadeTicket;
 
-  public Pagamento() {
-       //
+
+    
+    public int getIdpagamento() {
+        return idpagamento;
     }
 
-      public Pagamento(int idPagamento, Date dataCompra, Double valor, int quantidadeTicket) {
-        this.id_pagamento = idPagamento;
-        this.dataCompra = dataCompra;
-        this.valor = valor;
-        this.quantidadeTicket = quantidadeTicket;
+    public void setIdpagamento(int idpagamento) {
+        this.idpagamento = idpagamento;
     }
-        
-    public int getIdpagamento() {
-        return id_pagamento;
-    }
-    public void setIdpagamento(int idPagamento) {
-        this.id_pagamento = idPagamento;
-    }    
     public Date getDataCompra() {
         return dataCompra;
     }
@@ -58,13 +42,6 @@ public class Pagamento {
     public void setQuantidadeTicket(int quantidadeTicket) {
         this.quantidadeTicket = quantidadeTicket;
     }
+
     
-     @Override
-    public String toString() {
-        return "Pagamento {" +
-        "data da compra='" + dataCompra + '\'' +
-        ", valor='" + valor + '\'' +
-        ", Tickets='" + quantidadeTicket + '\'' +
-        '}'; 
-}
 }

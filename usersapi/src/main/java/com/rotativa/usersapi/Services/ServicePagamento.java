@@ -3,8 +3,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.rotativa.usersapi.Entidades.Pagamento;
 import com.rotativa.usersapi.Repositories.RepositoryPagamento;
+import com.rotativa.usersapi.entidades.Pagamento;
 
 @Service
 public class ServicePagamento {
