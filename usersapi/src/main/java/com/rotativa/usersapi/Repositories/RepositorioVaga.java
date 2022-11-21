@@ -59,12 +59,13 @@ public interface RepositorioVaga extends JpaRepository<VagasModel, Long> {
     "order by tempoUso desc", nativeQuery = true)
     List<List<String>> relatorioRank();
 
+    
     @Query(value = "select idvaga,nomeVaga,rua_avenida,bairro,acessibilidade,longitudeInicial,longitudeFinal,latitudeInicial,latitudeFinal,horarioUsoInica,horarioUsoFinal,tempoTicket,estadoVaga from vaga v "+
     "where nomeVaga = :nome and estadovaga = 1", nativeQuery = true)
-    List<List<String>> buscarVaga(String nome);
+    List<List<String>> buscarVaga(@Param("nome") String nome);
 
     //@Query(value = "select idVaga, nomeVaga,ruaAvenida,bairro,acessibilidade,longitudeInicial,longitudeFinal,latitudeInicial,latitudeFinal,horarioUsoInicial,horarioUsoFinal,tempoTicket,estadoVaga from VagasModel v  where nomeVaga = :nome and estadoVaga = true")
-    //VagasModel buscarVaga(String nome);
+    //VagasModel buscarVaga(@Param("nome") String nome);
 
 
     @Modifying
