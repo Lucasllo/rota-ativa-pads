@@ -9,102 +9,128 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "transacao")
+@Table(name = "transacao",schema = "rotaativa")
 public class TransacaoModel {
-    @Id
+   @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id_transacao;
-    @Column(name = "vaga_idvaga")
-    private int vaga_idvaga;
-    @Column(name = "usuario_idusuario")
-    private int usuario_idusuario;
-    @Column(name = "entrada")
-    private Date entrada;
-    @Column(name = "saida")
-    private Date saida;
-    @Column(name = "ticketsUsados")
-    private int ticketsUsados;
+    private int idUsuario;
+    @Column(name = "cpf")
+    private String cpf;
+    @Column(name = "nome")
+    private String nome;
+    @Column(name = "acessibilidade")
+    private int acessibilidade;
+    @Column(name = "email")
+    private String email;
+    @Column(name = "senha")
+    private String senha;
+    @Column(name = "data_nasc")
+    private Date dataNasc;
+    @Column(name = "ticket")
+    private int ticket;
+    @ManyToMany
+    @JoinTable(name = "usuario_has_veiculo", joinColumns = {@JoinColumn(name = "usuario_id_usuario")}, inverseJoinColumns = {@JoinColumn(name = "veiculo_id_veiculo")})
+    private Set<VeiculoModel> veiculos;
 
-  public TransacaoModel() {
-        //
-    }
-  
-     /**
-     * @param id_transacao
-     * @param vaga_idvaga
-     * @param usuario_idusuario
-     * @param entrada
-     * @param saida
-     * @param ticketsUsados
-     */
-    public TransacaoModel(int id_transacao, int vaga_idvaga, int usuario_idusuario, Date entrada, Date saida, int ticketsUsados) {
-        this.id_transacao = id_transacao;
-        this.vaga_idvaga = vaga_idvaga;
-        this.usuario_idusuario = usuario_idusuario;
-        this.entrada = entrada;
-        this.saida = saida;
-        this.ticketsUsados = ticketsUsados;
-    }
-    
-    public int getTicketsUsados() {
-        return ticketsUsados;
+    public int getIdUsuario() {
+        return idUsuario;
     }
 
-    public void setTicketsUsados(int ticketsUsados) {
-        this.ticketsUsados = ticketsUsados;
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
-    public int getId_transacao() {
-        return id_transacao;
+    public Date getDataNasc() {
+        return dataNasc;
     }
 
-    public void setId_Transacao(int id_transacao) {
-        this.id_transacao = id_transacao;
+    public void setDataNasc(Date dataNasc) {
+        this.dataNasc = dataNasc;
     }
 
-    public int getVaga_idvaga() {
-        return vaga_idvaga;
+    public Set<VeiculoModel> getVeiculos() {
+        return veiculos;
     }
 
-    public void setVaga_idvaga(int vaga_idvaga) {
-        this.vaga_idvaga = vaga_idvaga;
+    public void setVeiculos(Set<VeiculoModel> veiculos) {
+        this.veiculos = veiculos;
     }
 
-    public int getUsuario_idusuario() {
-        return usuario_idusuario;
+    public int getAcessibilidade() {
+        return acessibilidade;
     }
 
-    public void setUsuario_idusuario(int usuario_idusuario) {
-        this.usuario_idusuario = usuario_idusuario;
+    public void setAcessibilidade(int acessibilidade) {
+        this.acessibilidade = acessibilidade;
     }
 
-  public Date getSaida() {
-        return saida;
+    public String getNome() {
+        return nome;
     }
 
-    public void setSaida (Date saida) {
-        this.saida = saida;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-
-    public Date getEntrada() {
-        return entrada;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEntrada (Date entrada) {
-        this.entrada = entrada;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public int getIdusuario() {
+        return idUsuario;
+    }
+
+    public void setIdusuario(int idusuario) {
+        this.idUsuario = idusuario;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public int getTicket() {
+        return ticket;
+    }
+
+    public void setTicket(int ticket) {
+        this.ticket = ticket;
+    }
+
+    public Date getDatanasc() {
+        return dataNasc;
+    }
+
+    public void setDatanasc(Date datanasc) {
+        this.dataNasc = datanasc;
     }
 
     @Override
     public String toString() {
-        return "Vagas {" +
-                "id='" + id_transacao + '\'' +
-                ", vaga='" + vaga_idvaga + '\'' +
-                ", usuario ='" + usuario_idusuario + '\'' +
-                ", entrada='" + entrada + '\'' +
-                ", saida='" + saida + '\'' +
-                ", ticketsUsados='" + ticketsUsados + '\'' +
+        return "Usuario {" +
+                "id='" + idUsuario + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                ", acessibilidade='" + acessibilidade + '\'' +
+                ", email='" + email + '\'' +
+                ", senha='" + senha + '\'' +
+                ", ticket='" + ticket +
                 '}';
     }
-}
 
+}

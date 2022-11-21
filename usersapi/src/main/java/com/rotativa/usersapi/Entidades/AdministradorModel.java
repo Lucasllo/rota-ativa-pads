@@ -2,26 +2,37 @@ package com.rotativa.usersapi.Entidades;
 
 import java.sql.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "administrador")
 public class AdministradorModel {
-
+    
     @Id
-    private int idadministrador;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_administrador")
+    private int idAdministrador;
+    @Column(name = "nome")
     private String nome;
+    @Column(name = "cpf")
     private String cpf;
+    @Column(name = "email")
     private String email;
-    private Date datanasc;
+    @Column(name = "data_nasc")
+    private Date dataNasc;
+    @Column(name = "senha")
     private int senha;
 
-
     public int  getIdadministrador() {
-        return idadministrador;
+        return idAdministrador;
     }
     public void setIdadministrador(int idadministrador) {
-        this.idadministrador = idadministrador;
+        this.idAdministrador = idadministrador;
     }
     public String getNome() {
         return nome;
@@ -42,10 +53,10 @@ public class AdministradorModel {
         this.email = email;
     }
     public Date getDatanasc() {
-        return datanasc;
+        return dataNasc;
     }
     public void setDatanasc(Date datanasc) {
-        this.datanasc = datanasc;
+        this.dataNasc = datanasc;
     }
     public int getSenha() {
         return senha;
@@ -57,11 +68,11 @@ public class AdministradorModel {
     @Override
     public String toString() {
         return "Administrador {" +
-                "id='"+idadministrador+'\'' +
+                "id='"+idAdministrador+'\'' +
                 "nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", email='" + email + '\'' +
-                ", datanasc='" + datanasc + '\'' +
+                ", datanasc='" + dataNasc + '\'' +
                 ", senha='" + senha + 
                 '}';
 

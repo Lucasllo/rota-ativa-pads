@@ -4,47 +4,67 @@ do projeto eles devem ser criados dentro da pasta userapi*/
 import java.sql.Time;
 
 import javax.persistence.Entity; //O uso de @Entity identifica uma classe como Entidade
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Column; // Definindo regras para a coluna
 import javax.persistence.Id; //identificando chave primária para o framework
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "vaga", schema = "rotaativa")
+@Table(name = "vaga",schema = "rotaativa")
 public class VagasModel {
+   
     @Id
-    private int idvaga;
-    @Column(nullable = false)
-    private String rua_avenida;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_vaga")
+    private Long idVaga;
+    @Column(name = "rua_avenida")
+    private String ruaAvenida;
+    @Column(name = "bairro")
     private String bairro;
+    @Column(name = "acessibilidade")
     private String acessibilidade;
-    private String nomevaga;
-    private int longitudeinicial;
-    private int longitudefinal;
-    private int latitudeinicial;
-    private int latitudefinal;
-    private Time horariousoinica;
-    private Time horariousofinal;
-    private boolean estadovaga;
-    private int tempoticket;
+    @Column(name = "nome_vaga")
+    private String nomeVaga;
+    @Column(name = "longitude_inicial")
+    private int longitudeInicial;
+    @Column(name = "longitude_final")
+    private int longitudeFinal;
+    @Column(name = "latitude_inicial")
+    private int latitudeInicial;
+    @Column(name = "latitude_final")
+    private int latitudeFinal;
+    @Column(name = "horario_uso_inicial")
+    private Time horarioUsoInicial;
+    @Column(name = "horario_uso_Final")
+    private Time horarioUsoFinal;
+    @Column(name = "estado_vaga")
+    private boolean estadoVaga;
+    @Column(name = "tempo_ticket")
+    private int tempoTicket;
+        
+    public VagasModel(Long idVaga) {
+        super();
+        this.idVaga = idVaga;        
+    }
     
-
-    public int getIdvaga() {
-        return idvaga;
+    public Long getIdvaga() {
+        return idVaga;
     }
     public int getTempoticket() {
-        return tempoticket;
+        return tempoTicket;
     }
     public void setTempoticket(int tempoticket) {
-        this.tempoticket = tempoticket;
+        this.tempoTicket = tempoticket;
     }
-    public void setIdvaga(int idvaga) {
-        this.idvaga = idvaga;
+    public void setIdvaga(Long idvaga) {
+        this.idVaga = idvaga;
     }
     public String getRua_avenida() {
-        return rua_avenida;
+        return ruaAvenida;
     }
     public void setRua_avenida(String rua_avenida) {
-        this.rua_avenida = rua_avenida;
+        this.ruaAvenida = rua_avenida;
     }
     public String getBairro() {
         return bairro;
@@ -59,57 +79,51 @@ public class VagasModel {
         this.acessibilidade = acessibilidade;
     }
     public String getNomeVaga() {
-        return nomevaga;
+        return nomeVaga;
     }
     public void setNomeVaga(String nomeVaga) {
-        this.nomevaga = nomeVaga;
+        this.nomeVaga = nomeVaga;
     }
     public int getLongitudeInicial() {
-        return longitudeinicial;
+        return longitudeInicial;
     }
     public void setLongitudeInicial(int longitudeInicial) {
-        this.longitudeinicial = longitudeInicial;
+        this.longitudeInicial = longitudeInicial;
     }
     public int getLongitudeFinal() {
-        return longitudefinal;
+        return longitudeFinal;
     }
     public void setLongitudeFinal(int longitudeFinal) {
-        this.longitudefinal = longitudeFinal;
+        this.longitudeFinal = longitudeFinal;
     }
     public int getLatitudeInicial() {
-        return latitudeinicial;
+        return latitudeInicial;
     }
     public void setLatitudeInicial(int latitudeInicial) {
-        this.latitudeinicial = latitudeInicial;
+        this.latitudeInicial = latitudeInicial;
     }
     public int getLatitudeFinal() {
-        return latitudefinal;
+        return latitudeFinal;
     }
     public void setLatitudeFinal(int latitudeFinal) {
-        this.latitudefinal = latitudeFinal;
+        this.latitudeFinal = latitudeFinal;
     }
     public Time getHorarioUsoInica() {
-        return horariousoinica;
+        return horarioUsoInicial;
     }
     public void setHorarioUsoInica(Time horarioUsoInica) {
-        this.horariousoinica = horarioUsoInica;
+        this.horarioUsoInicial = horarioUsoInica;
     }
     public Time getHorarioUsoFinal() {
-        return horariousofinal;
+        return horarioUsoFinal;
     }
     public void setHorarioUsoFinal(Time horarioUsoFinal) {
-        this.horariousofinal = horarioUsoFinal;
+        this.horarioUsoFinal = horarioUsoFinal;
     }
     public boolean isEstadoVaga() {
-        return estadovaga;
+        return estadoVaga;
     }
     public void setEstadoVaga(boolean estadoVaga) {
-        this.estadovaga = estadoVaga;
+        this.estadoVaga = estadoVaga;
     }
-      
-
-     
-
-  
-    
 }

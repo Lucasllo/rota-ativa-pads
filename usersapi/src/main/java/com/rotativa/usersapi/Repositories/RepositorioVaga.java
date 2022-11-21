@@ -63,6 +63,10 @@ public interface RepositorioVaga extends JpaRepository<VagasModel, Long> {
     "where nomeVaga = :nome and estadovaga = 1", nativeQuery = true)
     List<List<String>> buscarVaga(String nome);
 
+    //@Query(value = "select idVaga, nomeVaga,ruaAvenida,bairro,acessibilidade,longitudeInicial,longitudeFinal,latitudeInicial,latitudeFinal,horarioUsoInicial,horarioUsoFinal,tempoTicket,estadoVaga from VagasModel v  where nomeVaga = :nome and estadoVaga = true")
+    //VagasModel buscarVaga(String nome);
+
+
     @Modifying
     @Query(value = "UPDATE vaga "+
     "SET estadoVaga = 0 "+

@@ -9,7 +9,7 @@ import com.rotativa.usersapi.Entidades.AdministradorModel;
 import com.rotativa.usersapi.Repositories.RepositorioAdministrador;
 import com.rotativa.usersapi.Services.AdministradorService;
 
-@Service("AdministradorService")
+@Service("administradorService")
 public class AdministradorImpl implements AdministradorService {
     
     RepositorioAdministrador repositorioAdministrador;

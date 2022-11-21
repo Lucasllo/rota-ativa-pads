@@ -1,16 +1,26 @@
 package com.rotativa.usersapi.Entidades;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="tipopagamento", schema = "rotaativa")
+@Table(name="tipopagamento",schema = "rotaativa")
 public class TipoPagamentoModel {
-    @Id 
+   @Id 
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_tipo_pagamento")
     private int idTipoPagamento;
-    private String TipoPagamento;
-    private String DescPagamento;
+    @Column(name = "tipo_pagamento")
+    private String tipoPagamento;
+    @Column(name = "desc_pagamento")
+    private String descPagamento;
+    @ManyToOne
+    @JoinColumn(name="pagamento_id_pagamento")
+    private PagamentoModel pagamentoIdPagamento;
 
     public int getIdTipoPagamento() {
         return idTipoPagamento;
@@ -19,15 +29,22 @@ public class TipoPagamentoModel {
         this.idTipoPagamento = idTipoPagamento;
     }
     public String getTipoPagamento() {
-        return TipoPagamento;
+        return tipoPagamento;
     }
     public void setTipoPagamento(String tipoPagamento) {
-        TipoPagamento = tipoPagamento;
+        this.tipoPagamento = tipoPagamento;
     }
     public String getDescPagamento() {
-        return DescPagamento;
+        return descPagamento;
     }
     public void setDescPagamento(String descPagamento) {
-        DescPagamento = descPagamento;
+        this.descPagamento = descPagamento;
+    }
+    
+    public PagamentoModel getPagamentoIdPagamento() {
+        return pagamentoIdPagamento;
+    }
+    public void setPagamentoIdPagamento(PagamentoModel pagamentoIdPagamento) {
+        this.pagamentoIdPagamento = pagamentoIdPagamento;
     }
 }
