@@ -22,23 +22,18 @@ public class TelefoneController {
 	TelefoneService telefoneService;
 
     @GetMapping
-    public List<TelefoneModel> listar(){
-        return telefoneService.listar();
+    public List<Telefone> listar(){
+        return telefoneService.findAll();
     }
 
     @PostMapping
-    public void salvar(@RequestBody TelefoneModel telefone){
-        telefoneService.salvar(telefone);
+    public void salvar(@RequestBody Telefone telefone){
+        telefoneService.save(telefone);
     }
 
     @PutMapping
-    public void alterar(@RequestBody TelefoneModel telefone){
-        telefoneService.alterar(telefone);
-    }
-
-    @DeleteMapping
-    public void excluir(@RequestBody TelefoneModel telefone){
-        telefoneService.excluir(telefone);
+    public void alterar(@RequestBody Telefone telefone){
+        telefoneService.update(telefone);
     }
 
 }

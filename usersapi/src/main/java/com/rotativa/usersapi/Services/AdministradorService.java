@@ -1,21 +1,57 @@
 package com.rotativa.usersapi.Services;
 
 import java.util.List;
+import java.util.Optional;
 
-import org.springframework.stereotype.Component;
+import com.rotativa.usersapi.Entidades.Administrador;
 
-import com.rotativa.usersapi.Entidades.*;
-
-@Component
+/**
+ * Service Interface for managing {@link Administrador}.
+ */
 public interface AdministradorService {
- 
-    public List<AdministradorModel> listar();
-    
-    public void salvar(AdministradorModel administrador);
+    /**
+     * Save a administrador.
+     *
+     * @param administrador the entity to save.
+     * @return the persisted entity.
+     */
+    Administrador save(Administrador administrador);
 
-    public void alterar(AdministradorModel administrador);
+    /**
+     * Updates a administrador.
+     *
+     * @param administrador the entity to update.
+     * @return the persisted entity.
+     */
+    Administrador update(Administrador administrador);
 
-    public void excluir(AdministradorModel administrador);
+    /**
+     * Partially updates a administrador.
+     *
+     * @param administrador the entity to update partially.
+     * @return the persisted entity.
+     */
+    Optional<Administrador> partialUpdate(Administrador administrador);
 
-    public List<AdministradorModel> buscaAdm(String email, int senha);
+    /**
+     * Get all the administradors.
+     *
+     * @return the list of entities.
+     */
+    List<Administrador> findAll();
+
+    /**
+     * Get the "id" administrador.
+     *
+     * @param id the id of the entity.
+     * @return the entity.
+     */
+    Optional<Administrador> findOne(Long id);
+
+    /**
+     * Delete the "id" administrador.
+     *
+     * @param id the id of the entity.
+     */
+    void delete(Long id);
 }

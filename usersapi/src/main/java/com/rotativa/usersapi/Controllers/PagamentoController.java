@@ -22,23 +22,18 @@ public class PagamentoController {
 	PagamentoService pagamentoService;
 
     @GetMapping
-    public List<PagamentoModel> listar(){
-        return pagamentoService.listar();
+    public List<Pagamento> listar(){
+        return pagamentoService.findAll();
     }
 
     @PostMapping
-    public void salvar(@RequestBody PagamentoModel pagamento){
-        pagamentoService.salvar(pagamento);
+    public void salvar(@RequestBody Pagamento pagamento){
+        pagamentoService.save(pagamento);
     }
 
     @PutMapping
-    public void alterar(@RequestBody PagamentoModel pagamento){
-        pagamentoService.alterar(pagamento);
-    }
-
-    @DeleteMapping
-    public void excluir(@RequestBody PagamentoModel pagamento){
-        pagamentoService.excluir(pagamento);
+    public void alterar(@RequestBody Pagamento pagamento){
+        pagamentoService.update(pagamento);
     }
 
 }

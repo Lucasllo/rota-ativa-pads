@@ -1,18 +1,56 @@
 package com.rotativa.usersapi.Services;
-// interface criada em arquivo separado para manter a privacidade da implementação dos métodos.
 import java.util.List;
+import java.util.Optional;
 
-import org.springframework.stereotype.Component;
-import com.rotativa.usersapi.Entidades.*;
+import com.rotativa.usersapi.Entidades.Telefone;
 
-@Component
+/**
+ * Service Interface for managing {@link Telefone}.
+ */
 public interface TelefoneService {
- 
-    public List<TelefoneModel> listar();
-    
-    public void salvar(TelefoneModel telefone);
+    /**
+     * Save a telefone.
+     *
+     * @param telefone the entity to save.
+     * @return the persisted entity.
+     */
+    Telefone save(Telefone telefone);
 
-    public void alterar(TelefoneModel telefone);
+    /**
+     * Updates a telefone.
+     *
+     * @param telefone the entity to update.
+     * @return the persisted entity.
+     */
+    Telefone update(Telefone telefone);
 
-    public void excluir(TelefoneModel telefone);
+    /**
+     * Partially updates a telefone.
+     *
+     * @param telefone the entity to update partially.
+     * @return the persisted entity.
+     */
+    Optional<Telefone> partialUpdate(Telefone telefone);
+
+    /**
+     * Get all the telefones.
+     *
+     * @return the list of entities.
+     */
+    List<Telefone> findAll();
+
+    /**
+     * Get the "id" telefone.
+     *
+     * @param id the id of the entity.
+     * @return the entity.
+     */
+    Optional<Telefone> findOne(Long id);
+
+    /**
+     * Delete the "id" telefone.
+     *
+     * @param id the id of the entity.
+     */
+    void delete(Long id);
 }

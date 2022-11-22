@@ -22,23 +22,18 @@ public class VeiculoController {
 	VeiculoService veiculoService;
 
     @GetMapping
-    public List<VeiculoModel> listar(){
-        return veiculoService.listar();
+    public List<Veiculo> listar(){
+        return veiculoService.findAll();
     }
 
     @PostMapping
-    public void salvar(@RequestBody VeiculoModel veiculo){
-        veiculoService.salvar(veiculo);
+    public void salvar(@RequestBody Veiculo veiculo){
+        veiculoService.save(veiculo);
     }
 
     @PutMapping
-    public void alterar(@RequestBody VeiculoModel veiculo){
-        veiculoService.alterar(veiculo);
-    }
-
-    @DeleteMapping
-    public void excluir(@RequestBody VeiculoModel veiculo){
-        veiculoService.excluir(veiculo);
+    public void alterar(@RequestBody Veiculo veiculo){
+        veiculoService.update(veiculo);
     }
 
 }

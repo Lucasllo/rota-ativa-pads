@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rotativa.usersapi.Entidades.UsuarioModel;
+import com.rotativa.usersapi.Entidades.Usuario;
 import com.rotativa.usersapi.Services.UsuarioService;
 
 @CrossOrigin(origins = "http://localhost:3000") 
@@ -24,37 +24,32 @@ public class UsuarioController {
     UsuarioService usersService;
 
     @GetMapping("/usuario")
-    public List<UsuarioModel> listar(){
-        return this.usersService.listar();
+    public List<Usuario> listar(){
+        return this.usersService.findAll();
     }
 
     @PostMapping
-    public void salvar(@RequestBody UsuarioModel usuario){
-        usersService.salvar(usuario);
+    public void salvar(@RequestBody Usuario usuario){
+        usersService.save(usuario);
     }
 
     @PatchMapping
-    public void alterar(@RequestBody UsuarioModel usuario){
-        usersService.alterar(usuario);
+    public void alterar(@RequestBody Usuario usuario){
+        usersService.update(usuario);
     }
 
-    @DeleteMapping
-    public void excluir(@RequestBody UsuarioModel usuario) {
-        usersService.excluir(usuario);
-    }
+    // @GetMapping("/filtro")
+    // public List<Usuario> filtroUsuario(@RequestParam("nome") String nome) {
+    //     System.out.println("Nome = " + nome);
+    //     List<Usuario> usuarios = usersService.carregarPorNome(nome);
+    //     return usuarios;
+    // }
 
-    @GetMapping("/filtro")
-    public List<UsuarioModel> filtroUsuario(@RequestParam("nome") String nome) {
-        System.out.println("Nome = " + nome);
-        List<UsuarioModel> usuarios = usersService.carregarPorNome(nome);
-        return usuarios;
-    }
-
-    @GetMapping("/relatorio")
-    List<List<String>> relatorioUsuario() {
-        List<List<String>> filtro = usersService.relatorioUsuario();
-        return filtro;
-    }
+    // @GetMapping("/relatorio")
+    // List<List<String>> relatorioUsuario() {
+    //     List<List<String>> filtro = usersService.relatorioUsuario();
+    //     return filtro;
+    // }
 
 
 
