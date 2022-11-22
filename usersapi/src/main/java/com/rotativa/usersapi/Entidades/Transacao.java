@@ -37,8 +37,6 @@ public class Transacao implements Serializable {
     private Vaga vaga;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
-
-
     
     public Long getId() {
         return this.id;

@@ -7,7 +7,7 @@ VALUES
 (3,'Teibieza','369.294.690-25','Teibieza@gmail.com','1995-06-15','342342345');
   
 
-INSERT INTO "usuario" ("id","cpf","nome","acessibilidade","email","senha","nascimento","estado","ticket")
+INSERT INTO "usuario" ("id","cpf","nome","acessibilidade","email","senha","nascimento","estado","quantidade_ticket")
 VALUES
   (1,'172.495.494-87','Miriam Valenzuela','1','suscipit.est@hotmail.ca','TVG67VPB6MS','2003-07-11', true,1),
   (2,'377.148.018-76','Maxwell Thornton','1','eros.proin.ultrices@aol.ca','MSY92HCJ6TY','2009-07-27', true,6),
@@ -70,7 +70,7 @@ VALUES
   (5,5);
   
   
-INSERT INTO "pagamento" ("id","data_compra","valor","quantidade_ticket","usuario_id","tipo_pagamento_id")
+INSERT INTO "pagamento" ("id","data_compra","valor","ticket","usuario_id","tipo_pagamento_id")
 VALUES
   (1,'2022-01-16',7,1,1,1),
   (2,'2022-05-1',86,8,2,2),

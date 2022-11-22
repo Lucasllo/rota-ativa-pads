@@ -26,8 +26,8 @@ public class Pagamento implements Serializable {
     @Column(name = "valor")
     private Double valor;
 
-    @Column(name = "quantidade_ticket")
-    private Integer quantidadeTicket;
+    @Column(name = "ticket")
+    private Integer ticket;
 
     @ManyToOne
     @JsonIgnoreProperties(value = { "pagamentos", "telefones", "transacoes"}, allowSetters = true)
@@ -78,7 +78,7 @@ public class Pagamento implements Serializable {
     }
 
     public Integer getQuantidadeTicket() {
-        return this.quantidadeTicket;
+        return this.ticket;
     }
 
     public Pagamento quantidadeTicket(Integer quantidadeTicket) {
@@ -87,7 +87,7 @@ public class Pagamento implements Serializable {
     }
 
     public void setQuantidadeTicket(Integer quantidadeTicket) {
-        this.quantidadeTicket = quantidadeTicket;
+        this.ticket = quantidadeTicket;
     }
 
     public Usuario getUsuario() {

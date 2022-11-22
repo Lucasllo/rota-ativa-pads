@@ -40,8 +40,8 @@ public class Usuario implements Serializable {
     @Column(name = "nascimento")
     private LocalDate nascimento;
 
-    @Column(name = "ticket")
-    private Integer ticket;
+    @Column(name = "quantidade_ticket")
+    private Integer quantidadeTicket;
 
     @Column(name = "estado")
     private Boolean estado;
@@ -160,7 +160,7 @@ public class Usuario implements Serializable {
     }
 
     public Integer getTicket() {
-        return this.ticket;
+        return this.quantidadeTicket;
     }
 
     public Usuario ticket(Integer ticket) {
@@ -169,7 +169,7 @@ public class Usuario implements Serializable {
     }
 
     public void setTicket(Integer ticket) {
-        this.ticket = ticket;
+        this.quantidadeTicket = ticket;
     }
 
     public Boolean getEstado() {
