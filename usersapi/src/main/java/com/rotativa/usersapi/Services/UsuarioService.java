@@ -10,6 +10,9 @@ import com.rotativa.usersapi.Entidades.Usuario;
  * Service Interface for managing {@link Usuario}.
  */
 public interface UsuarioService {
+
+    List<Usuario> getUsuario(String nome);
+
     /**
      * Save a usuario.
      *

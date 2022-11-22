@@ -26,4 +26,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     default Page<Usuario> findAllWithEagerRelationships(Pageable pageable) {
         return this.findAll(pageable);
     }
+
+    @Query(value = "FROM Usuario u JOIN u.transacoes t WHERE t.vaga.nome = :nome")
+    List<Usuario> getUsuarios(@Param("nome") String nome);
 }

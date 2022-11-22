@@ -38,8 +38,21 @@ public class Transacao implements Serializable {
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
+
+    
     public Long getId() {
         return this.id;
+    }
+
+    public Transacao(){}
+
+    public Transacao(Long id, LocalDate entrada, LocalDate saida, Integer ticketUsado, Usuario usuario, Vaga vaga) {
+        this.id = id;
+        this.entrada = entrada;
+        this.saida = saida;
+        this.ticketUsado = ticketUsado;
+        this.usuario = usuario;
+        this.vaga = vaga;
     }
 
     public Transacao id(Long id) {

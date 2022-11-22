@@ -79,4 +79,9 @@ public class TransacaoServiceImpl implements TransacaoService {
         log.debug("Request to delete Transacao : {}", id);
         transacaoRepository.deleteById(id);
     }
+
+    @Override
+    public List<Transacao> getTransacoes(String nome) {
+        return transacaoRepository.getTransacoes(nome);
+    }
 }

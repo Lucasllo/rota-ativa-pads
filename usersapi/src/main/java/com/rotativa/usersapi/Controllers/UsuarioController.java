@@ -18,12 +18,12 @@ import com.rotativa.usersapi.Services.UsuarioService;
 
 @CrossOrigin(origins = "http://localhost:3000") 
 @RestController
-@RequestMapping
+@RequestMapping("/usuario")
 public class UsuarioController {
     @Autowired 
     UsuarioService usersService;
 
-    @GetMapping("/usuario")
+    @GetMapping
     public List<Usuario> listar(){
         return this.usersService.findAll();
     }
@@ -45,11 +45,11 @@ public class UsuarioController {
     //     return usuarios;
     // }
 
-    // @GetMapping("/relatorio")
-    // List<List<String>> relatorioUsuario() {
-    //     List<List<String>> filtro = usersService.relatorioUsuario();
-    //     return filtro;
-    // }
+    @GetMapping("/relatorio")
+    List<Usuario> relatorioUsuario(@RequestParam("nome") String nome) {
+        List<Usuario> filtro = usersService.getUsuario(nome);
+        return filtro;
+    }
 
 
 

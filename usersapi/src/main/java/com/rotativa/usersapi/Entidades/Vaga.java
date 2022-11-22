@@ -1,6 +1,8 @@
 package com.rotativa.usersapi.Entidades;
 
 import java.io.Serializable;
+import java.util.Date;
+
 import javax.persistence.*;
 
 /**
@@ -42,7 +44,38 @@ public class Vaga implements Serializable {
     @Column(name = "latitude_final")
     private Integer latitudeFinal;
 
+    @Column(name = "horario_uso_inicial")
+    private Date horarioUsoInicial;
+
+    @Column(name = "horario_uso_final")
+    private Date horarioUsoFinal;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
+
+     public Vaga(
+            Long id,
+            String nome,
+            String logradouro,
+            String bairro,
+            Boolean acessibilidade,
+            Integer longitudeInicial,
+            Integer longitudeFinal,
+            Integer latitudeInicial,
+            Integer latitudeFinal) {
+
+        this.id = id;
+        this.nome = nome;
+        this.logradouro = logradouro;
+        this.bairro = bairro;
+        this.acessibilidade = acessibilidade;
+        this.longitudeInicial = longitudeInicial;
+        this.longitudeFinal = longitudeFinal;
+        this.latitudeInicial = latitudeInicial;
+        this.latitudeFinal = latitudeFinal;
+    }
+
+    public Vaga() {
+    }
 
     public Long getId() {
         return this.id;
@@ -161,7 +194,23 @@ public class Vaga implements Serializable {
         this.latitudeFinal = latitudeFinal;
     }
 
-    // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
+    public Date getHorarioUsoInicial() {
+        return horarioUsoInicial;
+    }
+
+    public void setHorarioUsoInicial(Date horarioUsoInicial) {
+        this.horarioUsoInicial = horarioUsoInicial;
+    }
+
+    public Date getHorarioUsoFinal() {
+        return horarioUsoFinal;
+    }
+
+    public void setHorarioUsoFinal(Date horarioUsoFinal) {
+        this.horarioUsoFinal = horarioUsoFinal;
+    }
+    // jhipster-needle-entity-add-getters-setters - JHipster will add getters and
+    // setters here
 
     @Override
     public boolean equals(Object o) {
@@ -176,7 +225,8 @@ public class Vaga implements Serializable {
 
     @Override
     public int hashCode() {
-        // see https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/
+        // see
+        // https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/
         return getClass().hashCode();
     }
 
@@ -184,15 +234,15 @@ public class Vaga implements Serializable {
     @Override
     public String toString() {
         return "Vaga{" +
-            "id=" + getId() +
-            ", logradouro='" + getLogradouro() + "'" +
-            ", bairro='" + getBairro() + "'" +
-            ", acessibilidade='" + getAcessibilidade() + "'" +
-            ", nome='" + getNome() + "'" +
-            ", longitudeInicial=" + getLongitudeInicial() +
-            ", longitudeFinal=" + getLongitudeFinal() +
-            ", latitudeInicial=" + getLatitudeInicial() +
-            ", latitudeFinal=" + getLatitudeFinal() +
-            "}";
+                "id=" + getId() +
+                ", logradouro='" + getLogradouro() + "'" +
+                ", bairro='" + getBairro() + "'" +
+                ", acessibilidade='" + getAcessibilidade() + "'" +
+                ", nome='" + getNome() + "'" +
+                ", longitudeInicial=" + getLongitudeInicial() +
+                ", longitudeFinal=" + getLongitudeFinal() +
+                ", latitudeInicial=" + getLatitudeInicial() +
+                ", latitudeFinal=" + getLatitudeFinal() +
+                "}";
     }
 }

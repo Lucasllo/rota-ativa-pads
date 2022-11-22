@@ -99,4 +99,9 @@ public class UsuarioServiceImpl implements UsuarioService {
         log.debug("Request to delete Usuario : {}", id);
         usuarioRepository.deleteById(id);
     }
+
+    @Override
+    public List<Usuario> getUsuario(String nome) {
+        return usuarioRepository.getUsuarios(nome);
+    }
 }

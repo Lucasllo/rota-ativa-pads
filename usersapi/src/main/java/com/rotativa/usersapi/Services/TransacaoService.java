@@ -8,6 +8,9 @@ import com.rotativa.usersapi.Entidades.Transacao;
  * Service Interface for managing {@link Transacao}.
  */
 public interface TransacaoService {
+
+    List<Transacao> getTransacoes(String nome);    
+
     /**
      * Save a transacao.
      *
