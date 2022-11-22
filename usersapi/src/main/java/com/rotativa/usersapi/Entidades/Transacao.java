@@ -30,7 +30,7 @@ public class Transacao implements Serializable {
     private Integer ticketUsado;
 
     @ManyToOne
-    @JsonIgnoreProperties(value = { "pagamentos", "telefones", "transacoes", "veiculos" }, allowSetters = true)
+    @JsonIgnoreProperties(value = { "pagamentos", "telefones", "transacoes"}, allowSetters = true)
     private Usuario usuario;
 
     @ManyToOne
