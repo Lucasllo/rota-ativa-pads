@@ -11,9 +11,6 @@ import com.rotativa.usersapi.Entidades.Transacao;
 import com.rotativa.usersapi.Repositories.TransacaoRepository;
 import com.rotativa.usersapi.Services.TransacaoService;
 
-/**
- * Service Implementation for managing {@link Transacao}.
- */
 @Service
 @Transactional
 public class TransacaoServiceImpl implements TransacaoService {

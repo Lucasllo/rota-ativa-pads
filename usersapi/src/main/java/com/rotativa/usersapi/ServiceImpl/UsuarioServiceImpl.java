@@ -12,9 +12,6 @@ import com.rotativa.usersapi.Entidades.Usuario;
 import com.rotativa.usersapi.Repositories.UsuarioRepository;
 import com.rotativa.usersapi.Services.UsuarioService;
 
-/**
- * Service Implementation for managing {@link Usuario}.
- */
 @Service
 @Transactional
 public class UsuarioServiceImpl implements UsuarioService {

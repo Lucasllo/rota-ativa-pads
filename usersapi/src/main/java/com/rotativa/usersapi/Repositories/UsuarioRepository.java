@@ -10,9 +10,6 @@ import org.springframework.stereotype.Repository;
 
 import com.rotativa.usersapi.Entidades.Usuario;
 
-/**
- * Spring Data SQL repository for the Usuario entity.
- */
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     default Optional<Usuario> findOneWithEagerRelationships(Long id) {

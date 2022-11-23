@@ -11,9 +11,6 @@ import com.rotativa.usersapi.Entidades.Pagamento;
 import com.rotativa.usersapi.Repositories.PagamentoRepository;
 import com.rotativa.usersapi.Services.PagamentoService;
 
-/**
- * Service Implementation for managing {@link Pagamento}.
- */
 @Service
 @Transactional
 public class PagamentoServiceImpl implements com.rotativa.usersapi.Services.PagamentoService {

@@ -11,9 +11,6 @@ import com.rotativa.usersapi.Entidades.Vaga;
 import com.rotativa.usersapi.Repositories.VagaRepository;
 import com.rotativa.usersapi.Services.VagaService;
 
-/**
- * Service Implementation for managing {@link Vaga}.
- */
 @Service
 @Transactional
 public class VagaServiceImpl implements VagaService {

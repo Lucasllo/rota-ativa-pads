@@ -11,9 +11,6 @@ import com.rotativa.usersapi.Entidades.Administrador;
 import com.rotativa.usersapi.Repositories.AdministradorRepository;
 import com.rotativa.usersapi.Services.AdministradorService;
 
-/**
- * Service Implementation for managing {@link Administrador}.
- */
 @Service
 @Transactional
 public class AdministradorServiceImpl implements AdministradorService {

@@ -12,9 +12,6 @@ import com.rotativa.usersapi.Entidades.Veiculo;
 import com.rotativa.usersapi.Repositories.VeiculoRepository;
 import com.rotativa.usersapi.Services.VeiculoService;
 
-/**
- * Service Implementation for managing {@link Veiculo}.
- */
 @Service
 @Transactional
 public class VeiculoServiceImpl implements VeiculoService {

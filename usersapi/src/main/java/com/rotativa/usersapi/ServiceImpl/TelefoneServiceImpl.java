@@ -11,9 +11,6 @@ import com.rotativa.usersapi.Entidades.Telefone;
 import com.rotativa.usersapi.Repositories.TelefoneRepository;
 import com.rotativa.usersapi.Services.TelefoneService;
 
-/**
- * Service Implementation for managing {@link Telefone}.
- */
 @Service
 @Transactional
 public class TelefoneServiceImpl implements TelefoneService {

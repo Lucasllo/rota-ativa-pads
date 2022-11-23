@@ -50,8 +50,6 @@ public class Vaga implements Serializable {
     @Column(name = "horario_uso_final")
     private Date horarioUsoFinal;
 
-    // jhipster-needle-entity-add-field - JHipster will add fields here
-
      public Vaga(
             Long id,
             String nome,
@@ -230,7 +228,6 @@ public class Vaga implements Serializable {
         return getClass().hashCode();
     }
 
-    // prettier-ignore
     @Override
     public String toString() {
         return "Vaga{" +

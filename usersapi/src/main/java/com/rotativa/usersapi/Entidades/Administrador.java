@@ -4,9 +4,6 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import javax.persistence.*;
 
-/**
- * A Administrador.
- */
 @Entity
 @Table(name = "administrador")
 public class Administrador implements Serializable {
@@ -33,8 +30,6 @@ public class Administrador implements Serializable {
 
     @Column(name = "senha")
     private String senha;
-
-    // jhipster-needle-entity-add-field - JHipster will add fields here
 
     public Long getId() {
         return this.id;
@@ -114,8 +109,6 @@ public class Administrador implements Serializable {
         this.senha = senha;
     }
 
-    // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
-
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -129,11 +122,9 @@ public class Administrador implements Serializable {
 
     @Override
     public int hashCode() {
-        // see https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/
         return getClass().hashCode();
     }
 
-    // prettier-ignore
     @Override
     public String toString() {
         return "Administrador{" +

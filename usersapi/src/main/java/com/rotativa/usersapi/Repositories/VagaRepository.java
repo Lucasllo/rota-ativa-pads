@@ -8,10 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import com.rotativa.usersapi.Entidades.Vaga;
 
-/**
- * Spring Data SQL repository for the Vaga entity.
- */
-@SuppressWarnings("unused")
 @Repository
 public interface VagaRepository extends JpaRepository<Vaga, Long> {
     @Query(value = "select new Vaga(v.id, v.nome, v.logradouro,v.bairro,v.acessibilidade,v.longitudeInicial,v.longitudeFinal,v.latitudeInicial,v.latitudeFinal) from Vaga v  where nome = :nome")

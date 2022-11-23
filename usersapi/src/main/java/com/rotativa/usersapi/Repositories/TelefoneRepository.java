@@ -5,9 +5,5 @@ import org.springframework.stereotype.Repository;
 
 import com.rotativa.usersapi.Entidades.Telefone;
 
-/**
- * Spring Data SQL repository for the Telefone entity.
- */
-@SuppressWarnings("unused")
 @Repository
 public interface TelefoneRepository extends JpaRepository<Telefone, Long> {}
