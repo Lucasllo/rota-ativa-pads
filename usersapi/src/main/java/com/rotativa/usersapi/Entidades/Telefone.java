@@ -4,9 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import javax.persistence.*;
 
-/**
- * A Telefone.
- */
 @Entity
 @Table(name = "telefone")
 public class Telefone implements Serializable {

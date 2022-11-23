@@ -7,9 +7,6 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.*;
 
-/**
- * A Usuario.
- */
 @Entity
 @Table(name = "usuario")
 public class Usuario implements Serializable {

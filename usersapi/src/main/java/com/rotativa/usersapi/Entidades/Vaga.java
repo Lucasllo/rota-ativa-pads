@@ -5,9 +5,6 @@ import java.util.Date;
 
 import javax.persistence.*;
 
-/**
- * A Vaga.
- */
 @Entity
 @Table(name = "vaga")
 public class Vaga implements Serializable {

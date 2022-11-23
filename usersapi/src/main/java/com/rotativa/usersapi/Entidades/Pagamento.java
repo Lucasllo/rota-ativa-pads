@@ -5,9 +5,6 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import javax.persistence.*;
 
-/**
- * A Pagamento.
- */
 @Entity
 @Table(name = "pagamento")
 public class Pagamento implements Serializable {

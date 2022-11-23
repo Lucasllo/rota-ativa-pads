@@ -3,9 +3,6 @@ package com.rotativa.usersapi.Entidades;
 import java.io.Serializable;
 import javax.persistence.*;
 
-/**
- * A Veiculo.
- */
 @Entity
 @Table(name = "veiculo")
 public class Veiculo implements Serializable {
