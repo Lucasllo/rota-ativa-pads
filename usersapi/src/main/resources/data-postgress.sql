@@ -1,10 +1,10 @@
 
   
-INSERT INTO administrador (nome,cpf,email,nascimento,senha)
+INSERT INTO administrador (id, nome,cpf,email,nascimento,senha)
 VALUES
-('Buffy Cooley','409.178.650-22','Buffy@gmail.com','1975-07-24','4532134'),
-('Rahor','029.683.090-99','Rahor@gmail.com','1980-05-09','3432543'),
-('Teibieza','369.294.690-25','Teibieza@gmail.com','1995-06-15','342342345');
+(1,'Buffy Cooley','409.178.650-22','Buffy@gmail.com','1975-07-24','4532134'),
+(2,'Rahor','029.683.090-99','Rahor@gmail.com','1980-05-09','3432543'),
+(3,'Teibieza','369.294.690-25','Teibieza@gmail.com','1995-06-15','342342345');
   
 
 INSERT INTO usuario (id,cpf,nome,acessibilidade,email,senha,nascimento,estado,quantidade_ticket)
@@ -56,13 +56,15 @@ VALUES
   (3,3,3,10,'2022-03-18','2022-03-18'),
   (4,4,4,5,'2009-02-8','2009-02-8'),
   (5,5,5,4,'2003-07-11','2003-07-11'),
-  (6,5,5,4,'2003-07-13','2003-07-12');
+  (6,5,1,4,'2003-07-13','2003-07-12'),
+  (7,5,3,2,'2003-07-11','2003-07-11'),
+  (8,5,2,1,'2003-07-14','2003-07-16');
 
 
   
 INSERT INTO rel_usuario__veiculos (usuario_id,veiculos_id)
 VALUES
-	
+  
   (1,1),
   (2,2),
   (3,3),
