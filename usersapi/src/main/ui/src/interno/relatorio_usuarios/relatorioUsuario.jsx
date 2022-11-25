@@ -11,6 +11,7 @@ import "./relatorioUsuario.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import AreasService from "../../service/areas";
 import VagaService from "../../service/vaga";
+import UserService from "../../service/users";
 
 let PageSize = 5;
 
@@ -18,6 +19,7 @@ export function RelatorioUsuario() {
   const [y, setY] = useState({ path: ["", ""] });
   const location = useLocation();
   const navigate = useNavigate();
+  const usuarioService = new UserService();
   const vagasService = new VagaService();
 
   const [usuarios, setUsuarios] = useState([]);
@@ -39,8 +41,10 @@ export function RelatorioUsuario() {
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    setUsuarios(location.state.vaga.usuarios);
-    setLista(location.state.vaga.usuarios);
+    usuarioService.getRelatorioUsuarioVaga(location.state.vaga.nome).then((resp)=>{
+      setUsuarios(resp);
+      setLista(resp);
+    });
   }, []);
 
   useEffect(() => {
@@ -145,7 +149,7 @@ export function RelatorioUsuario() {
               <tr>
                 <th>#</th>
                 <th>Nome</th>
-                <th>Tempo de Uso</th>
+                {/* <th>Tempo de Uso</th> */}
                 <th>Veiculo</th>
                 <th>Acessibilidade</th>
               </tr>
@@ -163,7 +167,7 @@ export function RelatorioUsuario() {
                         {item.nome}
                       </Link>
                     </td>
-                    <td>{item.tempo_uso}</td>
+                    {/* <td>{item.tempo_uso}</td> */}
                     <td>
                       {item.veiculo[0].modelo.toUpperCase()}{" "}
                       {item.veiculo[0].placa}

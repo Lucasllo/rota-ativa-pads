@@ -88,7 +88,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     }
 
     @Override
-    public List<Usuario> getUsuario(String nome) {
-        return usuarioRepository.getUsuarios(nome);
+    public List<Usuario> getUsuariosVaga(String nome) {
+        return usuarioRepository.getUsuariosVaga(nome);
     }
 }

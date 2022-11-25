@@ -8,7 +8,7 @@ import com.rotativa.usersapi.Entidades.Usuario;
 
 public interface UsuarioService {
 
-    List<Usuario> getUsuario(String nome);
+    List<Usuario> getUsuariosVaga(String nome);
 
     Usuario save(Usuario usuario);
 

@@ -156,11 +156,11 @@ export function RelatorioDeUso() {
                   var tempo = 0;
                   var credito = 0;
                   var veiculos = 0;
-                  item.usuarios.forEach((element) => {
-                    tempo += element.tempo_uso;
-                    credito += element.credito;
-                    veiculos += element.veiculo.length;
-                  });
+                  // item.usuarios.forEach((element) => {
+                  //   tempo += element.tempo_uso;
+                  //   credito += element.credito;
+                  //   veiculos += element.veiculo.length;
+                  // });
                   return (
                     <tr>
                       <td>{item.nome_vaga}</td>

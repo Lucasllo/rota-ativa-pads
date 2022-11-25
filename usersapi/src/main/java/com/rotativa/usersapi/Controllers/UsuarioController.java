@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,9 +33,9 @@ public class UsuarioController {
         usersService.save(usuario);
     }
 
-    @PatchMapping
+    @PutMapping
     public void alterar(@RequestBody Usuario usuario){
-        usersService.update(usuario);
+        usersService.partialUpdate(usuario);
     }
 
     // @GetMapping("/filtro")
@@ -45,9 +45,9 @@ public class UsuarioController {
     //     return usuarios;
     // }
 
-    @GetMapping("/relatorio")
+    @GetMapping("/relatorioVaga")
     List<Usuario> relatorioUsuario(@RequestParam("nome") String nome) {
-        List<Usuario> filtro = usersService.getUsuario(nome);
+        List<Usuario> filtro = usersService.getUsuariosVaga(nome);
         return filtro;
     }
 

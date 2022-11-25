@@ -25,5 +25,5 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     }
 
     @Query(value = "FROM Usuario u JOIN u.transacoes t WHERE t.vaga.nome = :nome")
-    List<Usuario> getUsuarios(@Param("nome") String nome);
+    List<Usuario> getUsuariosVaga(@Param("nome") String nome);
 }
