@@ -52,7 +52,7 @@ public class Usuario implements Serializable {
     private Set<Telefone> telefones = new HashSet<>();
 
     @OneToMany(mappedBy = "usuario")
-    @JsonIgnoreProperties(value = { "usuario", "vaga" }, allowSetters = true)
+    @JsonIgnoreProperties(value = { "usuario" }, allowSetters = true)
     private Set<Transacao> transacoes = new HashSet<>();
 
     @ManyToMany
