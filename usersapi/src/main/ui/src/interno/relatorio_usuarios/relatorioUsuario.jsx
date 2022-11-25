@@ -10,6 +10,7 @@ import Pagination from "../../components/Paginacao/Pagination";
 import "./relatorioUsuario.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import AreasService from "../../service/areas";
+import VagaService from "../../service/vaga";
 
 let PageSize = 5;
 
@@ -17,7 +18,7 @@ export function RelatorioUsuario() {
   const [y, setY] = useState({ path: ["", ""] });
   const location = useLocation();
   const navigate = useNavigate();
-  const areasService = new AreasService();
+  const vagasService = new VagaService();
 
   const [usuarios, setUsuarios] = useState([]);
 
@@ -43,9 +44,9 @@ export function RelatorioUsuario() {
   }, []);
 
   useEffect(() => {
-    areasService.getAreas().then((resp) => {
+    vagasService.getVaga().then((resp) => {
       setY(
-        resp.data.find((p) => p.rua_avenida == location.state.vaga.rua_avenida)
+        resp.data.find((p) => p.logradouro == location.state.vaga.logradouro)
       );
     });
   }, []);
@@ -70,7 +71,7 @@ export function RelatorioUsuario() {
       <Flex h="30vh" className="margem-esq">
         <Box h="100%" w="100%">
           <GoogleMap
-            center={y.path[0]}
+            center={{lat:y.latitudeInicial,lng:y.longitudeInicial}}
             zoom={16}
             mapContainerStyle={{ width: "100%", height: "100%" }}
           >
@@ -79,7 +80,7 @@ export function RelatorioUsuario() {
               onClick={() => {
                 console.log(location);
               }}
-              paths={y.path}
+              paths={[{lat:y.latitudeInicial,lng:y.longitudeInicial},{lat:y.latitudeFinal,lng:y.longitudeFinal}]}
             ></Polygon>
           </GoogleMap>
         </Box>
@@ -98,20 +99,20 @@ export function RelatorioUsuario() {
           <div className="row">
             <div className="col-md-12">
               <h2>
-                Endereço: {location.state.vaga.rua_avenida} -{" "}
-                {location.state.vaga.Bairro}
+                Endereço: {location.state.vaga.logradouro} -{" "}
+                {location.state.vaga.bairro}
               </h2>
               <h2>
                 Regra:
-                {location.state.vaga.hora == undefined
+                {location.state.vaga.horario_uso_inicial == undefined
                   ? ""
-                  : ` ${location.state.vaga.hora} - `}
-                {location.state.vaga.tipoVaga == undefined
+                  : ` ${location.state.vaga.horario_uso_inicial} - `}
+                {location.state.vaga.acessibilidade == undefined
                   ? ""
-                  : `${location.state.vaga.tipoVaga} - `}
-                {location.state.vaga.tempo == undefined
+                  : `${location.state.vaga.acessibilidade} - `}
+                {/* {location.state.vaga.tempo == undefined
                   ? ""
-                  : `${location.state.vaga.tempo}`}
+                  : `${location.state.vaga.tempo}`} */}
               </h2>
               <h3 className="py-3 text-center font-bold font-up blue-text">
                 Relatorio de Usuarios

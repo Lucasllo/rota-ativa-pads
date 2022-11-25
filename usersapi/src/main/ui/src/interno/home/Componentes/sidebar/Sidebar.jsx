@@ -10,7 +10,7 @@ export function NavbarLateral() {
     nome: "",
     email: "",
     cpf: "",
-    datanasc: ""
+    nascimento: ""
   });
 
   useEffect(() => {

@@ -30,16 +30,16 @@ public class Vaga implements Serializable {
     private String nome;
 
     @Column(name = "longitude_inicial")
-    private Integer longitudeInicial;
+    private Double longitudeInicial;
 
     @Column(name = "longitude_final")
-    private Integer longitudeFinal;
+    private Double longitudeFinal;
 
     @Column(name = "latitude_inicial")
-    private Integer latitudeInicial;
+    private Double latitudeInicial;
 
     @Column(name = "latitude_final")
-    private Integer latitudeFinal;
+    private Double latitudeFinal;
 
     @Column(name = "horario_uso_inicial")
     private Date horarioUsoInicial;
@@ -53,10 +53,10 @@ public class Vaga implements Serializable {
             String logradouro,
             String bairro,
             Boolean acessibilidade,
-            Integer longitudeInicial,
-            Integer longitudeFinal,
-            Integer latitudeInicial,
-            Integer latitudeFinal) {
+            Double longitudeInicial,
+            Double longitudeFinal,
+            Double latitudeInicial,
+            Double latitudeFinal) {
 
         this.id = id;
         this.nome = nome;
@@ -137,55 +137,55 @@ public class Vaga implements Serializable {
         this.nome = nome;
     }
 
-    public Integer getLongitudeInicial() {
+    public Double getLongitudeInicial() {
         return this.longitudeInicial;
     }
 
-    public Vaga longitudeInicial(Integer longitudeInicial) {
+    public Vaga longitudeInicial(Double longitudeInicial) {
         this.setLongitudeInicial(longitudeInicial);
         return this;
     }
 
-    public void setLongitudeInicial(Integer longitudeInicial) {
+    public void setLongitudeInicial(Double longitudeInicial) {
         this.longitudeInicial = longitudeInicial;
     }
 
-    public Integer getLongitudeFinal() {
+    public Double getLongitudeFinal() {
         return this.longitudeFinal;
     }
 
-    public Vaga longitudeFinal(Integer longitudeFinal) {
+    public Vaga longitudeFinal(Double longitudeFinal) {
         this.setLongitudeFinal(longitudeFinal);
         return this;
     }
 
-    public void setLongitudeFinal(Integer longitudeFinal) {
+    public void setLongitudeFinal(Double longitudeFinal) {
         this.longitudeFinal = longitudeFinal;
     }
 
-    public Integer getLatitudeInicial() {
+    public Double getLatitudeInicial() {
         return this.latitudeInicial;
     }
 
-    public Vaga latitudeInicial(Integer latitudeInicial) {
+    public Vaga latitudeInicial(Double latitudeInicial) {
         this.setLatitudeInicial(latitudeInicial);
         return this;
     }
 
-    public void setLatitudeInicial(Integer latitudeInicial) {
+    public void setLatitudeInicial(Double latitudeInicial) {
         this.latitudeInicial = latitudeInicial;
     }
 
-    public Integer getLatitudeFinal() {
+    public Double getLatitudeFinal() {
         return this.latitudeFinal;
     }
 
-    public Vaga latitudeFinal(Integer latitudeFinal) {
+    public Vaga latitudeFinal(Double latitudeFinal) {
         this.setLatitudeFinal(latitudeFinal);
         return this;
     }
 
-    public void setLatitudeFinal(Integer latitudeFinal) {
+    public void setLatitudeFinal(Double latitudeFinal) {
         this.latitudeFinal = latitudeFinal;
     }
 

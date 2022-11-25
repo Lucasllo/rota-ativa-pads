@@ -26,7 +26,7 @@ export function RelatorioVagas() {
 
   useEffect(() => {
     const novaLista = vagas.filter(
-      (item) => testaBusca(item.rua_avenida) || testaBusca(item.Bairro)
+      (item) => testaBusca(item.logradouro) || testaBusca(item.bairro)
     );
     setLista(novaLista);
   }, [buscar]);
@@ -75,7 +75,7 @@ export function RelatorioVagas() {
             <thead>
               <tr>
                 <th scope="row">Nome</th>
-                <th className="th-lg">Rua/Avenida - Bairro</th>
+                <th className="th-lg">Logradouro - Bairro</th>
                 <th className="th-lg">Crédito</th>
                 <th className="th-lg">Total do veículos</th>
                 <th className="th-lg">Tempo de uso</th>
@@ -101,7 +101,7 @@ export function RelatorioVagas() {
                         }}
                         state={{ vaga: item }}
                       >
-                        {item.rua_avenida} - {item.Bairro}
+                        {item.logradouro} - {item.bairro}
                       </Link>
                     </td>
                     <td>{credito}</td>

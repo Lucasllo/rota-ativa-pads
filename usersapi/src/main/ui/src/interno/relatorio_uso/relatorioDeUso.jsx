@@ -36,13 +36,13 @@ export function RelatorioDeUso() {
 
   useEffect(() => {
     const novaLista = vagas.filter(
-      (item) => testaBusca(item.rua_avenida) || testaBusca(item.Bairro)
+      (item) => testaBusca(item.logradouro) || testaBusca(item.bairro)
     );
     setLista(novaLista);
   }, [buscar]);
 
   useEffect(() => {
-    areasService.getAreas().then((resp) => {
+    vagaService.getVaga().then((resp) => {
       setDados(resp.data);
     });
   }, []);
@@ -84,7 +84,7 @@ export function RelatorioDeUso() {
               mapContainerStyle={{ width: "100%", height: "100%" }}
             >
               {dados.map((d) => {
-                var x = vagas.find((p) => p.rua_avenida == d.rua_avenida);
+                var x = vagas.find((p) => p.logradouro == d.logradouro);
 
                 return (
                   <>
@@ -100,7 +100,7 @@ export function RelatorioDeUso() {
                           replace: true,
                         });
                       }}
-                      paths={d.path}
+                      paths={[{lat:d.latitudeInicial,lng:d.longitudeInicial},{lat:d.latitudeFinal,lng:d.longitudeFinal}]}
                     ></Polygon>
                   </>
                 );
@@ -145,7 +145,7 @@ export function RelatorioDeUso() {
               <thead>
                 <tr>
                   <th scope="row">Nome</th>
-                  <th className="th-lg">Rua/Avenida - Bairro</th>
+                  <th className="th-lg">Logradouro - Bairro</th>
                   <th className="th-lg">Crédito</th>
                   <th className="th-lg">Total do veículos</th>
                   <th className="th-lg">Tempo de uso</th>
@@ -171,7 +171,7 @@ export function RelatorioDeUso() {
                           }}
                           state={{ vaga: item }}
                         >
-                          {item.rua_avenida} - {item.Bairro}
+                          {item.logradouro} - {item.bairro}
                         </Link>
                       </td>
                       <td>{credito}</td>

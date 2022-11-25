@@ -12,7 +12,7 @@ export function EditaPerfil() {
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
     const [cpf, setCpf] = useState("");
-    const [datanasc, setDatanasc] = useState("");
+    const [nascimento, setNascimento] = useState("");
 
     const dados = [
         {
@@ -28,8 +28,8 @@ export function EditaPerfil() {
             evento: setCpf
         },
         {
-            campo: datanasc,
-            evento: setDatanasc
+            campo: nascimento,
+            evento: setNascimento
         }
     ]
 
@@ -44,7 +44,7 @@ export function EditaPerfil() {
                 setNome(login.nome)
                 setEmail(login.email);
                 setCpf(login.cpf);
-                setDatanasc(login.datanasc);
+                setNascimento(login.nascimento);
             }
         })
     }, [])
@@ -52,7 +52,7 @@ export function EditaPerfil() {
     function salvar(e) {
         e.preventDefault();
         let id = localStorage.getItem("usuarioLogado");
-        userService.putUsuario(id, {...usuario, nome, cpf, email, datanasc}).then(alert("cadastrado com sucesso"));
+        userService.putUsuario(id, {...usuario, nome, cpf, email, nascimento: nascimento}).then(alert("cadastrado com sucesso"));
     }
 
     return (

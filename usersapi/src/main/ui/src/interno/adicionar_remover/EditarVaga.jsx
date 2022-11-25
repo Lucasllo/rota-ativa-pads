@@ -23,8 +23,8 @@ export function EditarVaga() {
     e.preventDefault();
     vagaService.postVaga({
       nome_vaga: nome,
-      rua_avenida: rua,
-      Bairro: bairro,
+      logradouro: rua,
+      bairro: bairro,
       usuarios: [],
       tipoVaga: tipoVaga,
       hora: hora,
@@ -34,8 +34,8 @@ export function EditarVaga() {
     areasService
       .postAreas({
         nome_vaga: nome,
-        rua_avenida: rua,
-        Bairro: bairro,
+        logradouro: rua,
+        bairro: bairro,
         tipoVaga: tipoVaga,
         hora: hora,
         tempo: tempo,

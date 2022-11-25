@@ -7,7 +7,7 @@ export function DadoUsuario() {
     const navigate = useNavigate();
 
     const infos = ["Nome", "E-mail", "CPF", "Data de Nascimento"]
-    const dados = [location.state.usuario.nome, location.state.usuario.email, location.state.usuario.cpf, location.state.usuario.datanasc]
+    const dados = [location.state.usuario.nome, location.state.usuario.email, location.state.usuario.cpf, location.state.usuario.nascimento]
 
     return (
         <>

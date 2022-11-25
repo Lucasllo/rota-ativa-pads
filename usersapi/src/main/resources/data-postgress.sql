@@ -18,11 +18,11 @@ VALUES
 
 INSERT INTO vaga (id,logradouro,bairro,acessibilidade,nome,longitude_inicial,longitude_final,latitude_inicial,latitude_final)
 VALUES
-  (1,'Cundinamarca','Messejana','1','A',582512,698435,238663,1670784),
-  (2,'Saskatchewan','Pedras','1','B',605023,247620,773261,78026),
-  (3,'Heredia','Jabuti','1','C',482111,1026024,816287,1100786),
-  (4,'Wielkopolskie','Aldeota','1','D',689873,1075199,201218,1304796),
-  (5,'Vestfold og Telemark','Itaitinga','1','E',673375,425530,590523,695340);
+  (1,'Cundinamarca','Messejana','1','A',-38.495077, -38.491622,-3.726077, -3.725595),
+  (2,'Saskatchewan','Pedras','1','B',-38.491326,-38.491543,-3.72658,-3.7256),
+  (3,'Heredia','Jabuti','1','C',-38.491178,-38.490775,-3.727608,-3.729014),
+  (4,'Wielkopolskie','Aldeota','1','D',-38.490775,-38.49282,-3.729014,-3.735742),
+  (5,'Vestfold og Telemark','Itaitinga','1','E', -38.489679,-38.492477,-3.729332,-3.73806);
 
 
   INSERT INTO tipo_pagamento (id,nome,descricao)
