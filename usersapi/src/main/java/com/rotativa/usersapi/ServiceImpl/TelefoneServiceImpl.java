@@ -2,8 +2,6 @@ package com.rotativa.usersapi.ServiceImpl;
 
 import java.util.List;
 import java.util.Optional;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,8 +12,6 @@ import com.rotativa.usersapi.Services.TelefoneService;
 @Service
 @Transactional
 public class TelefoneServiceImpl implements TelefoneService {
-
-    private final Logger log = LoggerFactory.getLogger(TelefoneServiceImpl.class);
 
     private final TelefoneRepository telefoneRepository;
 
