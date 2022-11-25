@@ -25,19 +25,16 @@ public class PagamentoServiceImpl implements com.rotativa.usersapi.Services.Paga
 
     @Override
     public Pagamento save(Pagamento pagamento) {
-        log.debug("Request to save Pagamento : {}", pagamento);
         return pagamentoRepository.save(pagamento);
     }
 
     @Override
     public Pagamento update(Pagamento pagamento) {
-        log.debug("Request to save Pagamento : {}", pagamento);
         return pagamentoRepository.save(pagamento);
     }
 
     @Override
     public Optional<Pagamento> partialUpdate(Pagamento pagamento) {
-        log.debug("Request to partially update Pagamento : {}", pagamento);
 
         return pagamentoRepository
             .findById(pagamento.getId())
@@ -60,20 +57,17 @@ public class PagamentoServiceImpl implements com.rotativa.usersapi.Services.Paga
     @Override
     @Transactional(readOnly = true)
     public List<Pagamento> findAll() {
-        log.debug("Request to get all Pagamentos");
         return pagamentoRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
     public Optional<Pagamento> findOne(Long id) {
-        log.debug("Request to get Pagamento : {}", id);
         return pagamentoRepository.findById(id);
     }
 
     @Override
     public void delete(Long id) {
-        log.debug("Request to delete Pagamento : {}", id);
         pagamentoRepository.deleteById(id);
     }
 }

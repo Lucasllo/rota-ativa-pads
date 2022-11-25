@@ -26,19 +26,16 @@ public class VeiculoServiceImpl implements VeiculoService {
 
     @Override
     public Veiculo save(Veiculo veiculo) {
-        log.debug("Request to save Veiculo : {}", veiculo);
         return veiculoRepository.save(veiculo);
     }
 
     @Override
     public Veiculo update(Veiculo veiculo) {
-        log.debug("Request to save Veiculo : {}", veiculo);
         return veiculoRepository.save(veiculo);
     }
 
     @Override
     public Optional<Veiculo> partialUpdate(Veiculo veiculo) {
-        log.debug("Request to partially update Veiculo : {}", veiculo);
 
         return veiculoRepository
             .findById(veiculo.getId())
@@ -61,20 +58,17 @@ public class VeiculoServiceImpl implements VeiculoService {
     @Override
     @Transactional(readOnly = true)
     public List<Veiculo> findAll() {
-        log.debug("Request to get all Veiculos");
         return veiculoRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
     public Optional<Veiculo> findOne(Long id) {
-        log.debug("Request to get Veiculo : {}", id);
         return veiculoRepository.findById(id);
     }
 
     @Override
     public void delete(Long id) {
-        log.debug("Request to delete Veiculo : {}", id);
         veiculoRepository.deleteById(id);
     }
 }

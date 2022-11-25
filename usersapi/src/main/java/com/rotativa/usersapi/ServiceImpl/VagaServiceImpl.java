@@ -25,19 +25,16 @@ public class VagaServiceImpl implements VagaService {
 
     @Override
     public Vaga save(Vaga vaga) {
-        log.debug("Request to save Vaga : {}", vaga);
         return vagaRepository.save(vaga);
     }
 
     @Override
     public Vaga update(Vaga vaga) {
-        log.debug("Request to save Vaga : {}", vaga);
         return vagaRepository.save(vaga);
     }
 
     @Override
     public Optional<Vaga> partialUpdate(Vaga vaga) {
-        log.debug("Request to partially update Vaga : {}", vaga);
 
         return vagaRepository
             .findById(vaga.getId())
@@ -75,20 +72,17 @@ public class VagaServiceImpl implements VagaService {
     @Override
     @Transactional(readOnly = true)
     public List<Vaga> findAll() {
-        log.debug("Request to get all Vagas");
         return vagaRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
     public Optional<Vaga> findOne(Long id) {
-        log.debug("Request to get Vaga : {}", id);
         return vagaRepository.findById(id);
     }
 
     @Override
     public void delete(Long id) {
-        log.debug("Request to delete Vaga : {}", id);
         vagaRepository.deleteById(id);
     }
 

@@ -25,19 +25,16 @@ public class AdministradorServiceImpl implements AdministradorService {
 
     @Override
     public Administrador save(Administrador administrador) {
-        log.debug("Request to save Administrador : {}", administrador);
         return administradorRepository.save(administrador);
     }
 
     @Override
     public Administrador update(Administrador administrador) {
-        log.debug("Request to save Administrador : {}", administrador);
         return administradorRepository.save(administrador);
     }
 
     @Override
     public Optional<Administrador> partialUpdate(Administrador administrador) {
-        log.debug("Request to partially update Administrador : {}", administrador);
 
         return administradorRepository
             .findById(administrador.getId())
@@ -66,20 +63,17 @@ public class AdministradorServiceImpl implements AdministradorService {
     @Override
     @Transactional(readOnly = true)
     public List<Administrador> findAll() {
-        log.debug("Request to get all Administradors");
         return administradorRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
     public Optional<Administrador> findOne(Long id) {
-        log.debug("Request to get Administrador : {}", id);
         return administradorRepository.findById(id);
     }
 
     @Override
     public void delete(Long id) {
-        log.debug("Request to delete Administrador : {}", id);
         administradorRepository.deleteById(id);
     }
 }

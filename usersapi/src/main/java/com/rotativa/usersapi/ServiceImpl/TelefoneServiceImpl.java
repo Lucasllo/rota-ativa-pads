@@ -25,19 +25,16 @@ public class TelefoneServiceImpl implements TelefoneService {
 
     @Override
     public Telefone save(Telefone telefone) {
-        log.debug("Request to save Telefone : {}", telefone);
         return telefoneRepository.save(telefone);
     }
 
     @Override
     public Telefone update(Telefone telefone) {
-        log.debug("Request to save Telefone : {}", telefone);
         return telefoneRepository.save(telefone);
     }
 
     @Override
     public Optional<Telefone> partialUpdate(Telefone telefone) {
-        log.debug("Request to partially update Telefone : {}", telefone);
 
         return telefoneRepository
             .findById(telefone.getId())
@@ -54,20 +51,17 @@ public class TelefoneServiceImpl implements TelefoneService {
     @Override
     @Transactional(readOnly = true)
     public List<Telefone> findAll() {
-        log.debug("Request to get all Telefones");
         return telefoneRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
     public Optional<Telefone> findOne(Long id) {
-        log.debug("Request to get Telefone : {}", id);
         return telefoneRepository.findById(id);
     }
 
     @Override
     public void delete(Long id) {
-        log.debug("Request to delete Telefone : {}", id);
         telefoneRepository.deleteById(id);
     }
 }

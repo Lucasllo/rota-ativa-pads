@@ -25,19 +25,16 @@ public class TransacaoServiceImpl implements TransacaoService {
 
     @Override
     public Transacao save(Transacao transacao) {
-        log.debug("Request to save Transacao : {}", transacao);
         return transacaoRepository.save(transacao);
     }
 
     @Override
     public Transacao update(Transacao transacao) {
-        log.debug("Request to save Transacao : {}", transacao);
         return transacaoRepository.save(transacao);
     }
 
     @Override
     public Optional<Transacao> partialUpdate(Transacao transacao) {
-        log.debug("Request to partially update Transacao : {}", transacao);
 
         return transacaoRepository
             .findById(transacao.getId())
@@ -60,20 +57,17 @@ public class TransacaoServiceImpl implements TransacaoService {
     @Override
     @Transactional(readOnly = true)
     public List<Transacao> findAll() {
-        log.debug("Request to get all Transacaos");
         return transacaoRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
     public Optional<Transacao> findOne(Long id) {
-        log.debug("Request to get Transacao : {}", id);
         return transacaoRepository.findById(id);
     }
 
     @Override
     public void delete(Long id) {
-        log.debug("Request to delete Transacao : {}", id);
         transacaoRepository.deleteById(id);
     }
 

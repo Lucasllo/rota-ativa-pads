@@ -25,19 +25,16 @@ public class TipoPagamentoServiceImpl implements TipoPagamentoService {
 
     @Override
     public TipoPagamento save(TipoPagamento tipoPagamento) {
-        log.debug("Request to save TipoPagamento : {}", tipoPagamento);
         return tipoPagamentoRepository.save(tipoPagamento);
     }
 
     @Override
     public TipoPagamento update(TipoPagamento tipoPagamento) {
-        log.debug("Request to save TipoPagamento : {}", tipoPagamento);
         return tipoPagamentoRepository.save(tipoPagamento);
     }
 
     @Override
     public Optional<TipoPagamento> partialUpdate(TipoPagamento tipoPagamento) {
-        log.debug("Request to partially update TipoPagamento : {}", tipoPagamento);
 
         return tipoPagamentoRepository
             .findById(tipoPagamento.getId())
@@ -57,20 +54,17 @@ public class TipoPagamentoServiceImpl implements TipoPagamentoService {
     @Override
     @Transactional(readOnly = true)
     public List<TipoPagamento> findAll() {
-        log.debug("Request to get all TipoPagamentos");
         return tipoPagamentoRepository.findAll();
     }
 
     @Override
     @Transactional(readOnly = true)
     public Optional<TipoPagamento> findOne(Long id) {
-        log.debug("Request to get TipoPagamento : {}", id);
         return tipoPagamentoRepository.findById(id);
     }
 
     @Override
     public void delete(Long id) {
-        log.debug("Request to delete TipoPagamento : {}", id);
         tipoPagamentoRepository.deleteById(id);
     }
 }
